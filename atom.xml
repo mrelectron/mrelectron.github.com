@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Heterodoxic]]></title>
+  <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
+  <link href="http://mrelectron.github.com/"/>
+  <updated>2011-10-26T01:18:44+11:00</updated>
+  <id>http://mrelectron.github.com/</id>
+  <author>
+    <name><![CDATA[Mia]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
