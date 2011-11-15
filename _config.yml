@@ -33,15 +33,15 @@ github_skip_forks: true
 twitter_user:
 twitter_tweet_count: 4
 twitter_show_replies: false
-twitter_follow_button: true
+twitter_follow_button: false
 twitter_show_follower_count: false
-twitter_tweet_button: true
+twitter_tweet_button: false
 
-google_plus_one: true
+google_plus_one: false
 google_plus_one_size: medium
 
 googleplus_user:
-googleplus_hidden: false
+googleplus_hidden: true
 
 pinboard_user:
 pinboard_count: 3
@@ -49,9 +49,9 @@ pinboard_count: 3
 delicious_user:
 delicious_count: 3
 
-disqus_short_name:
+disqus_short_name:heterodoxic
 disqus_show_comment_count: false
 
 google_analytics_tracking_id:
 
-facebook_like: true   
+facebook_like: false
