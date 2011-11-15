@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-16T01:14:55+11:00</updated>
+  <updated>2011-11-16T01:19:44+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[Mia]]></name>
@@ -33,49 +33,6 @@
 
 
 <p>Anyway the film is great and highly recommended. Get it, and you can make up your mind if Alex died or not.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Install Octopress]]></title>
-    <link href="http://mrelectron.github.com/blog/2011/10/31/install-octopress/"/>
-    <updated>2011-10-31T01:54:00+11:00</updated>
-    <id>http://mrelectron.github.com/blog/2011/10/31/install-octopress</id>
-    <content type="html"><![CDATA[<h1>Summary</h1>
-
-<p>This post will show you how to install <a href="http://octopress.org">Octopress</a>, on <a href="https://wiki.ubuntu.com/NattyNarwhal">Ubuntu 11.04, Natty Narwhal</a> and using <a href="http://github.com">github</a> for <a href="http://octopress.org/docs/deploying/">storing</a> the blog posts.</p>
-
-<h1>Prerequisites</h1>
-
-<ul>
-<li><a href="http://github.com">github</a> Account</li>
-<li><a href="http://github.com">github</a> Repository</li>
-<li>ssh client</li>
-<li><a href="http://ruby-lang.org/">Ruby</a></li>
-<li>Various Packages see below.</li>
-</ul>
-
-
-<h1>Topics</h1>
-
-<ul>
-<li>Create github Account</li>
-<li>Create ssh Key</li>
-<li>Add ssh key to github Account</li>
-<li>Create github Repository</li>
-<li>Test github access</li>
-</ul>
-
-
-<h1>Problems Encountered</h1>
-
-<h1>Resources</h1>
-
-<h2>Learn</h2>
-
-<p><a href="http://greglus.com/blog/2011/10/03/how-to-install-octopress-on-ubuntu-11-dot-04/">Gregory A. Lussier</a></p>
-
-<h2><a href="http://help.github.com">help.github.com</a></h2>
 ]]></content>
   </entry>
   
