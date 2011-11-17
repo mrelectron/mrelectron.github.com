@@ -49,7 +49,7 @@ pinboard_count: 3
 delicious_user:
 delicious_count: 3
 
-disqus_short_name:heterodoxic
+disqus_short_name:
 disqus_show_comment_count: false
 
 google_analytics_tracking_id:
