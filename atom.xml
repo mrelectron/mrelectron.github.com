@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T00:01:30+11:00</updated>
+  <updated>2011-11-18T00:09:04+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -20,7 +20,7 @@
     <id>http://mrelectron.github.com/blog/2011/11/16/github-setup</id>
     <content type="html"><![CDATA[<h2>Introduction</h2>
 
-<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Ubuntu and secondly you do not have an existing github account.</p>
+<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Linux and secondly you do not have an existing github account.</p>
 
 <!--more-->
 
@@ -30,6 +30,8 @@
 <p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
 
 <p><img src="http://mrelectron.github.com/images/001.png"></p>
+
+<hr />
 
 <blockquote><p>You need to be logged into github to complete the following two steps.</p></blockquote>
 
@@ -51,7 +53,7 @@
 
 <p><img src="http://mrelectron.github.com/images/002.png"></p>
 
-<h2>Fini</h2>
+<h2>Step: Fini</h2>
 
 <p>We are finished setting up github and can now start on setting up Octopress, this will be another post.</p>
 ]]></content>
