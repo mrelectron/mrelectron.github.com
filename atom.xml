@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-17T23:39:43+11:00</updated>
+  <updated>2011-11-17T23:54:18+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,33 +14,40 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Github - Hosting for Octopress]]></title>
+    <title type="html"><![CDATA[Octopress & github]]></title>
     <link href="http://mrelectron.github.com/blog/2011/11/16/github-setup/"/>
     <updated>2011-11-16T00:27:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/16/github-setup</id>
     <content type="html"><![CDATA[<h2>Introduction</h2>
 
-<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a>can use. Github will store your data and host your blog (for free). Some assumptions have been made in this post, firstly you are using Ubuntu and secondly you do not have an existing github account.</p>
+<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Ubuntu and secondly you do not have an existing github account.</p>
 
-<h2>Create github account</h2>
+<!--more-->
 
-<p>Go <a href="https://github.com/signup/free">here</a>.</p>
+
+<h2>Create Account</h2>
+
+<p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
 
 <p><img src="http://mrelectron.github.com/images/001.png"></p>
 
 <blockquote><p>You need to be logged into github to complete the following two steps.</p></blockquote>
 
 
-<h2>Configure github account</h2>
+<h2>Configure Account</h2>
 
-<p>Go <a href="http://help.github.com/linux-set-up-git/">here</a>. Follow the instructions under the 3 main subheadings.
-* First: Download and Install Git
-* Next: Set Up SSH Keys
-* Then: Set Up Your Info</p>
+<p>Go <a href="http://help.github.com/linux-set-up-git/">here</a>. Follow the instructions under the 3 main subheadings.</p>
 
-<h2>Create a github repository</h2>
+<ul>
+<li>First: Download and Install Git</li>
+<li>Next: Set Up SSH Keys</li>
+<li>Then: Set Up Your Info</li>
+</ul>
 
-<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the project name field enter username.github.com, where username is the name you used to setup your github account above.</p>
+
+<h2>Create Repository</h2>
+
+<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for the user1999.</p>
 
 <p><img src="http://mrelectron.github.com/images/002.png"></p>
 
@@ -56,6 +63,9 @@
     <updated>2011-11-16T00:27:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/16/did-alex-die</id>
     <content type="html"><![CDATA[<p>If you have not watched <a href="http://www.imdb.com/title/tt0111149">Shallow Grave</a> by the <a href="www.imdb.com/title/tt0117951/">Trainspotting</a> director <a href="http://www.imdb.com/name/nm0000965">Danny Boyle</a> then you will not care about this question, but there are 100 responses on the <a href="http://www.imdb.com/title/tt0111149/board/threads">message board</a> about Alex&#8217;s death. I have not seen that degree of interest in any film previously, so I thought I would add my opinion.</p>
+
+<!--more-->
+
 
 <p>Naturally enough I thought to add the 101st opinion to the IMDB message board but IMDB not only want you to sign up to post a message they also want to you to submit your mobile number or credit card details. Thats beyond the pale so I have to post my opinion here where noone will read it, but thats OK.</p>
 
