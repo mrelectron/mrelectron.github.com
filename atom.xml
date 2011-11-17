@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T00:09:04+11:00</updated>
+  <updated>2011-11-18T00:11:20+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -31,8 +31,6 @@
 
 <p><img src="http://mrelectron.github.com/images/001.png"></p>
 
-<hr />
-
 <blockquote><p>You need to be logged into github to complete the following two steps.</p></blockquote>
 
 
@@ -54,8 +52,6 @@
 <p><img src="http://mrelectron.github.com/images/002.png"></p>
 
 <h2>Step: Fini</h2>
-
-<p>We are finished setting up github and can now start on setting up Octopress, this will be another post.</p>
 ]]></content>
   </entry>
   
