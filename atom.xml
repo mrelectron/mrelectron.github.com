@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T13:21:43+11:00</updated>
+  <updated>2011-11-18T18:18:52+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,19 +14,60 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress - First Post]]></title>
-    <link href="http://mrelectron.github.com/blog/2011/11/18/your-first-post/"/>
-    <updated>2011-11-18T13:04:00+11:00</updated>
-    <id>http://mrelectron.github.com/blog/2011/11/18/your-first-post</id>
-    <content type="html"><![CDATA[<p>This post describes the process to writing your first Octopress post.</p>
+    <title type="html"><![CDATA[Octopress - Custom Domain]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-custom-domain/"/>
+    <updated>2011-11-18T17:10:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/18/octopress-custom-domain</id>
+    <content type="html"><![CDATA[<p>This post describes the process whereby you can use your own domain name to point to your blog. Useful background information can be found <a href="http://pages.github.com/">here</a>. Look under subheadings &#8220;User &amp; Organization Pages&#8221; &amp; &#8220;Custom Domains&#8221;</p>
+
+<p>As an example of what we are going to do, my github username is mrelectron, I have a repository accessible at the internet address http://mrelectron.github.com. But I want to access this repository using a domain name that I own called heterodoxic.com</p>
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>You have a working Octopress installation.</li>
+<li>You own a domain name</li>
+<li>You have edit / add permission for your domain name DNS records.</li>
+</ul>
+
+
+<h2>Step: Create CNAME file</h2>
+
+<p>Using the editor of your choice create a file called CNAME in the source directory of your Octopress installation. On the first line put the domain name that you want to point to your Octopress installation.</p>
+
+<p><img src="http://mrelectron.github.com/images/004.png"></p>
+
+<h2>Step: Commit CNAME file</h2>
+
+<p>Committing this file to the repository will signal to the github server it needs to map requests for heterodoxic.com to mrelectron.github.com</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& git add .
+</span><span class='line'>& git commit -m 'Adding CNAME file'
+</span><span class='line'>& git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Modify DNS Records</h2>
+
+<p>I cannot be specific here as DNS management user interfaces are going to vary wildly. I added a single &#8220;A&#8221; DNS record that points at 207.97.227.245 which is github.com. The @ in the image is shorthand for heterodoxic.com.</p>
+
+<p><img src="http://mrelectron.github.com/images/005.png"></p>
+
+<h2>Step: Fini</h2>
+
+<p>All done, it may take some time for the change made to your DNS, to propagate around the world. If it does not work after 24 hours though, you may have a problem.</p>
+
+<h1>References</h1>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress - Installation]]></title>
-    <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-install/"/>
+    <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-installation/"/>
     <updated>2011-11-18T11:13:00+11:00</updated>
-    <id>http://mrelectron.github.com/blog/2011/11/18/octopress-install</id>
+    <id>http://mrelectron.github.com/blog/2011/11/18/octopress-installation</id>
     <content type="html"><![CDATA[<p>This post describes the process to install <a href="http://octopress.org">Octopress</a> on <a href="http://www.ubuntu.com/">Ubuntu Oneiric 11.10</a>. My starting point was a brand spanking new install of Oneiric on a <a href="https://www.virtualbox.org/">Virtual Box</a> virtual machine. Immediately after this installation completed I did a sudo apt-get -y update &amp;&amp; sudo apt-get -y upgrade.</p>
 
 <!--more-->
@@ -36,7 +77,8 @@
 
 <ul>
 <li>You are not logged in as root.</li>
-<li>You have already installed git via sudo apt-get -y install git.</li>
+<li>Git is installed on your computer. If not a simple sudo apt-get -y install git will suffice.</li>
+<li>You have created your github account and Octopress repository, if you have not go <a href="http://heterodoxic.com/blog/2011/11/16/github-setup.html">here</a>.</li>
 </ul>
 
 
@@ -112,7 +154,109 @@
 
 <h2>Step: Fini</h2>
 
-<p>This was Part B in this series, go here for Part C, or here for Part A.</p>
+<h2>References</h2>
+
+<ul>
+<li><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/">Gregory A. Lussier</a></li>
+<li><a href="http://blog.costan.us/2011/10/getting-mri-192-on-ubuntu-1110.html">Victor Costan</a></li>
+<li><a href="http://answers.oreilly.com/topic/2845-installing-ruby-1-9-on-a-debian-or-ubuntu-system/">Adriene Lamothe</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress - Installation]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-install/"/>
+    <updated>2011-11-18T11:13:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/18/octopress-install</id>
+    <content type="html"><![CDATA[<p>This post describes the process to install <a href="http://octopress.org">Octopress</a> on <a href="http://www.ubuntu.com/">Ubuntu Oneiric 11.10</a>. My starting point was a brand spanking new install of Oneiric on a <a href="https://www.virtualbox.org/">Virtual Box</a> virtual machine. Immediately after this installation completed I did a sudo apt-get -y update &amp;&amp; sudo apt-get -y upgrade.</p>
+
+<!--more-->
+
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>You are not logged in as root.</li>
+<li>Git is installed on your computer. If not a simple sudo apt-get -y install git will suffice.</li>
+<li>You have created your github account and Octopress repository, if you have not go <a href="http://heterodoxic.com/blog/2011/11/16/github-setup.html">here</a>.</li>
+</ul>
+
+
+<h2>Step: Get Ruby</h2>
+
+<p>Oneiric comes with Ruby 1.8.7. Octopress depends on Ruby 1.9.2.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& sudo apt-get -y install ruby1.9.1-full
+</span><span class='line'>& sudo update-alternatives --set ruby /usr/bin/ruby1.9.1
+</span><span class='line'>& sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Test Ruby</h2>
+
+<p>The important thing is the Ruby version is at least 1.9.2.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& ruby -v.
+</span><span class='line'>& ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
+</span><span class='line'>& gem -v
+</span><span class='line'>& 1.8.11</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Get Octopress</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& mkdir ~/name_and_location_you_choose
+</span><span class='line'>& cd ~/name_and_location_you_choose
+</span><span class='line'>& git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Configure Octopress</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& cd octopress
+</span><span class='line'>& sudo gem install bundler
+</span><span class='line'>& bundle install
+</span><span class='line'>& rake install
+</span><span class='line'>& rake setup_github_pages
+</span><span class='line'>Enter the read/write url for your repository: git@github.com:uname/uname.github.com.git</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Generate &amp; Deploy</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& rake generate
+</span><span class='line'>& rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Commit Source</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& git add .
+</span><span class='line'>& git commit -m 'Initial Commit'
+</span><span class='line'>& git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Fini</h2>
+
+<p>All finished, you can blog. Go [here][009] for some simple instructions on how to write your first post. Go <a href="http://octopress.org/docs/configuring/">here</a> for some simple instructions on making minor modifications to the look of your blog, such things as changing the name of the blog, the name of the author and enabling various services such as Disqus, Twitter etc.</p>
 
 <h2>References</h2>
 
@@ -122,6 +266,54 @@
 <li><a href="http://answers.oreilly.com/topic/2845-installing-ruby-1-9-on-a-debian-or-ubuntu-system/">Adriene Lamothe</a></li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress - Github]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/11/16/octopress-github/"/>
+    <updated>2011-11-16T00:27:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/16/octopress-github</id>
+    <content type="html"><![CDATA[<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free).</p>
+
+<!--more-->
+
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>You are using Linux</li>
+<li>You do not have an existing github account.</li>
+<li>After creating an Account you stay logged into github.</li>
+</ul>
+
+
+<h2>Step: Create Account</h2>
+
+<p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
+
+<p><img src="http://mrelectron.github.com/images/001.png"></p>
+
+<h2>Step: Configure Account</h2>
+
+<p>Go <a href="http://help.github.com/linux-set-up-git/">here</a>. Follow the instructions under the 3 main subheadings.</p>
+
+<ul>
+<li>First: Download and Install Git</li>
+<li>Next: Set Up SSH Keys</li>
+<li>Then: Set Up Your Info</li>
+</ul>
+
+
+<h2>Step: Create Repository</h2>
+
+<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for user1999.</p>
+
+<p><img src="http://mrelectron.github.com/images/002.png"></p>
+
+<h2>Step: Fini</h2>
+
+<p>This was Part A in this series, go here for Part B.</p>
 ]]></content>
   </entry>
   
@@ -169,7 +361,7 @@
 
 <h2>Step: Fini</h2>
 
-<p>This was Part A in this series, go here for Part B.</p>
+<p>To find how to install Octopress to use this new repository go <a href="http://heterodoxic.com/blog/2011/11/18/octopress-install/">here</a></p>
 ]]></content>
   </entry>
   

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopress - Github - Heterodoxic</title>
+  <title>Octopress - Custom Domain - Heterodoxic</title>
   <meta name="author" content="MAB">
 
   
-  <meta name="description" content="This post describes how to setup a github account and repository that Octopress will use. Github will store your data and host your blog (for free). &hellip;">
+  <meta name="description" content="This post describes the process whereby you can use your own domain name to point to your blog. Useful background information can be found here. Look &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mrelectron.github.com/blog/2011/11/16/github-setup">
+  <link rel="canonical" href="http://mrelectron.github.com/blog/2011/11/18/octopress-custom-domain">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress - Github</h1>
+      <h1 class="entry-title">Octopress - Custom Domain</h1>
     
     
       <p class="meta">
@@ -76,53 +76,55 @@
 
   
 
-<time datetime="2011-11-16T00:27:00+11:00" pubdate>Nov 16<span>th</span>, 2011</time>
+<time datetime="2011-11-18T17:10:00+11:00" pubdate>Nov 18<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free).</p>
+<div class="entry-content"><p>This post describes the process whereby you can use your own domain name to point to your blog. Useful background information can be found <a href="http://pages.github.com/">here</a>. Look under subheadings &#8220;User &amp; Organization Pages&#8221; &amp; &#8220;Custom Domains&#8221;</p>
 
-<!--more-->
-
+<p>As an example of what we are going to do, my github username is mrelectron, I have a repository accessible at the internet address http://mrelectron.github.com. But I want to access this repository using a domain name that I own called heterodoxic.com</p>
 
 <h2>Assumptions</h2>
 
 <ul>
-<li>You are using Linux</li>
-<li>You do not have an existing github account.</li>
-<li>After creating an Account you stay logged into github.</li>
+<li>You have a working Octopress installation.</li>
+<li>You own a domain name</li>
+<li>You have edit / add permission for your domain name DNS records.</li>
 </ul>
 
 
-<h2>Step: Create Account</h2>
+<h2>Step: Create CNAME file</h2>
 
-<p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
+<p>Using the editor of your choice create a file called CNAME in the source directory of your Octopress installation. On the first line put the domain name that you want to point to your Octopress installation.</p>
 
-<p><img src="/images/001.png"></p>
+<p><img src="/images/004.png"></p>
 
-<h2>Step: Configure Account</h2>
+<h2>Step: Commit CNAME file</h2>
 
-<p>Go <a href="http://help.github.com/linux-set-up-git/">here</a>. Follow the instructions under the 3 main subheadings.</p>
+<p>Committing this file to the repository will signal to the github server it needs to map requests for heterodoxic.com to mrelectron.github.com</p>
 
-<ul>
-<li>First: Download and Install Git</li>
-<li>Next: Set Up SSH Keys</li>
-<li>Then: Set Up Your Info</li>
-</ul>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& git add .
+</span><span class='line'>& git commit -m 'Adding CNAME file'
+</span><span class='line'>& git push origin source</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>Step: Create Repository</h2>
+<h2>Step: Modify DNS Records</h2>
 
-<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for user1999.</p>
+<p>I cannot be specific here as DNS management user interfaces are going to vary wildly. I added a single &#8220;A&#8221; DNS record that points at 207.97.227.245 which is github.com. The @ in the image is shorthand for heterodoxic.com.</p>
 
-<p><img src="/images/002.png"></p>
+<p><img src="/images/005.png"></p>
 
 <h2>Step: Fini</h2>
 
-<p>To find how to install Octopress to use this new repository go <a href="http://heterodoxic.com/blog/2011/11/18/octopress-install/">here</a></p>
+<p>All done, it may take some time for the change made to your DNS, to propagate around the world. If it does not work after 24 hours though, you may have a problem.</p>
+
+<h1>References</h1>
 </div>
 
 
@@ -140,7 +142,7 @@
 
   
 
-<time datetime="2011-11-16T00:27:00+11:00" pubdate>Nov 16<span>th</span>, 2011</time>
+<time datetime="2011-11-18T17:10:00+11:00" pubdate>Nov 18<span>th</span>, 2011</time>
       
 
 
@@ -155,10 +157,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/11/16/did-alex-die/" title="Previous Post: Did Alex Die?">&laquo; Did Alex Die?</a>
+        <a class="basic-alignment left" href="/blog/2011/11/18/octopress-installation/" title="Previous Post: Octopress - Installation">&laquo; Octopress - Installation</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2011/11/16/octopress-github/" title="next Post: Octopress - Github">Octopress - Github &raquo;</a>
       
     </p>
   </footer>
