@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T13:02:14+11:00</updated>
+  <updated>2011-11-18T13:21:43+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress - First Post]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/11/18/your-first-post/"/>
+    <updated>2011-11-18T13:04:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/18/your-first-post</id>
+    <content type="html"><![CDATA[<p>This post describes the process to writing your first Octopress post.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress - Installation]]></title>
@@ -121,9 +130,18 @@
     <link href="http://mrelectron.github.com/blog/2011/11/16/github-setup/"/>
     <updated>2011-11-16T00:27:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/16/github-setup</id>
-    <content type="html"><![CDATA[<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Linux and secondly you do not have an existing github account.</p>
+    <content type="html"><![CDATA[<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free).</p>
 
 <!--more-->
+
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>You are using Linux</li>
+<li>You do not have an existing github account.</li>
+<li>After creating an Account you stay logged into github.</li>
+</ul>
 
 
 <h2>Step: Create Account</h2>
@@ -131,9 +149,6 @@
 <p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
 
 <p><img src="http://mrelectron.github.com/images/001.png"></p>
-
-<blockquote><p>You need to be logged into github to complete the following two steps.</p></blockquote>
-
 
 <h2>Step: Configure Account</h2>
 
@@ -148,7 +163,7 @@
 
 <h2>Step: Create Repository</h2>
 
-<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for the user1999.</p>
+<p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for user1999.</p>
 
 <p><img src="http://mrelectron.github.com/images/002.png"></p>
 
