@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T12:57:28+11:00</updated>
+  <updated>2011-11-18T13:02:14+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress Installation]]></title>
+    <title type="html"><![CDATA[Octopress - Installation]]></title>
     <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-install/"/>
     <updated>2011-11-18T11:13:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/18/octopress-install</id>
@@ -27,7 +27,7 @@
 
 <ul>
 <li>You are not logged in as root.</li>
-<li>You have already installed git via apt-get.</li>
+<li>You have already installed git via sudo apt-get -y install git.</li>
 </ul>
 
 
@@ -45,6 +45,8 @@
 
 <h2>Step: Test Ruby</h2>
 
+<p>The important thing is the Ruby version is at least 1.9.2.</p>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -54,8 +56,6 @@
 </span><span class='line'>& gem -v
 </span><span class='line'>& 1.8.11</span></code></pre></td></tr></table></div></figure>
 
-
-<p>The important thing is the Ruby version is at least 1.9.2.</p>
 
 <h2>Step: Get Octopress</h2>
 
@@ -73,17 +73,13 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>& cd octopress
 </span><span class='line'>& sudo gem install bundler
 </span><span class='line'>& bundle install
-</span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>& rake setup_github_pages
+</span><span class='line'>& rake install
+</span><span class='line'>& rake setup_github_pages
 </span><span class='line'>Enter the read/write url for your repository: git@github.com:uname/uname.github.com.git</span></code></pre></td></tr></table></div></figure>
 
 
@@ -121,7 +117,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Octopress - github]]></title>
+    <title type="html"><![CDATA[Octopress - Github]]></title>
     <link href="http://mrelectron.github.com/blog/2011/11/16/github-setup/"/>
     <updated>2011-11-16T00:27:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/16/github-setup</id>
@@ -157,6 +153,8 @@
 <p><img src="http://mrelectron.github.com/images/002.png"></p>
 
 <h2>Step: Fini</h2>
+
+<p>This was Part A in this series, go here for Part B.</p>
 ]]></content>
   </entry>
   

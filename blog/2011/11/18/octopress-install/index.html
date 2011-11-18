@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopress Installation - Heterodoxic</title>
+  <title>Octopress - Installation - Heterodoxic</title>
   <meta name="author" content="MAB">
 
   
@@ -65,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress Installation</h1>
+      <h1 class="entry-title">Octopress - Installation</h1>
     
     
       <p class="meta">
@@ -92,7 +92,7 @@
 
 <ul>
 <li>You are not logged in as root.</li>
-<li>You have already installed git via apt-get.</li>
+<li>You have already installed git via sudo apt-get -y install git.</li>
 </ul>
 
 
@@ -110,6 +110,8 @@
 
 <h2>Step: Test Ruby</h2>
 
+<p>The important thing is the Ruby version is at least 1.9.2.</p>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -119,8 +121,6 @@
 </span><span class='line'>& gem -v
 </span><span class='line'>& 1.8.11</span></code></pre></td></tr></table></div></figure>
 
-
-<p>The important thing is the Ruby version is at least 1.9.2.</p>
 
 <h2>Step: Get Octopress</h2>
 
@@ -138,17 +138,13 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>& cd octopress
 </span><span class='line'>& sudo gem install bundler
 </span><span class='line'>& bundle install
-</span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>& rake setup_github_pages
+</span><span class='line'>& rake install
+</span><span class='line'>& rake setup_github_pages
 </span><span class='line'>Enter the read/write url for your repository: git@github.com:uname/uname.github.com.git</span></code></pre></td></tr></table></div></figure>
 
 
@@ -214,7 +210,7 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/11/16/github-setup/" title="Previous Post: Octopress - github">&laquo; Octopress - github</a>
+        <a class="basic-alignment left" href="/blog/2011/11/16/github-setup/" title="Previous Post: Octopress - Github">&laquo; Octopress - Github</a>
       
       
     </p>
@@ -230,11 +226,11 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2011/11/18/octopress-install/">Octopress Installation</a>
+        <a href="/blog/2011/11/18/octopress-install/">Octopress - Installation</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/11/16/github-setup/">Octopress - github</a>
+        <a href="/blog/2011/11/16/github-setup/">Octopress - Github</a>
       </li>
     
       <li class="post">
