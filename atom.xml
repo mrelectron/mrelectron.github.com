@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T12:37:14+11:00</updated>
+  <updated>2011-11-18T12:41:23+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -81,7 +81,7 @@
 </span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
 
 
-<p>The Rake task below <strong>setup_github_pages</strong> will request a read/write url for your repository. You can find that at https://github.com/your_username/your_username.github.com and it looks like this:</p>
+<p>The Rake task below <strong>setup_github_pages</strong> will request a read/write url for your repository - it looks like this:</p>
 
 <p><img src="http://mrelectron.github.com/images/003.png"></p>
 
@@ -111,9 +111,12 @@
 
 <h2>References</h2>
 
-<p><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/">Gregory A. Lussier</a>
-<a href="http://blog.costan.us/2011/10/getting-mri-192-on-ubuntu-1110.html">Victor Costan</a>
-<a href="http://answers.oreilly.com/topic/2845-installing-ruby-1-9-on-a-debian-or-ubuntu-system/">Adriene Lamothe</a></p>
+<ul>
+<li><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/">Gregory A. Lussier</a></li>
+<li><a href="http://blog.costan.us/2011/10/getting-mri-192-on-ubuntu-1110.html">Victor Costan</a></li>
+<li><a href="http://answers.oreilly.com/topic/2845-installing-ruby-1-9-on-a-debian-or-ubuntu-system/">Adriene Lamothe</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
