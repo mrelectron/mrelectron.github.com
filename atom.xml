@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T19:02:24+11:00</updated>
+  <updated>2011-11-18T19:08:02+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -79,7 +79,7 @@
 <ul>
 <li>You are not logged in as root.</li>
 <li>Git is installed on your computer. If not a simple sudo apt-get -y install git will suffice.</li>
-<li>You have created your github account and Octopress repository, if you have not go <a href="http://heterodoxic.com/blog/2011/11/16/github-setup.html">here</a>.</li>
+<li>You have created your github account and Octopress repository, if you have not go <a href="http://heterodoxic.com/blog/2011/11/16/octopress-github.html">here</a>.</li>
 </ul>
 
 
@@ -212,7 +212,7 @@
 
 <h2>Step: Fini</h2>
 
-<p>To find how to install Octopress to use this new repository go <a href="http://heterodoxic.com/blog/2011/11/18/octopress-install/">here</a></p>
+<p>To find how to install Octopress to use this new repository go <a href="http://heterodoxic.com/blog/2011/11/18/octopress-installation/">here</a></p>
 ]]></content>
   </entry>
   
