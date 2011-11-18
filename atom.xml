@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T18:24:42+11:00</updated>
+  <updated>2011-11-18T18:27:51+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>This post describes the process whereby you can use your own domain name to point to your blog. Useful background information can be found <a href="http://pages.github.com/">here</a>. Look under subheadings &#8220;User &amp; Organization Pages&#8221; &amp; &#8220;Custom Domains&#8221;</p>
 
 <p>As an example of what we are going to do, my github username is mrelectron, I have a repository accessible at the internet address http://mrelectron.github.com. But I want to access this repository using a domain name that I own called heterodoxic.com</p>
+
+<!--more-->
+
 
 <h2>Assumptions</h2>
 

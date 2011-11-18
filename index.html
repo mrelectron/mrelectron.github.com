@@ -90,46 +90,12 @@
 
 <p>As an example of what we are going to do, my github username is mrelectron, I have a repository accessible at the internet address http://mrelectron.github.com. But I want to access this repository using a domain name that I own called heterodoxic.com</p>
 
-<h2>Assumptions</h2>
-
-<ul>
-<li>You have a working Octopress installation.</li>
-<li>You own a domain name</li>
-<li>You have edit / add permission for your domain name DNS records.</li>
-</ul>
-
-
-<h2>Step: Create CNAME file</h2>
-
-<p>Using the editor of your choice create a file called CNAME in the source directory of your Octopress installation. On the first line put the domain name that you want to point to your Octopress installation.</p>
-
-<p><img src="/images/004.png"></p>
-
-<h2>Step: Commit CNAME file</h2>
-
-<p>Committing this file to the repository will signal to the github server it needs to map requests for heterodoxic.com to mrelectron.github.com</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>& git add .
-</span><span class='line'>& git commit -m 'Adding CNAME file'
-</span><span class='line'>& git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Step: Modify DNS Records</h2>
-
-<p>I cannot be specific here as DNS management user interfaces are going to vary wildly. I added a single &#8220;A&#8221; DNS record that points at 207.97.227.245 which is github.com. The @ in the image is shorthand for heterodoxic.com.</p>
-
-<p><img src="/images/005.png"></p>
-
-<h2>Step: Fini</h2>
-
-<p>All done, it may take some time for the change made to your DNS, to propagate around the world. If it does not work after 24 hours though, you may have a problem.</p>
-
-<h1>References</h1>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/11/18/octopress-custom-domain/">Read on &rarr;</a>
+    </footer>
   
 
 
