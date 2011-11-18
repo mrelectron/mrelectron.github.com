@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T12:44:47+11:00</updated>
+  <updated>2011-11-18T12:46:21+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -81,15 +81,15 @@
 </span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
 
 
-<p>The Rake task below <strong>setup_github_pages</strong> will request a read/write url for your repository - it looks like this:</p>
+<p>The Rake task below <strong>setup_github_pages</strong> will request a read/write url for your repository. It looks like this.</p>
+
+<p><img src="http://mrelectron.github.com/images/003.png"></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>& rake setup_github_pages
 </span><span class='line'>Enter the read/write url for your repository:</span></code></pre></td></tr></table></div></figure>
 
-
-<p><img src="http://mrelectron.github.com/images/003.png"></p>
 
 <h2>Step: Generate &amp; Deploy</h2>
 
