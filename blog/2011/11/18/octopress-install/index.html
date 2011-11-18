@@ -83,9 +83,17 @@
   </header>
 
 
-<div class="entry-content"><p>This post describes the process to install <a href="http://octopress.org">Octopress</a> on <a href="http://www.ubuntu.com/">Ubuntu Oneiric 11.10</a>. My starting point was a brand spanking new install of Oneiric on a <a href="https://www.virtualbox.org/">Virtual Box</a> virtual machine. Immediately after this installation completed I did a sudo apt-get -y update &amp;&amp; sudo apt-get -y upgrade. It is assumed you are not logged in as root.</p>
+<div class="entry-content"><p>This post describes the process to install <a href="http://octopress.org">Octopress</a> on <a href="http://www.ubuntu.com/">Ubuntu Oneiric 11.10</a>. My starting point was a brand spanking new install of Oneiric on a <a href="https://www.virtualbox.org/">Virtual Box</a> virtual machine. Immediately after this installation completed I did a sudo apt-get -y update &amp;&amp; sudo apt-get -y upgrade.</p>
 
 <!--more-->
+
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>You are not logged in as root.</li>
+<li>You have already installed git via apt-get.</li>
+</ul>
 
 
 <h2>Step: Get Ruby</h2>
@@ -95,11 +103,9 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>& sudo apt-get -y install ruby1.9.1-full
 </span><span class='line'>& sudo update-alternatives --set ruby /usr/bin/ruby1.9.1
-</span><span class='line'>& sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system
-</span><span class='line'>& sudo chown -R user: ~/.gem</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>& sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Step: Test Ruby</h2>
@@ -118,19 +124,11 @@
 
 <h2>Step: Get Octopress</h2>
 
-<p>If you have been through Part A of this series, then you should already have installed git.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>& sudo apt-get -y install git</span></code></pre></td></tr></table></div></figure>
-
-
-
-
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>& mkdir ~/name_and_location_of_your_own_choosing
-</span><span class='line'>& cd ~/name_and_location_of_your_own_choosing
+</pre></td><td class='code'><pre><code class=''><span class='line'>& mkdir ~/name_and_location_you_choose
+</span><span class='line'>& cd ~/name_and_location_you_choose
 </span><span class='line'>& git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
 
 
@@ -142,7 +140,7 @@
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>& cd octopress
 </span><span class='line'>& sudo gem install bundler
-</span><span class='line'>& sudo bundle install
+</span><span class='line'>& bundle install
 </span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
 
 
