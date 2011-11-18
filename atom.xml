@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T18:27:51+11:00</updated>
+  <updated>2011-11-18T18:31:19+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -61,8 +61,6 @@
 <h2>Step: Fini</h2>
 
 <p>All done, it may take some time for the change made to your DNS, to propagate around the world. If it does not work after 24 hours though, you may have a problem.</p>
-
-<h1>References</h1>
 ]]></content>
   </entry>
   
