@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T00:11:20+11:00</updated>
+  <updated>2011-11-18T12:37:14+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,13 +14,115 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress & github]]></title>
+    <title type="html"><![CDATA[Octopress Installation]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/11/18/octopress-install/"/>
+    <updated>2011-11-18T11:13:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/18/octopress-install</id>
+    <content type="html"><![CDATA[<p>This post describes the process to install <a href="http://octopress.org">Octopress</a> on <a href="http://www.ubuntu.com/">Ubuntu Oneiric 11.10</a>. My starting point was a brand spanking new install of Oneiric on a <a href="https://www.virtualbox.org/">Virtual Box</a> virtual machine. Immediately after this installation completed I did a sudo apt-get -y update &amp;&amp; sudo apt-get -y upgrade. It is assumed you are not logged in as root.</p>
+
+<!--more-->
+
+
+<h2>Step: Get Ruby</h2>
+
+<p>Oneiric comes with Ruby 1.8.7. Octopress depends on Ruby 1.9.2.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& sudo apt-get -y install ruby1.9.1-full
+</span><span class='line'>& sudo update-alternatives --set ruby /usr/bin/ruby1.9.1
+</span><span class='line'>& sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system
+</span><span class='line'>& sudo chown -R user: ~/.gem</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Test Ruby</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& ruby -v.
+</span><span class='line'>& ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
+</span><span class='line'>& gem -v
+</span><span class='line'>& 1.8.11</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The important thing is the Ruby version is at least 1.9.2.</p>
+
+<h2>Step: Get Octopress</h2>
+
+<p>If you have been through Part A of this series, then you should already have installed git.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& sudo apt-get -y install git</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& mkdir ~/name_and_location_of_your_own_choosing
+</span><span class='line'>& cd ~/name_and_location_of_your_own_choosing
+</span><span class='line'>& git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Configure Octopress</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& cd octopress
+</span><span class='line'>& sudo gem install bundler
+</span><span class='line'>& sudo bundle install
+</span><span class='line'>& rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Rake task below <strong>setup_github_pages</strong> will request a read/write url for your repository. You can find that at https://github.com/your_username/your_username.github.com and it looks like this:</p>
+
+<p><img src="http://mrelectron.github.com/images/003.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& rake setup_github_pages
+</span><span class='line'>Enter the read/write url for your repository:
+</span><span class='line'>& rake generate
+</span><span class='line'>& rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Commit Source</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>& git add .
+</span><span class='line'>& git commit -m 'Initial Commit'
+</span><span class='line'>& git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Step: Fini</h2>
+
+<p>This was Part B in this series, go here for Part C, or here for Part A.</p>
+
+<h2>References</h2>
+
+<p><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/">Gregory A. Lussier</a>
+<a href="http://blog.costan.us/2011/10/getting-mri-192-on-ubuntu-1110.html">Victor Costan</a>
+<a href="http://answers.oreilly.com/topic/2845-installing-ruby-1-9-on-a-debian-or-ubuntu-system/">Adriene Lamothe</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress - github]]></title>
     <link href="http://mrelectron.github.com/blog/2011/11/16/github-setup/"/>
     <updated>2011-11-16T00:27:00+11:00</updated>
     <id>http://mrelectron.github.com/blog/2011/11/16/github-setup</id>
-    <content type="html"><![CDATA[<h2>Introduction</h2>
-
-<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Linux and secondly you do not have an existing github account.</p>
+    <content type="html"><![CDATA[<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free). Assumptions have been made in this post, firstly you are using Linux and secondly you do not have an existing github account.</p>
 
 <!--more-->
 
