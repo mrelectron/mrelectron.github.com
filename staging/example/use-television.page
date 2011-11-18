@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="use-television" xml:lang="en_GB">
+	<info>
+		<link type="guide" xref="index"/>
+		<desc>Use analogue television with digital receiver</desc>
+		<credit type="author">
+			<name>Mark Brand</name>
+			<email>acquitaine@gmail.com</email>
+		</credit>
+	</info>
+	<title>Use analogue television with digital receiver</title>
+
+	<note style="tip">
+		<p>These instructions are specific to the television and digital set top receiver at the house of Beryl Brand.</p>
+	</note>
+
+	<section id="reset-state-television">
+		<title>reset television to a known state</title>
+		<steps>
+			<item>
+				<p>Walk over to the television.</p>
+				<p>If the television is On switch it Off then switch it On</p>
+				<p>If the television is Off switch it On</p>
+				<p>At this point the television should be on.</p>
+			</item>
+		</steps>
+	</section>
+
+	<section id="reset-state-receiver">
+		<title>reset digital receiver to a known state</title>
+		<steps>
+			<item>
+				<p>Pick up the remote control for the digital receiver.</p>
+				<p>Walk to the digital receiver, position yourself so you are within 30cm of the digital receiver and have a clear view of the control panel - bend down if you have to.</p>
+				<p>If the light on the control panel is red. Then point the remote control at the control panel and press the red button once</p>
+				<p>If you cannot see a red light on the control panel. Then point the remote at the control and press the red button once. Then press the red button again.</p>
+				<p>At this point the digital receiver should be on.</p>
+			</item>
+		</steps>
+	</section>
+
+
+	<section id="set-television-mode">
+		<title>set television mode</title>
+		<steps>
+			<item>
+			<item>
+				<p>Walk over to the television.</p>
+				<p>There is a sequence of buttons on the television top.</p>
+				<p>Keep pressing the button that is third from the left until you see written in the top left hand corner of the screen "Video 1"</p>
+				<p>At this point you have set the television to the correct mode to receive digital signals.</p>
+			</item>
+			</item>
+		</steps>
+	</section>
+
+	<note style="tip">
+		<p>You can now site down and use the remote control arrow keys to change volume and channels.</p>
+	</note>
+</page>

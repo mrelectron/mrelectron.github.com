@@ -1,0 +1,141 @@
+﻿<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" id="tenminutes">
+
+    <info>
+        <link type="guide" xref="index" group="primary"/>
+        <revision version="0.1" date="2009-06-16" status="incomplete"/>
+        <credit type="author">
+            <name>Shaun McCance</name>
+            <email>shaunm@gnome.org</email>
+            <years>2008-2010</years>
+        </credit>
+        <desc>Create a multiple-page document in only ten minutes.</desc>
+    </info>
+
+    <title>Ten Minute Tour</title>
+    <note style="pmo-source">
+        <title>Learn by Example</title>
+        <p>This page was written in a Mallard extension format called Mallard Sites. <link xref="tenminutes-src">Read the source markup</link> for this page to learn Mallard from real-world examples.</p>
+    </note>
+
+    <p>In this tutorial, you will learn how to create a simple multiple-page Mallard document by creating a document for the fictitious <app>Beanstalk</app> application.  This tutorial assumes you have a basic familiarity with XML or with a similar markup language like HTML.</p>
+    <p>A Mallard document is composed of multiple independent pages. Each page is kept in a separate XML file, and a processing tool aggregates them together, automatically creating links and navigational aids. There are two primary types of pages: <link xref="/1.0/mal_page#topic">topic pages</link> and <link xref="/1.0/mal_page#guide">guide pages</link>. Topic pages present some piece of information to the reader. This might be a tutorial, a conceptual overview, reference material, or any other type of content. Guide pages serve as the navigational glue between topics, helping readers find and explore content.</p>
+
+    <section id="first">
+        <title>First Page</title>
+        <p>Begin making a Mallard document by writing the front page in any text editor. Generally, the front page of any document will be a guide page, as its purpose is to help users navigate to other content. In Mallard, the front page of any document is always named <file>index.page</file>.</p>
+        <listing>
+            <title><file>index.page</file></title>
+            <code>
+                <![CDATA[
+                <page xmlns="http://projectmallard.org/1.0/"
+                type="guide"
+                id="index">
+                <title>Beanstalk Help</title>
+                </page>]]>
+            </code>
+        </listing>
+        <p>This simple example is a valid Mallard guide page. Taken alone, it is also a valid Mallard document.</p>
+        <p>The entire contents of the page are between the opening <code>&lt;page></code> and closing <code>&lt;/page></code> tags.  As with all XML formats, every element must either have opening and closing tags or use the special empty tag syntax. We'll see the empty tag below with link elements.</p>
+        <p>There are three attributes on the <code>page</code> element.  The <code>xmlns</code> attribute specifies that the XML tags in this file are from the <link xref="/1.0/index">Mallard 1.0 namespace</link>.  This must be set on all Mallard pages.  The <code>id</code> attribute provides a unique identifier that other pages can use to link to this page.  You should match the <code>id</code> attribute to the name of the file without the <file>.page</file> extension.</p>
+        <p>Finally, the <code>type</code> attribute specifies that this is a guide page. Guide pages get special treatment in Mallard documents.  They're displayed with additional links to topic pages and other guide pages, based on metadata that is provided on this page or on other pages.  The linking structure for guide pages is unique to Mallard, and we will explore it further below.</p>
+    </section>
+
+    <section id="view">
+        <title>View Your Document</title>
+        <p>You now have a simple document, but you can only view the raw markup in a text editor.  To view formatted output, you need to process your document with a Mallard processing tool.</p>
+        <p>Mallard is just the markup language and a specification of how documents should be processed.  Anybody can write tools to display a Mallard document or convert it into another format.</p>
+        <p>For the purpose of this tutorial, we'll assume you have the Gnome help viewer <app>Yelp</app> installed.  You can view this document by calling <cmd>yelp</cmd> from the command line and passing it the full path to the directory containing the page files.  For example, if you have placed <file>index.page</file> in <file>/home/drake/mydocument/</file>, enter this at the command line:</p>
+        <screen>yelp /home/drake/mydocument/</screen>
+    </section>
+
+    <section id="topic">
+        <title>Another Page</title>
+        <p>Unless you're creating a simple set of instructions for a friend or colleague, you probably want to have multiple pages in your document. Add another page to the document by creating a new page file:</p>
+        <listing>
+            <title><file>planting.page</file></title>
+            <code>
+                <![CDATA[
+                <page xmlns="http://projectmallard.org/1.0/"
+                type="topic"
+                id="planting">
+                <title>Planting Beans</title>
+                </page>]]>
+            </code>
+        </listing>
+        <p>Notice that the <code>type</code> attribute is <code>"guide"</code> in <file>index.page</file> and <code>"topic"</code> in <file>planting.page</file>. Since <file>index.page</file> is a guide page, it can have links inserted automatically to other pages. In Mallard, guides don't have to specify which pages they link to. Instead, pages can specify that guides should link to them. Do this by adding a link element to <file>planting.page</file>:</p>
+        <listing>
+            <title><file>planting.page</file></title>
+            <code>
+                <![CDATA[
+                <page xmlns="http://projectmallard.org/1.0/"
+                type="topic"
+                id="planting">
+                ]]><e:hi><![CDATA[<info>
+                <link type="guide" xref="index"/>
+                </info>]]></e:hi><![CDATA[
+                <title>Planting Beans</title>
+                </page>]]>
+            </code>
+        </listing>
+        <p>The <code>link</code> element specifies that this page should be linked to from the guide page <code>index</code>, which we created above.  This element has no content, so we use the XML empty element syntax, ending he tag with <code>/></code>.  The <code>link</code> element is inside a <code>info</code> element.  The <code>info</code> element contains various information about a page, including links to other pages.</p>
+        <p>If you view your document again in <app>Yelp</app>, you'll see that the front page now has a link to this page.  This is one of the unique features of Mallard.  Rather than requiring pages to specify everything they link to, Mallard allows pages to insert themselves into other guide pages.  This makes it possible to add pages for plugins and additional functionality without modifying the original source pages.</p>
+    </section>
+
+    <section id="guide">
+        <title>Another Guide</title>
+        <p>You can add additional guide pages to your document.  This allows you to organize content to match what your readers are looking for.  Add a guide page to link to ways you can use magic beans.</p>
+        <listing>
+            <title><file>uses.page</file></title>
+            <code>
+                <![CDATA[
+                <page xmlns="http://projectmallard.org/1.0/"
+                type="guide"
+                id="uses">
+                <info>
+                <link type="guide" xref="index"/>
+                <link type="topic" xref="planting"/>
+                </info>
+                <title>Bean Uses</title>
+                </page>]]>
+            </code>
+        </listing>
+        <p>Like <file>planting.page</file>, this page has a guide link to <code>index</code>. If you view your document in <app>Yelp</app> again, you'll see that the front page now has two links.</p>
+        <p>This page adds a new type of link in the <code>info</code> element.  Topic links are the inverse of guide links.  When a guide page has a topic link to another page, it's as if the other page had a guide link to the guide page.  Despite the name, topic links can link to topic pages or guide pages.</p>
+        <p>If you view “Planting Beans” in <app>Yelp</app>, you'll see it has links at the top and bottom to both “Beanstalk Help” and “Bean Uses”.  Adding a page to a guide is like adding it to a section in a traditional linear document, except that pages can be linked to from multiple guides.  This allows you to provide multiple ways to navigate to a page to better match how your readers are thinking.</p>
+    </section>
+
+    <section id="content">
+        <title>Add Content</title>
+        <p>Currently, there's no real content in <file>planting.page</file>.  Add content to explain to the user how to plant magic beans.  The following example shows a basic <link xref="/1.0/mal_block_p">paragraph</link> and a <link xref="/1.0/mal_block_steps">step list</link>.</p>
+        <listing>
+            <title><file>planting.page</file></title>
+            <code>
+                <![CDATA[
+                <page xmlns="http://projectmallard.org/1.0/"
+                type="topic"
+                id="planting">
+                <info>
+                <link type="guide" xref="index"/>
+                </info>
+                <title>Planting Beans</title>]]><e:hi><![CDATA[
+                <p>By the end of this page, you will be able to plant your magic
+                beans and nurture them into a bean sprout.</p>
+                <steps>
+                <item><p>Dig a hole 5cm deep.</p></item>
+                <item><p>Place your magic beans in the hole.</p></item>
+                <item><p>Fill the hole with clean dirt and pat it level.</p></item>
+                <item><p>Water daily.</p></item>
+                </steps>]]></e:hi><![CDATA[
+                </page>]]>
+            </code>
+        </listing>
+        <p>The <code>p</code> element is similar to HTML.  It creates a simple paragraph.  The <code>steps</code> element creates a list of steps to follow.  Each <code>item</code> element is one step in the list, and must contain one or more paragraphs or other block content.</p>
+    </section>
+
+    <section id="learnmore">
+        <title>Read More and Explore</title>
+        <p>Using the information in this tutorial, you can create a simple Mallard document with any number of pages.  Mallard offers more features that allow you to create richer documents with more useful links.  Try adding more content and additional pages to your document.</p>
+        <p>To learn more, read more of the <link xref="index">Mallard tutorials</link>. Or read the <link xref="/1.0/index">Mallard language specification</link> to see a complete list of what Mallard offers.</p>
+    </section>
+
+</page>

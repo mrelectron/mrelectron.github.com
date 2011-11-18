@@ -1,0 +1,19 @@
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="using">
+    <info>
+        <link type="guide" xref="index"/>
+    </info>
+    <title>Coding with Git</title>
+    <p>To check if you have installed Git, just type the command:<code>git -version</code>and you will see in this case 1.7.4</p>
+    <p>To start with Git, make sure where you are going to save the files. Here we are on mallard directory and we are going to create testdir directory<code>mkdir testdir </code>that creates "testdir" directory</p>
+    <p>To start with Git, make sure where you are going to save the files<code> cd testdir </code>to get into testdir</p>
+    <p>Initializing git:<code>git init</code> This message confirms the operation."Initialized empty Git repository in /home/yulys/mallard/.git/" ... if you don't remember, just type git help and choice "init"</p>
+    <p>To add files on mallard directory, for example "hello.txt", you have to create the file inside mallard directory first  <code> echo "hola">mundo.txt</code> This append hola in mundo.txt</p>
+    <p>Then you have to tell git that hello.txt is going to be tracked it:<code>git add mundo.txt</code>... mundo.txt is the file being tracked </p>
+    <p>To add a commit <code>git commit -a -m "saludo inicial"</code> my comment was: "saludo inicial"</p>
+    <p>To see the differences of the last version and the uncommitted file you are working on:<code>git diff</code>with diff you see the changes clearly</p>
+    <p>Finally, you can see all the commits the file suffers being manipulated by many people. <code>git log</code>The log command will give you the commit hash (the unique ID of your commit), the author of the commit, and the date/time it was committed.</p>
+</page>
+
+<!--
+* To specify that codeGit is a topic of the guide page, we put in type="topic"  as its purpose is showing new content that belongs to the index.page. The relationship between these two pages are showing in <info>... </info> trough xref command. <code>... </code> let us shine the commands in the document. <p>... </p> to brace paragraphs
+-->

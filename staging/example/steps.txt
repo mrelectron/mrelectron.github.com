@@ -1,0 +1,72 @@
+TOPICS
+	prereqs
+		info for ubuntu 11.04
+		ref: ubuntu.com/download/...
+
+	knowlegwe prereqs(github,
+		ref:http://progit.org/book/ch1-3.html
+		ref: help.github.com
+
+	github
+		follow this guide.
+		ref:http://help.github.com/linux-set-up-git/
+
+	ruby compile/install/check
+
+PREREQS
+	RUBY
+		COMPILATION (IF NEC)
+		INSTALL
+		CHECK (ruby --version : 1.9, gem -v)
+
+    GITHUB.SETUP [point to here]
+		SSH
+
+    ENVIRONMENT
+        LAYERS
+            HARDWARE (NA)
+            OS (LINUX,MAC, WINDOWS)
+            SOFTWARE  (RUBY, RAILS, OTHER)
+
+DEPLOY
+USING
+PHASE A.
+
+* clone repository
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+bundle install
+rake install [creates source directory & sass directory]
+modify _config.yml
+do any other initial mods like asides etc.
+
+PHASE B
+rake setup_github_pages [this creates empty git repo in _deploy ]
+    readwrite.url: ggit@github.com:mrelectron/mrelectron.github.com.git
+rake generate :::: produces public foler, gets config from _config.yml
+rake deploy ::: produces _deploy folder
+
+#when making changes to source if you wnat them reflected you must seem to do #an explict add each time to tell git that it needs to be committed.
+
+git add .
+git commit -m 'initial source commit'
+git push origin source
+
+we end up with two branches master & source why is that.
+    master is the webroot
+    source is octopress root + source directory.
+
+PHASE C
+custom DOMAIN. with github.
+add CNAME file with tld to source dir. then do the dns stuff at your provider.
+
+understanding:
+octopress root is the working directory.
+_deploy is the local repository
+origin is the remote master repository on mrelectron.github.com/master to which we push up changes from our local repo
+we en
+
+Problems:
+using wrong readwrite url.
+cache not empty so was geting old pages.
+git add . / git commit seem to have to use them together.

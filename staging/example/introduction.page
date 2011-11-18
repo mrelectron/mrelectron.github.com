@@ -1,0 +1,19 @@
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction.page">
+    <info>
+        <link type="guide" xref="index"/>
+    </info>
+    <title>Introduction to Git</title>
+    <p>Git is the source code control management system created by Linus Trovals in 2005, most written in C that can manage projects of different sizes with speed and efficiency.  This tool offers better performance than others version control systems like Subversion(SVN), Mercurial, CVS, Perforce and Visual SourceSafe.</p>
+    <p>The document can be distributed to everyone (is not central central process) and each clone of Git present the whole history from their origins,  that allows the full revision tracking and handle it independently as a full-fledged repository.</p>
+    <p>Finally, Git does not depend on network access or a central server. This is a feature that is not support by any other control management system.</p>
+    <steps>
+        <item><p>GNOME projects and KDE projects use Git</p></item>
+        <item><p>Perl projects and Ruby projects also use Git</p></item>
+        <item><p>Android, Debian and and many more projects use Git too</p></item>
+    </steps>
+    <p>Imagine having 5 users or developers working on the same project: managing 5 files would mean 20 more files to deal with. Most projects will have many, many files and even more developers- it's enough using Google Docs if you are a final user. In the case you are developer or programmer it wont be so useful because you need more information about the code log, etc.</p>
+</page>
+
+<!--
+* To specify that introGIT is a topic of the guide page, we put in type="topic"  as its purpose is showing new content that belongs to the index.page. The relationship between these two pages are showing in <info>... </info> trough xref command. <p>... </p> in this case, like HTML introduce a paragraph. <step>... </step> creates a list of steps to follow, each one can contain one or more paragraphs or other block content.
+-->

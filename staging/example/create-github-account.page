@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-github-account" xml:lang="en_GB">
+
+  <info>
+    <link type="guide" xref="index#github"/>
+    <link type="seealso" xref=""/>
+    <desc>Create a new account with github.</desc>
+    <credit type="author">
+      <name>Miah Charles</name>
+      <email>miah.charles@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Create a new account with github</title>
+  <p>We are going to use github to store our posts, to do this we need to create an account.</p>
+  <p>This page provides information on creating a new account with github. @TODO link to help.github.com</p>
+
+	<steps>
+		https://github.com/signup/free
+		<item><p>At a terminal window type </item>
+		<item><p>Expand the <gui>Room List</gui> section to see all the existing rooms.</p></item>
+		<item><p>Double-click on the name of a room to join it.</p></item>
+	</steps>
+</page>

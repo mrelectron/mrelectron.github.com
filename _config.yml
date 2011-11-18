@@ -20,7 +20,7 @@ pygments: false
 
 paginate: 10
 pagination_dir: blog
-recent_posts: 5
+recent_posts: 15
 excerpt_link: "Read on &rarr;"
 
 titlecase: true
