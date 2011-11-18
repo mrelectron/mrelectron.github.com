@@ -4,7 +4,7 @@
   <title><![CDATA[Heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T19:24:14+11:00</updated>
+  <updated>2011-11-18T19:26:04+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -172,9 +172,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress - Github]]></title>
-    <link href="http://mrelectron.github.com/blog/2011/11/16/octopress-github/"/>
-    <updated>2011-11-16T00:27:00+11:00</updated>
-    <id>http://mrelectron.github.com/blog/2011/11/16/octopress-github</id>
+    <link href="http://mrelectron.github.com/blog/2011/11/17/octopress-github/"/>
+    <updated>2011-11-17T00:27:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/11/17/octopress-github</id>
     <content type="html"><![CDATA[<p>This post describes how to setup a <a href="http://github.com">github</a> account and repository that <a href="http://octopress.org">Octopress</a> will use. Github will store your data and host your blog (for free).</p>
 
 <!--more-->
