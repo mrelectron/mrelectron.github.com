@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Heterodoxic]]></title>
+  <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2011-11-18T19:30:50+11:00</updated>
+  <updated>2011-12-07T21:21:26+11:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Carlin - Religious Bullshit]]></title>
+    <link href="http://mrelectron.github.com/blog/2011/12/07/carlin-religious-bullshit/"/>
+    <updated>2011-12-07T20:45:00+11:00</updated>
+    <id>http://mrelectron.github.com/blog/2011/12/07/carlin-religious-bullshit</id>
+    <content type="html"><![CDATA[<p>I found this 10 minute video by the late <a href="http://en.wikipedia.org/wiki/George_Carlin">George Carlin</a> on <a href="http://thepiratebay.org">Pirate Bay</a>. Its funny and great viewing for the irreligious and religious alike.</p>
+
+<p><video width='640' height='320' preload='none' controls poster=' http://heterdoxic.com/video/20111207-2045-A.png'><source src='http://heterdoxic.com/video/20111207-2045-A.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<p>I don&#8217;t know what the rest of his stuff is like. For what its worth he is 2nd on this <a href="http://www.listology.com/list/comedy-central-100-greatest-standups-all-time">list</a> of the 100 greatest standup comedians.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress - Custom Domain]]></title>
