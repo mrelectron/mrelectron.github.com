@@ -10,6 +10,8 @@ This post describes the process whereby you can use your own domain name to poin
 
 As an example of what we are going to do, my github username is mrelectron, I have a repository accessible at the internet address http://mrelectron.github.com. But I want to access this repository using a domain name that I own called heterodoxic.com
 
+<!--more-->
+
 ## Assumptions
 
 * You have a working Octopress installation.
@@ -38,6 +40,5 @@ I cannot be specific here as DNS management user interfaces are going to vary wi
 ## Step: Fini
 All done, it may take some time for the change made to your DNS, to propagate around the world. If it does not work after 24 hours though, you may have a problem.
 
-# References
 [001]: http://pages.github.com/
 

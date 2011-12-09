@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Octopress - Github"
-date: 2011-11-16 00:27
+date: 2011-11-17 00:27
 comments: false
 categories:
 ---
@@ -41,5 +41,5 @@ To find how to install Octopress to use this new repository go [here][006]
 [003]: https://github.com/signup/free
 [004]: http://help.github.com/linux-set-up-git/
 [005]: https://github.com/repositories/new
-[006]: http://heterodoxic.com/blog/2011/11/18/octopress-install/
+[006]: http://heterodoxic.com/blog/2011/11/18/octopress-installation/
 
