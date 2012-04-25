@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-04-25T16:36:02+10:00</updated>
+  <updated>2012-04-25T16:43:29+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -38,22 +38,23 @@
 
 <p>Using the editor of your choice create a file called CNAME in the source directory of your Octopress installation. On the first line put the domain name that you want to point to your Octopress installation.</p>
 
-<p>{% img /images/004.png %}</p>
+<p><img src="/images/004.png"></p>
 
 <h2>Step: Commit CNAME file</h2>
 
 <p>Committing this file to the repository will signal to the github server it needs to map requests for heterodoxic.com to mrelectron.github.com
-{% codeblock %}
-&amp; git add .
-&amp; git commit -m 'Adding CNAME file'
-&amp; git push origin source
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; git add .
+</span><span class='line'>&amp; git commit -m 'Adding CNAME file'
+</span><span class='line'>&amp; git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Modify DNS Records</h2>
 
 <p>I cannot be specific here as DNS management user interfaces are going to vary wildly. I added a single "A" DNS record that points at 207.97.227.245 which is github.com. The @ in the image is shorthand for heterodoxic.com.</p>
 
-<p>{% img /images/005.png %}</p>
+<p><img src="/images/005.png"></p>
 
 <h2>Step: Fini</h2>
 
@@ -84,58 +85,67 @@
 
 <p>Oneiric comes with Ruby 1.8.7. Octopress depends on Ruby 1.9.2.</p>
 
-<p>{% codeblock %}
-&amp; sudo apt-get -y install ruby1.9.1-full
-&amp; sudo update-alternatives --set ruby /usr/bin/ruby1.9.1
-&amp; sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; sudo apt-get -y install ruby1.9.1-full
+</span><span class='line'>&amp; sudo update-alternatives --set ruby /usr/bin/ruby1.9.1
+</span><span class='line'>&amp; sudo env REALLY_GEM_UPDATE_SYSTEM=1 gem update --system</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Test Ruby</h2>
 
 <p>The important thing is the Ruby version is at least 1.9.2.</p>
 
-<p>{% codeblock %}
-&amp; ruby -v.
-&amp; ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
-&amp; gem -v
-&amp; 1.8.11
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; ruby -v.
+</span><span class='line'>&amp; ruby 1.9.2p290 (2011-07-09 revision 32553) [i686-linux]
+</span><span class='line'>&amp; gem -v
+</span><span class='line'>&amp; 1.8.11</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Get Octopress</h2>
 
-<p>{% codeblock %}
-&amp; mkdir ~/name_and_location_you_choose
-&amp; cd ~/name_and_location_you_choose
-&amp; git clone git://github.com/imathis/octopress.git octopress
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; mkdir ~/name_and_location_you_choose
+</span><span class='line'>&amp; cd ~/name_and_location_you_choose
+</span><span class='line'>&amp; git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Configure Octopress</h2>
 
 <p>Make sure you replace uname in the read / write url below with your own github username.</p>
 
-<p>{% codeblock %}
-&amp; cd octopress
-&amp; sudo gem install bundler
-&amp; bundle install
-&amp; rake install
-&amp; rake setup_github_pages
-Enter the read/write url for your repository: git@github.com:uname/uname.github.com.git
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; cd octopress
+</span><span class='line'>&amp; sudo gem install bundler
+</span><span class='line'>&amp; bundle install
+</span><span class='line'>&amp; rake install
+</span><span class='line'>&amp; rake setup_github_pages
+</span><span class='line'>Enter the read/write url for your repository: git@github.com:uname/uname.github.com.git</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Generate &amp; Deploy</h2>
 
-<p>{% codeblock %}
-&amp; rake generate
-&amp; rake deploy
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; rake generate
+</span><span class='line'>&amp; rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Commit Source</h2>
 
-<p>{% codeblock %}
-&amp; git add .
-&amp; git commit -m 'Initial Commit'
-&amp; git push origin source
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&amp; git add .
+</span><span class='line'>&amp; git commit -m 'Initial Commit'
+</span><span class='line'>&amp; git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Step: Fini</h2>
 
@@ -175,7 +185,7 @@ Enter the read/write url for your repository: git@github.com:uname/uname.github.
 
 <p>Go <a href="https://github.com/signup/free">here</a>. The image below shows creating an account for user1999 with email youremail@gmail.com.</p>
 
-<p>{% img /images/001.png %}</p>
+<p><img src="/images/001.png"></p>
 
 <h2>Step: Configure Account</h2>
 
@@ -192,7 +202,7 @@ Enter the read/write url for your repository: git@github.com:uname/uname.github.
 
 <p>Go <a href="https://github.com/repositories/new">here</a>. The important thing you need to do here is in the <strong>project name field</strong> enter <strong>username.github.com</strong>, where username is the name you used to setup your github account. The image below shows creating a repository for user1999.</p>
 
-<p>{% img /images/002.png %}</p>
+<p><img src="/images/002.png"></p>
 
 <h2>Step: Fini</h2>
 
