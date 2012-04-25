@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: software | heterodoxic]]></title>
-  <link href="http://mrelectron.github.com/blog/categories/software/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | heterodoxic]]></title>
+  <link href="http://mrelectron.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-04-25T13:44:55+10:00</updated>
+  <updated>2012-04-25T14:00:52+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
