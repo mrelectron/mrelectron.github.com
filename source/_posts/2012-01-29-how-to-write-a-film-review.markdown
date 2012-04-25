@@ -3,9 +3,7 @@ layout: post
 title: "How to write a Film Review"
 date: 2012-01-29 23:21
 comments: true
-categories:
-- film
-- guide
+categories: film
 description:
 keywords: "film, review, guide, how to, tutorial, introduction, beginner"
 ---

@@ -3,9 +3,7 @@ layout: post
 title: "Carlin - Religious Bullshit"
 date: 2011-12-07 20:45
 comments: true
-categories:
-- religion
-- people
+categories: religion
 description: "A poke at religon by the late comedian George Carlin"
 keywords: "religion, carlin, comedy"
 ---

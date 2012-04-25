@@ -3,9 +3,7 @@ layout: post
 title: "Octopress - Custom Domain"
 date: 2011-11-18 17:10
 comments: true
-categories:
-- software
-- guide
+categories: octopress
 description: "Configure Octopress with a custom domain"
 keywords: "domain, octopress, custom"
 ---

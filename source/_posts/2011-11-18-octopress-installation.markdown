@@ -3,9 +3,7 @@ layout: post
 title: "Octopress - Installation"
 date: 2011-11-18 11:13
 comments: true
-categories:
-- software
-- guide
+categories: octopress
 description: "How to install Octopress"
 keywords: "setup, guide, how to, tutorial, introduction, beginner newbie"
 ---

@@ -3,9 +3,7 @@ layout: post
 title: "Octopress - Github"
 date: 2011-11-17 00:27
 comments: false
-categories:
-- software
-- guide
+categories: octopress
 description: "Configure Octopress with a GitHub backend"
 keywords: "guide, installation, tutorial, database, backend, octopress, github"
 ---

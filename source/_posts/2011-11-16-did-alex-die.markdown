@@ -3,9 +3,7 @@ layout: post
 title: "Did Alex Die?"
 date: 2011-11-16 00:27
 comments: true
-categories:
-- film
-- review
+categories: film
 description: "Did Alex die in the film Shallow Grave"
 keywords: "film, Shallow Grave, mystery"
 ---

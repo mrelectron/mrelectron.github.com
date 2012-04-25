@@ -3,10 +3,9 @@ layout: post
 title: "SOPA - Redaction &amp; Censorship"
 date: 2011-12-14 16:02
 comments: true
-categories: 
-- tinysteps
+categories: babysteps 
 description: "SOPA censorship and Big Media"
-keywords: "SOPA"
+keywords: "SOPA, babysteps"
 ---
 
 Below is a censored version of my previous [post][002] on George Carlin. It has been censored, in protest of a bill that gives any corporation and the US government the power to censor the internet--a bill that could pass THIS WEEK. To see the uncensored text, and to stop internet censorship, visit: 
