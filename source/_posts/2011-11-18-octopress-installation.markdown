@@ -4,6 +4,10 @@ title: "Octopress - Installation"
 date: 2011-11-18 11:13
 comments: true
 categories:
+- software
+- guide
+description: "How to install Octopress"
+keywords: "setup, guide, how to, tutorial, introduction, beginner newbie"
 ---
 
 This post describes the process to install [Octopress][001] on [Ubuntu Oneiric 11.10][002]. My starting point was a brand spanking new install of Oneiric on a [VirtualBox][003] virtual machine.

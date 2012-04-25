@@ -3,7 +3,11 @@ layout: post
 title: "Carlin - Religious Bullshit"
 date: 2011-12-07 20:45
 comments: true
-categories: 
+categories:
+- religion
+- people
+description: "A poke at religon by the late comedian George Carlin"
+keywords: "religion, carlin, comedy"
 ---
 
 I found this 10 minute video by the late [George Carlin][001] on [Pirate Bay][002]. Its funny and great viewing for the irreligious and religious alike. The video and sound are crap but the video is still viewable.

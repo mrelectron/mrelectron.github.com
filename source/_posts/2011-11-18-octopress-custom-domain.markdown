@@ -4,6 +4,10 @@ title: "Octopress - Custom Domain"
 date: 2011-11-18 17:10
 comments: true
 categories:
+- software
+- guide
+description: "Configure Octopress with a custom domain"
+keywords: "domain, octopress, custom"
 ---
 
 This post describes the process whereby you can use your own domain name to point to your blog. Useful background information can be found [here][001]. Look under subheadings "User & Organization Pages" & "Custom Domains"

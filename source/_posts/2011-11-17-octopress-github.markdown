@@ -4,6 +4,10 @@ title: "Octopress - Github"
 date: 2011-11-17 00:27
 comments: false
 categories:
+- software
+- guide
+description: "Configure Octopress with a GitHub backend"
+keywords: "guide, installation, tutorial, database, backend, octopress, github"
 ---
 
 This post describes how to setup a [github][001] account and repository that [Octopress][002] will use. Github will store your data and host your blog (for free).

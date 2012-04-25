@@ -4,6 +4,7 @@ subtitle: Man will never be free until the last king is strangled with the entra
 author: MAB
 simple_search: http://google.com/search
 
+lsi:true
 date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:

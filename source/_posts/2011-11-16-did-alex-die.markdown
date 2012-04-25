@@ -4,6 +4,10 @@ title: "Did Alex Die?"
 date: 2011-11-16 00:27
 comments: true
 categories:
+- film
+- review
+description: "Did Alex die in the film Shallow Grave"
+keywords: "film, Shallow Grave, mystery"
 ---
 
 If you have not watched [Shallow Grave][001] by the [Trainspotting][003] director [Danny Boyle][004] then you will not care about this question, but there are 100 responses on the [message board][002] about Alex's death. I have not seen that degree of interest in any film previously, so I thought I would add my opinion.
