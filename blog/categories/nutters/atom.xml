@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: religion | heterodoxic]]></title>
-  <link href="http://mrelectron.github.com/blog/categories/religion/atom.xml" rel="self"/>
+  <title><![CDATA[Category: nutters | heterodoxic]]></title>
+  <link href="http://mrelectron.github.com/blog/categories/nutters/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
   <updated>2012-04-28T07:10:24+10:00</updated>
   <id>http://mrelectron.github.com/</id>
@@ -50,23 +50,6 @@
 <p><img class="[class names]" src="/images/20120428-20120317.png"></p>
 
 <hr />
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Carlin - Religious Bullshit]]></title>
-    <link href="http://mrelectron.github.com/blog/2011/12/07/carlin-religious-bullshit/"/>
-    <updated>2011-12-07T20:45:00+11:00</updated>
-    <id>http://mrelectron.github.com/blog/2011/12/07/carlin-religious-bullshit</id>
-    <content type="html"><![CDATA[<p>I found this 10 minute video by the late <a href="http://en.wikipedia.org/wiki/George_Carlin">George Carlin</a> on <a href="http://thepiratebay.org">Pirate Bay</a>. Its funny and great viewing for the irreligious and religious alike. The video and sound are crap but the video is still viewable.</p>
-
-<p><video width='' height='' preload='none' controls poster=''><source src='http://heterodoxic.com/video/carlin.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
-
-<p>I don't know what the rest of his stuff is like. For what its worth he is 2nd on this <a href="http://www.listology.com/list/comedy-central-100-greatest-standups-all-time">list</a> of the 100 greatest standup comedians.</p>
-
-<p>After putting this up, I found 100's of videos of Carlin on YouTube.</p>
-
-<p>This post uses the new HTML5 video tag, which is pretty neat, so now you can put a video on your website with the same ease as you used to be able to do with an image. I think there are some issues with cross browser support - I generally use chrome (I would much rather use Firefox - but the wheels have fallen of at Mozilla and Firefox is now just a slow bloated memory and resource hog - a crying shame.) and it works well.</p>
 ]]></content>
   </entry>
   
