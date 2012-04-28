@@ -4,7 +4,7 @@
   <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-04-29T02:26:27+10:00</updated>
+  <updated>2012-04-29T04:09:54+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Order Types]]></title>
+    <link href="http://mrelectron.github.com/blog/2012/04/29/order-types/"/>
+    <updated>2012-04-29T03:57:00+10:00</updated>
+    <id>http://mrelectron.github.com/blog/2012/04/29/order-types</id>
+    <content type="html"><![CDATA[<p>This post is about execution orders in particular about the types of orders you can make when you execute a trade.</p>
+
+<!-- more -->
+
+
+<h2>Order Types</h2>
+
+<p>Most brokers allow traders 2 different ways in which they can enter the market. Traders have the option to either enter the market instantly or wait for a predetermined level to be reached and then automatically enter the market. These are known as Market orders and Pending orders.</p>
+
+<h3>Market Orders</h3>
+
+<p>These are the most basic way of trading. A trader will decide which way they think the market is going and either buy or sell at the current price. After determining the size of their position the trader simply has to click on buy or sell and the trade is opened instantly by their broker.</p>
+
+<h3>Pending Orders</h3>
+
+<p>There are 3 different types of pending orders that can be placed on most brokers&#8221; platforms; stop order, limit order &amp; OCO order. Pending orders are placed a specific levels predetermined by the trader. The trader will place either a buy or sell trade and wait for the market to reach the level they are waiting for before their order goes &#8220;live&#8221;.</p>
+
+<h3>Stop Orders</h3>
+
+<p>These types of orders can be placed when the trader wants to wait for the market to reach a certain level before entering their trade. These types of orders can be placed when the market is ranging (no clear direction) either above or below the range. The traders order is triggered when the market moves up or down to their predetermined level depending on the direction they are expecting.</p>
+
+<h3>Buy Stop</h3>
+
+<p>As you can see below the pending buy order is placed above the current market price. The trader expects the price to continue rising after they have been triggered into the trade.</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0001.png"></p>
+
+<h3>Sell Stop</h3>
+
+<p>As you can see the pending order is placed below the current market price. The trade expects the market to continue falling after they have been entered into the trade</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0002.png"></p>
+
+<h3>Limit Orders</h3>
+
+<p>These types of orders can be placed when the trade wants to wait for the market to reach a certain level before entering their trade. They are different to stop orders. As we know, when a trader places a buy/sell stop they are expecting the market to continue moving in the same direction. Limit orders however are slightly different. The trade will place a buy or sell limit at a higher or lower price than the current market price. However they will expect the market to &#8220;bounce&#8221; of their entry price and move in the opposite direction. For example a buy limit may be placed when the trader expects the market to move up before moving down therefore placing a sell limit at a higher price than the current market price hoping to enter the trade at a better price.</p>
+
+<h3>Buy Limit</h3>
+
+<p>As you can see the trader expects the market to slightly fall before rising. They have placed a buy limit below the current market price.</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0003.png"></p>
+
+<h2>Sell Limit</h2>
+
+<p>As you can see below the trader expects the market to rise before falling. They have placed a sell limit order above the current market price.</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0004.png"></p>
+
+<h3>OCO Orders</h3>
+
+<p>Many brokers allow traders the option to place OCO orders. OCO means &#8220;order cancels other&#8221;. These are 2 orders placed on the same currency pair. One is a buy stop and the other is a sell stop. The trader expects the market to move either up or down and dosnt want to miss out on the move. They place a buy stop above the current market price and a sell stop below the current market price. When either the buy or sell have been triggered the other pending trade is automatically cancelled.</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0005.png"></p>
+
+<h3>GTC Orders</h3>
+
+<p>These types of orders are an &#8220;add on&#8221; to the 3 types of orders we&#8221;ve just discussed. GTC means Good Till Cancelled. This means that the order placed by the trader will remain in the market until cancelled by them. Many brokers also allow the option to add a &#8220;valid until&#8221; part to a pending trade. This means that predetermined time can be set by the trader before the trade is closed by the broker automatically.</p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0006.png"></p>
+
+<p><img src="http://mrelectron.github.com/images/20120429-0007.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Magic of Compounding]]></title>
@@ -199,8 +269,201 @@ Order Types</p>
     <link href="http://mrelectron.github.com/blog/2012/04/29/understanding-the-forex-market/"/>
     <updated>2012-04-29T01:59:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/04/29/understanding-the-forex-market</id>
-    <content type="html"><![CDATA[<!--more-->
+    <content type="html"><![CDATA[<h2>What is forex?</h2>
 
+<p>The forex market is an over the counter (OTC) market. Unlike the stock market that requires a buyer and seller to go though a centralized exchange (i.e. The New York Stock Exchange) which will have just one price, the forex market is a decentralized market. This means currency/forex dealers can offer different prices/quotes for currency pairs resulting in better choices and deals for the buyer and seller. Foreign exchange deals are made between 2 participants; the buyer and the seller.</p>
+
+<!--more-->
+
+
+<h2>Who trades Forex?</h2>
+
+<p>Foreign currency can be traded by almost anyone. The main players are the Banks &amp; large financial institutions. We then have commercial traders such as hedge funds and large commercial corporations. Finally we have you and me, the retail traders.</p>
+
+<p>It&#8221;s the big banks and financial institutions that have most the power and control over the price in the forex market. They will only trade between themselves and together these banks and financial institutions are known as the interbank market.</p>
+
+<p>Commercial corporations often engage in international transactions and as a result have an affect and influence of exchange rates. Hedge funds and retail traders trade for the sole purpose of making money, be it though hedging, speculation and investing. These types of traders are at the bottom of the forex food chain. Retail traders especially have no influence in exchange rate prices. Larger hedge funds with substantial funds at their disposal can in certain cases have enough collateral to move or influence a currencies price.</p>
+
+<h2>How to Read Quotes</h2>
+
+<p>Reading a foreign exchange quote is simple if you remember two things</p>
+
+<p>{% blockquote %}
+The first currency listed is the base currency
+The value of the base currency is always 1.
+{% endblockquote %}</p>
+
+<p>As we know all currencies are always quoted in pairs. Every time you make a forex trade or transaction you are simultaneously buying one currency and selling another.</p>
+
+<p>If you were to sell GBP/USD you would be selling the British Pound and at the same time buying the USD.</p>
+
+<p>The base currency is the &#8220;head&#8221; or &#8220;lead&#8221; currency in any pair. Whenever you open a trade and buy or sell, you are always buying or selling the base currency and doing the opposite to the quote currency. Whenever you close a trade you are either buying back what you sold or selling back what you bought.</p>
+
+<p>The base currency is known as the Transaction Currency, while the second currency in the pair is the Settlement Currency.   The quantity bought and sold will apply directly to the Transaction Currency, while the gains and losses from transactions will apply to the Settlement Currency.  When you buy a currency pair you are going long the Transaction Currency while simultaneously shorting the Settlement Currency.  Conversely, when you sell a currency pair you are shorting the Transaction Currency while simultaneously buying the Settlement Currency.  Since the forex market is foreign exchange, each transaction must contain one currency against another.</p>
+
+<h2>Exchange Rates</h2>
+
+<p>For every forex pair we trade it has an exchange rate. It is the change in this exchange rate that determines how much money we make as traders. When placing a trade we are simply speculating on whether a currency will rise or fall against another. It is important to understand how exchange rates work. ::</p>
+
+<p>{% blockquote %}
+GBP/USD = 1.5279
+{% endblockquote %}</p>
+
+<p>Above we can see GBP/USD with its exchange rate quoted. The exchange rate is telling us how much we need in units of the of the quote currency (the one on the right) to buy one unit of the base currency (the one on the left).</p>
+
+<p>{% endblockquote %}
+We would need to spend 1.5279 USD in order to buy 1 GBP.
+We would need to spend 1 GBP in order to buy 1.5279 USD&#8221;s.
+{% endblockquote %}</p>
+
+<h2>Buying &amp; Selling</h2>
+
+<p>In the forex market you can either buy or sell a currency. When buying you are expecting the base currency to rise against the quote currency and when selling you are expecting the quote currency to rise against the base currency.</p>
+
+<p>BUY GBP/USD - if you were to buy the GBP/USD you expect the Pound to &#8220;gain strength&#8221; over the USD therefore pushing the exchange rate of the GBP/USD up.</p>
+
+<p>SELL GBP/USD - if you were to sell the GBP/USD you expect the Pound to &#8220;weaken&#8221; against the USD therefore pushing the exchange rate of the GBP/USD down.</p>
+
+<p>{% blockquote %}
+&#8220;I&#8217;ve gone long on Cable&#8221; Translates to &#8220;I&#8217;ve bought the GBP/USD&#8221;
+&#8220;I&#8217;m short on the Aussie&#8221; Translates to &#8220;I&#8217;m selling the AUD/USD&#8221;
+{% endblockquote %}</p>
+
+<h2>Pips</h2>
+
+<p>Price intercept points are more commonly known as PIPs. A pip is the smallest unit by which a currency quote can change. If the rate for EUR/USD is 1.3574 and it changes to 1.3575 that change is a 1 pip movement. It is these changes in forex prices that we as traders look for in order to make money from the markets. ::</p>
+
+<p>{% blockquote %}
+EUR/USD = 1.3574 - EUR/USD = 1.3575
+You can see above the price has increased by 1 pip.
+{% endblockquote %}</p>
+
+<p>The pip is always the 4th number after the decimal point; however, pairs that include the Japanese yen only have 2 digits after the decimal point, in this case the pip is the 2nd number after the decimal point. For example if the rate for EUR/JPY is 132.87 and it changes to 132.88 that change is a 1 pip movement. Some brokers are now offering an extra digit at the end of their quotes which shows a fraction of a pip. ::</p>
+
+<p>{% blockquote %}
+EUR/USD = 1.35754
+{% endblockquote %}</p>
+
+<p>In the quote above the 4 is the PIP and the 5 is the pip fraction. Fractions of pips do not make too much difference to trading however it is worth keeping an eye out especially if your broker is using them in their quotes.</p>
+
+<h1>Spread Bid &amp; Ask</h1>
+
+<p>Just like other markets, forex quotes consist of two sides, the bid and the ask::</p>
+
+<p>{% blockquote %}
+The BID is the price at which you can SELL base currency.
+The ASK is the price at which you can BUY base currency.
+{% endblockquote %}</p>
+
+<p>The prices you can sell or buy a currency are different to one and other. It is this difference in price that is known as the Spread. The spread is where the broker makes his money. Spread is usually a few pips and all brokers will offer different spreads. Obviously the lower the spread the better for us as traders so it&#8221;s a good idea to search for brokers who offer low spreads.</p>
+
+<p>Spreads can fluctuate during times of high market volatility. Some brokers may offer fixed spreads. It is the trader&#8221;s personal choice as to which broker they do business with.</p>
+
+<p>The bid price is the price the broker has offered if you wish to sell a currency pair. The ask price is the price the broker has offered if you wish to buy a currency pair. The difference between the bid and ask is known as the spread. ::</p>
+
+<p>{% blockquote %}
+Bid     Ask
+1.3486  1.3488
+{% endblockquote %}</p>
+
+<h2>Lots</h2>
+
+<p>Forex is traded using specific amounts called Lots. A lot is the amount of units you are trading with. The standard lot size is 100,000 units. The size of the lot will determine the value per pip. Knowing the value per pip is critical in order to work out how much money you will make or lose per trade. Lots come in 4 sizes. ::</p>
+
+<p>{% blockquote %}
+Standard    100,000 units
+Mini        10,000 units
+Micro       1,000 units
+Nano        100 units
+{% endblockquote %}</p>
+
+<p>Many brokers also have the option to trade using flexible lots, for example 1.5 standard lots (150,000 units). You can use the size of the lot to determine the value of a pip which you can use to help calculate how much you will win or lose on any particular trade. The value of a pip can be worked out using a simple formula ::</p>
+
+<p>{% codeblock %}
+Pip value = (.0001/exchange rate) x lot size x exchange rate
+Example: EUR/USD = 1.3592, Use 1 standard lot (100,000)
+Pip value = (.0001/1.3592) x 100,000 x 1.3592 = 9.999 (rounded up) = $10
+{% endcodeblock %}</p>
+
+<p>This means that if we were to trade the EUR/USD using 1 standard lot size, each pip will be worth $10. If we make 100 pips on our trade we will be making $1000. There is a slightly different formula used to work out the value of a pip when the USD is the base currency. The formula for this is ::</p>
+
+<p>{% codeblock %}
+Pip value = (0.0001/exchange rate) x lot size
+Example: USD/CHF = 1.1213, Use 1 standard lot (100,000)
+Pip value = (.0001/1.1213) x 100,000 = 8.918 (rounded up) = $9:
+{% endcodeblock %}</p>
+
+<p>This means that if we were to trade the USD/CHF using 1 standard lot each pip would be worth $9, if we make 100 pips on our trade we will be making $900.</p>
+
+<h2>Leverage &amp; Margin</h2>
+
+<p>New Account: Free Margin is equal to the entire account balance. If a brand new account balance is $1000,the deposit currency is USD and the broker has a minimum 1% margin requirement and the trader wants to execute a 0.3 Lot trade (assuming USD is the base currency, if it is not then the calculations are a bit more complicated), then the used margin after placing the trade can be computed by multiplying the trade size by the margin requirement (0.3 lots or $30,000 x 1% = $300).</p>
+
+<p>If trading a xxxUSD pair:
+{% codeblock %}
+Margin = StandardLot * quote * LotSize / Leverage
+Example (trading 0.5 lots of GBPUSD @ 1.3982):
+Margin = 100,000 * 1.3982 * 0.5 / 200 = 349.55 USD.
+{% endcodeblock %}</p>
+
+<p>If trading a USDxxx pair:
+{% codeblock %}
+Margin = StandardLot * LotSize / Leverage
+Example (trading 0.1 lots of USDJPY):
+Margin = 100,000 * 0.1 / 200 = 50 USD set aside as margin (used margin).
+{% endcodeblock %}</p>
+
+<p>Leverage, in essence, is a loan that is provided to an investor by the broker that is handling his or her Forex account. When an investor decides to invest in the Forex market, he or she must first open up a margin account with a broker. Usually, the amount of leverage provided is either 50:1, 100:1 or 200:1, depending on the broker and the size of the position the investor is trading. Standard trading is done on 100,000 units of currency, so for a trade of this size, the leverage provided is usually 50:1 or 100:1. Leverage of 200:1 is usually used for positions of 50,000 units or less.</p>
+
+<p>Although the ability to earn significant profits by using leverage is substantial, leverage can also work against investors. For example, if the currency underlying one of your trades moves in the opposite direction of what you believed would happen, leverage will greatly amplify the potential losses.</p>
+
+<p>Margin is the aggregate amount of customer cash pledged against the aggregate Open Positions. The margin pledged is a function of Maximum Trading Leverage Ratio. The higher the leverage, the lower the pledged Margin. The lower the leverage, the higher the Margin needed to carry the position.</p>
+
+<p>Margin - The amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities. This is your account balance when you first open your account.</p>
+
+<p>Leverage - The use of credit or borrowed funds to increase one&#8217;s speculative capacity and increase the rate of return from an investment, as in buying securities on margin, although it can also increase the rate of loss by the same factor. Your leverage depends on the size of the trades you make relative to your account equity, and nothing else, as long as you don&#8217;t surpass the maximum leverage the broker allows. This value is normally displayed as a DEBT:EQUITY ratio.</p>
+
+<p>Margin requirement - expressed as a percentage, the margin requirement is set by your broker to protect itself against traders using too much leverage, or in other words, against traders borrowing more than their collateral would support according to the broker&#8217;s risk management parameters. So when a broker&#8217;s marketing team says their margin requirement is 1%, it means that they require 1% of your trade size in order to lend you the amount you need for the trade. For example if you are trading $100,000 position size, then the broker requires $1,000 (1%) of your margin in order to make the loan. As I stated before, this number generally does not vary unless you specifically change the deal with your broker. Furthermore, in this example we know what the margin requirement is, but we don&#8217;t yet have enough information to calculate leverage, because we don&#8217;t know what our account equity is (more about this later). Your broker would normally quote that as &#8220;100:1&#8221; leverage, which is not entirely accurate since our actual leverage also depends on our account equity. What they are actually saying is that your maximum leverage, based on their margin requirement, would be 100:1. How much of that leverage you actually use is entirely up to you, as long as you don&#8217;t surpass this maximum.</p>
+
+<p>A 100:1 leverage ratio means that your broker will lend you 100x what you have on margin in your account. This means that with only $1000 you can control $100,000 in the market. Using a higher leverage would mean you need to put less money in your margin account.</p>
+
+<p>Calculate True Leverage:As we mentioned before, leverage in the financial markets is the DEBT:EQUITY ratio, so we need to calculate our debt and our equity.</p>
+
+<p>{% codeblock %}
+Equity = B + P where::
+E = Equity (quantity we are trying to calculate)
+B = Balance
+P = Profit on open positions (negative if open positions are in the red)
+{% endcodeblock %}</p>
+
+<p>{% codeblock %}
+Debt = T * Cb / Ca where::
+D = Debt (the quantity we are trying to calculate)
+T = Trade size (in units of the base currency)
+CB = Base currency
+CA = Account currency
+{% endcodeblock %}</p>
+
+<p>Please note that the equation uses forex notation, and not true mathematical notation. In mathematical notation, EUR/USD would be displayed as USD/EUR because it denotes a ratio of &#8220;Dollars per Euro&#8221;. If you would like to use mathematical notation, currency pairs should be inverted.::</p>
+
+<p>{% codeblock %}
+Leverage = (T * (Ca / Cb)) / (B + P)
+{% endcodeblock %}</p>
+
+<p>Example
+{% codeblock %}</p>
+
+<pre><code>AccountSize: USD100,000
+TradeSize: 1 x Mini @1.2500
+T = 10,000 //Mini Lot
+Ca / Cb = 1.2500
+B = 10000
+P = 0 //no trades open so account equity == account balance
+so
+Leverage = (10000 * 1.2500) / 10000 = 1.25:1
+</code></pre>
+
+<p>{% endcodeblock %}</p>
 ]]></content>
   </entry>
   
@@ -209,40 +472,118 @@ Order Types</p>
     <link href="http://mrelectron.github.com/blog/2012/04/29/trading-plan/"/>
     <updated>2012-04-29T01:45:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/04/29/trading-plan</id>
-    <content type="html"><![CDATA[<p>This post describes my trading plan. It is good that this is a semi-public (in that I don&#8217;t actively advertise this site, people who come here will only come here by accident) forum. It is good because it will force me to write a good trading plan and hopefully it will make me follow it.</p>
+    <content type="html"><![CDATA[<p>This post describes my trading plan. It is good that this is a semi-public (semi-public in that I don&#8217;t actively advertise this site, people who come here will only come here by accident) forum. It is good because it will force me to write a good trading plan and hopefully will make me follow it.</p>
 
 <!--more-->
 
 
 <h2>Beliefs</h2>
 
+<ul>
+<li><p>I believe that trading is gambling but it is possible to fix the odds slightly in your favour.</p></li>
+<li><p>I don&#8217;t care what moves the Forex market, my approach is very short term. So macro economic analysis will have no impact on my trading.</p></li>
+<li><p>I do need to be conscious of calendar events while I have a trade open.</p></li>
+<li><p>I believe that the psychological aspect (discipline, control of fear and greed) of trading is the most important thing in trading.</p></li>
+<li><p>I believe the second most important thing is money management.</p></li>
+<li><p>I believe the technical aspects of trading are irrelevant if you don&#8217;t have good money management and control of your mind.</p></li>
+<li><p>I do not know what the market will do. All I can do is use my experience and skills to allocate a probability to what the market will do.</p></li>
+<li><p>I believe that compounding is vital.</p></li>
+<li><p>I believe I can be successful at trading only if I take control of my self discipline and mind.</p></li>
+<li><p>I believe losses are part and parcel of trading. Therefore losses should not upset me. Taking losses does not mean I&#8217;m a loser.</p></li>
+<li><p>I believe leverage is a two edged sword, that holds the potential to bring me down.</p></li>
+</ul>
+
+
 <h2>Weakness</h2>
 
-<h2>Strength</h2>
+<ul>
+<li><p>I lack self discipline</p></li>
+<li><p>I do not have control of my emotions.</p></li>
+</ul>
 
-<h2>Workflow</h2>
 
-<h2>Broker</h2>
+<h2>Strengths</h2>
 
-<h2>Platform</h2>
+<ul>
+<li>TODO</li>
+</ul>
+
 
 <h2>Markets</h2>
 
+<p>I have chosen to trade Forex. I have a couple of years experience trading equities in the USA via Contracts for Difference. But for the size of the account I was trading the round trip expenses were too much. So this time around I wanted a  market where I did not have to pay any transation fees on top of the spread. So that is the first reason I chose the Forex market, the second reason, is of course the leverage.</p>
+
 <h2>Instruments</h2>
+
+<p>My main criteria for an appropriate instrument was one with a low spread and high liquidity. Most crosses have a fairly high spread making them ineligible. For some reason (I have not examined too closely I&#8217;m not comfortable with the JPY pairs). Any of the major&#8217;s were going to be OK, so pretty much randomly I chose the AUDUSD, EURUSD, and GBPUSD. But will focus for at least 12 months on the AUDUSD.</p>
+
+<h2>Workflow</h2>
+
+<h3>PreMarket</h3>
+
+<ul>
+<li>1500: Do daily analysis on each of D1,H4,H1 &amp; M15 charts.</li>
+<li>Do screen capture of all 4 timeframes as individual fullsized images and as a single image of all four. For a total of five images.</li>
+<li>Markup Economic calendar events on Chart.</li>
+</ul>
+
+
+<h3>InMarket</h3>
+
+<ul>
+<li>TODO</li>
+</ul>
+
+
+<h3>PostMarket</h3>
+
+<ul>
+<li>2330: Post daily analysis and each trade analysis to heterodoxic.com</li>
+</ul>
+
+
+<h2>Broker</h2>
+
+<p>I have two brokers <a href="http://www.fxpro.com.au">FXPro</a> and <a href="http://www.pepperstone.com.au">Pepperstone</a>. When I was hunting for a broker, my major criteria was to find a broker that had tight spreads. These two brokers should allow me to trade AUDUSD, EURUSD and GBPUSD with a 1 pip spread.</p>
+
+<p>I have only funded FXPro at this stage, and plan to use Pepperstone as a backup. FXPro has a slight pecularity in that there are two types of accounts, one type uses the <a href="http://fxpro.com.au/trading/cfd/mt4">Market Maker</a> model and the other uses an <a href="http://fxpro.com.au/trading/cfd/ecn">ECN</a> model. I have opened an account of each type but only funded the Market Maker model account. The main difference between the two accounts are that the ECN account offers a more direct route to the interbank market, it is aimed a bigger players and commissions are charged per transaction.</p>
+
+<h2>Platform</h2>
+
+<p>I need platforms,for strategy development, indicator development, charting and execution. I will use <a href="http://www.r-project.org/">R</a> for strategy development, and <a href="http://www.metaquotes.net/">MT4-MQL</a> for indicator development. Financial considerations and a desire to keep my monthly costs down for at least 12 months means I will utilise the broker supplied platforms for charting and execution. Currently both Pepperstone and FXPro offer <a href="http://www.metaquotes.net/">MT4</a> for their charting and execution platforms.</p>
 
 <h2>Timeframes</h2>
 
+<p>I&#8217;m trading a small account, to maximise the magic of compounding, I&#8217;m have chosen to trade short-term. I don&#8217;t think I have the personality or the quickness to be a scalper but I should feel comfortable on the 15 minute timeframe.</p>
+
 <h2>Trading Times</h2>
+
+<p>I do not want to spend all day trading, I don&#8217;t think I can be effective because it is necessary to have a high level of concentration. Also there are certain times that are have much higher liquidity than others. There are two particular time periods, that I will trade (not at the same time) either one or the other each day. The two periods are the first 3 hours of the London Open which is 0800-1100 UTC and the intersection of the London Open and the New York Open which is from 1300-1600 UTC</p>
 
 <h2>Journal</h2>
 
+<p>I will journal all my trades on the heterodoxic.com website under the category Execution. I will also undertake to complete a daily analysis each day prior to the London open at 0800 UTC. I have setup two Octopress templates that set out the structure and content of these journal entries.</p>
+
 <h2>Log</h2>
 
-<h2>Funding</h2>
+<p>I will log all my trades using journal.xlsx. This journal calculates position size, risk reward, risk.multiple which I will complete before executing a trade.</p>
 
 <h2>Withdrawals</h2>
 
+<ul>
+<li>This area is important because one of thing I found in previous trading was that if you leave money in your account you will blow it. I saw a similar thing  written somewhere, that when people win at trading, it is really just a loan from the markets, as the market will take it back. This is similar I guess to a casino. So if you get money in your account, take it out at regular intervals and put it into something else. This is also has the beneficial effect of giving you a reward especially if you don&#8217;t actually put into a bank, but take the cash and keep it at home in 100 dollar bills.</li>
+</ul>
+
+
 <h2>Money Management</h2>
+
+<p>This makes me a bit uncomfortable, because I know I should only be risking an absolute maximum of 2% of my net equity (net.equity = account.balance + open.winning.trades - open.losing.trades) on a trade. But my account is so miniscule that I feel it is necessary to risk 5%, this maybe my downfall.</p>
+
+<ul>
+<li><p>Maximum leverage I will apply is 100:1 again this is too much, I should only be applying a maximum of 50:1.</p></li>
+<li><p>If my account does grow then I will institute more sane money management rules.</p></li>
+</ul>
+
 
 <h2>Discipline</h2>
 
@@ -252,11 +593,40 @@ Order Types</p>
 
 <h2>Resources</h2>
 
+<ul>
+<li><a href="http://www.forexticket.biz/#en">mataf</a></li>
+</ul>
+
+
 <h2>Mentors</h2>
+
+<ul>
+<li>Crossing Wall Street</li>
+<li>I think I will probably join this <a href="http://www.james16group.us/">james.sixteen</a> group when I can afford it. Their methodology seems a good fit with mine.</li>
+<li>The London Group</li>
+</ul>
+
 
 <h2>Tools</h2>
 
+<ul>
+<li><a href="http://www.snagit.com">SnagIT</a></li>
+<li><a href="http://www.octopress.net">Octopress</a></li>
+<li><a href="http://www.metaquotes.net/">MT4</a></li>
+<li><a href="http://www.r-project.org/">R</a></li>
+</ul>
+
+
 <h2>Paper Trading</h2>
+
+<p>What to do here? I think paper trading will be good to with the LGP for 1 week.</p>
+
+<h2>Strategies</h2>
+
+<ul>
+<li>POINT AT DIFFRENT PAGE - so many strategies to choose from. My interst lies at the moment with the harvest, and tukey biweight. maybe closing range/opening range something.</li>
+</ul>
+
 ]]></content>
   </entry>
   
