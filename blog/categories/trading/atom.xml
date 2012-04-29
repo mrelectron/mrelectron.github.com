@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trading | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/trading/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-04-29T04:20:55+10:00</updated>
+  <updated>2012-04-30T01:29:28+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -278,21 +278,12 @@
     <link href="http://mrelectron.github.com/blog/2012/04/29/words-of-wisdom/"/>
     <updated>2012-04-29T02:00:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/04/29/words-of-wisdom</id>
-    <content type="html"><![CDATA[<p>This post</p>
+    <content type="html"><![CDATA[<p>This post has the no secrets stuff + other good points</p>
 
 <!--more-->
 
 
-<p>ECN
-Fixing
-Pairs
-Exchange Rates
-Pips
-Bid &amp; Ask
-Lots
-Leverage
-Margin
-Order Types</p>
+
 ]]></content>
   </entry>
   
@@ -506,6 +497,8 @@ Order Types</p>
 <h2>Beliefs</h2>
 
 <ul>
+<li><p>I believe I only need to master one setup to be a consistently profitable trader. After I have mastered one setup and "own it" I can start to master another setup ... ad infinitum.</p></li>
+<li><p>I believe that Price Action trading is the best approach to market analysis, because most technical analysis indicators are derivatives of price so why not just use price.</p></li>
 <li><p>I believe that trading is gambling but it is possible to fix the odds slightly in your favour.</p></li>
 <li><p>I don't care what moves the Forex market, my approach is very short term. So macro economic analysis will have no impact on my trading.</p></li>
 <li><p>I do need to be conscious of calendar events while I have a trade open.</p></li>
@@ -605,11 +598,7 @@ Order Types</p>
 
 <p>This makes me a bit uncomfortable, because I know I should only be risking an absolute maximum of 2% of my net equity (net.equity = account.balance + open.winning.trades - open.losing.trades) on a trade. But my account is so miniscule that I feel it is necessary to risk 5%, this maybe my downfall.</p>
 
-<ul>
-<li><p>Maximum leverage I will apply is 100:1 again this is too much, I should only be applying a maximum of 50:1.</p></li>
-<li><p>If my account does grow then I will institute more sane money management rules.</p></li>
-</ul>
-
+<p>Maximum leverage I will apply is 100:1, again, way too much, I should only be applying a maximum of 50:1. But the miniscule account problem rears its ugly head. If my account does grow then I will institute sane money management rules, 2% of net equity and a maximum of 50:1 leverage.</p>
 
 <h2>Discipline</h2>
 
@@ -617,29 +606,38 @@ Order Types</p>
 
 <h2>Punishment</h2>
 
+<h2>Mentor</h2>
+
+<p>In the sense that these people are people whose opinion and methodology I respect and agree with.
+* <a href="http://www.trading-naked.com">Trading Naked</a>
+* <a href="http://www.learntotradethemarket.com/">Nial Fuller</a>
+* <a href="http://www.amazon.com/Crossing-Wall-Street-Independent-Financial/dp/0615510132">Crossing Wall Street</a>
+* <a href="http://www.james16group.us/">James Sixteen</a>
+* The London Group
+* <a href="http://www.alphatrends.net">Brian Shannon</a>
+* <a href="http://www.stockbee.biz">Stockbee</a>
+* <a href="http://www.joefahmy.com">Joe Fahmy</a>
+* <a href="http://www.davelandry.com">Dave Landry</a>
+* <a href="http://www.peterlbrandt.com">Peter Brandt</a>
+* <a href="http://www.effectivevolume.com">Pascal Willain</a></p>
+
 <h2>Resources</h2>
 
-<ul>
-<li><a href="http://www.forexticket.biz/#en">mataf</a></li>
-</ul>
-
-
-<h2>Mentors</h2>
-
-<ul>
-<li>Crossing Wall Street</li>
-<li>I think I will probably join this <a href="http://www.james16group.us/">james.sixteen</a> group when I can afford it. Their methodology seems a good fit with mine.</li>
-<li>The London Group</li>
-</ul>
-
+<p>This is only a subset of my forex resources, most trading including forex resources are on my hard drive and in my chrome bookmarks.
+* <a href="http://www.stevehopwoodforex.com">Steve Hopwood</a>
+* <a href="http://www.forexticket.biz/#en">Mataf</a>
+* <a href="http://www.babypips.com/">BabyPips</a></p>
 
 <h2>Tools</h2>
 
 <ul>
-<li><a href="http://www.snagit.com">SnagIT</a></li>
+<li><a href="http://www.fxpro.com.au">FXPro</a></li>
+<li><a href="http://www.pepperstone.com.au">Pepperstone</a></li>
+<li><a href="http://www.babypips.com/tools/forex-calendar/">Economic Calendar</a></li>
 <li><a href="http://www.octopress.net">Octopress</a></li>
 <li><a href="http://www.metaquotes.net/">MT4</a></li>
 <li><a href="http://www.r-project.org/">R</a></li>
+<li><a href="http://www.snagit.com">SnagIT</a></li>
 </ul>
 
 
@@ -649,10 +647,12 @@ Order Types</p>
 
 <h2>Strategies</h2>
 
-<ul>
-<li>POINT AT DIFFRENT PAGE - so many strategies to choose from. My interst lies at the moment with the harvest, and tukey biweight. maybe closing range/opening range something.</li>
-</ul>
+<p>A trading strategy is a set of rules for executing a trade and will be applied in a manner somewhere along a continumn between 100% discretionary and 100% mechanical.</p>
 
+<p>Whether you prefer a discretionary or mechanical approach is something you will struggle with and eventually find the right mix. You may apply a different trading strategy to different parts of your portfolio. For example you may apply a purely mechanical trading strategy to the Forex instruments in your portfolio and a purely discretionary trading strategy to your equity instruments. Trading strategies, trading setups, and trading systems are synonyms.</p>
+
+<p>The strategies I utilise are:
+* [021][Alexandra]</p>
 ]]></content>
   </entry>
   
