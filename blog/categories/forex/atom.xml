@@ -4,7 +4,7 @@
   <title><![CDATA[Category: forex | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/forex/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-03T00:52:06+10:00</updated>
+  <updated>2012-05-03T01:03:42+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -529,15 +529,69 @@
 </ul>
 
 
-<h2>Weakness</h2>
+<h2>Objectives</h2>
+
+<h3>Annual</h3>
 
 <ul>
-<li><p>I lack self discipline</p></li>
-<li><p>I do not have control of my emotions.</p></li>
+<li>Achieve an average 200% increase in Trading Capital</li>
+<li>Measurable (what?) performance improvement in mastering strategies.</li>
+<li>Develop profitable trading strategy or strategies using R</li>
+<li>Low risk, high probability</li>
 </ul>
 
 
-<h2>Strengths</h2>
+<h3>Monthly</h3>
+
+<ul>
+<li>Achieve an average 16% increase in Trading Capital</li>
+<li>Remain consistently profitable</li>
+<li>Trading Plan refinement</li>
+<li>Strategy refinement</li>
+</ul>
+
+
+<h3>Weekly</h3>
+
+<ul>
+<li>Achieve an average 4% increase in Trading Capital</li>
+<li>Maintain strict compliance with trading business plan</li>
+<li>Consistent discipline and execution performance</li>
+<li>Review and refine trade set-ups</li>
+<li>Define weekly revenue/profit targets</li>
+</ul>
+
+
+<h3>Daily</h3>
+
+<ul>
+<li>Execution refinement</li>
+<li>Discipline refinement</li>
+<li>Journal entry refinement</li>
+</ul>
+
+
+<h2>Self Assessment</h2>
+
+<h3>Why</h3>
+
+<ul>
+<li>I want to be a trader it offers an income which I will be unable to manage elsewhere.</li>
+<li>I want to be a trader because it suits my personality and character</li>
+<li>I want to be a trader because I can enjoy the freedom of being able to trade from anywhere in the world.</li>
+<li>I believe  I can achieve my objectives because I have learned a lot from my previous trading experience.</li>
+</ul>
+
+
+<h3>Weakness</h3>
+
+<ul>
+<li>I lack self discipline</li>
+<li>I do not have control of my emotions.</li>
+</ul>
+
+
+<h3>Strengths</h3>
 
 <ul>
 <li>TODO</li>
@@ -552,31 +606,6 @@
 
 <p>My main criteria for an appropriate instrument was one with a low spread and high liquidity. Most crosses have a fairly high spread making them ineligible. For some reason (I have not examined too closely I'm not comfortable with the JPY pairs). Any of the major's were going to be OK, so pretty much randomly I chose the AUDUSD, EURUSD, and GBPUSD. But will focus for at least 12 months on the AUDUSD.</p>
 
-<h2>Workflow</h2>
-
-<h3>PreMarket</h3>
-
-<ul>
-<li>1500: Do daily analysis on each of D1,H4,H1 &amp; M15 charts.</li>
-<li>Do screen capture of all 4 timeframes as individual fullsized images and as a single image of all four. For a total of five images.</li>
-<li>Markup Economic calendar events on Chart.</li>
-</ul>
-
-
-<h3>InMarket</h3>
-
-<ul>
-<li>TODO</li>
-</ul>
-
-
-<h3>PostMarket</h3>
-
-<ul>
-<li>2330: Post daily analysis and each trade analysis to heterodoxic.com</li>
-</ul>
-
-
 <h2>Broker</h2>
 
 <p>I have two brokers <a href="http://www.fxpro.com.au">FXPro</a> and <a href="http://www.pepperstone.com.au">Pepperstone</a>. When I was hunting for a broker, my major criteria was to find a broker that had tight spreads. These two brokers should allow me to trade AUDUSD, EURUSD and GBPUSD with a 1 pip spread.</p>
@@ -589,13 +618,51 @@
 
 <p>Financial considerations and a desire to keep my monthly costs down for at least 12 months precludes the option of getting a seperate data and charting package. Therefore I will utilise the broker supplied platforms for charting and execution. Currently both Pepperstone and FXPro offer <a href="http://www.metaquotes.net/">MT4</a> for their charting and execution platforms.</p>
 
+<h2>Workflow</h2>
+
+<h3>PreMarket</h3>
+
+<p>TODO</p>
+
+<h3>InMarket</h3>
+
+<p>TODO</p>
+
+<h3>PostMarket</h3>
+
+<p>TODO</p>
+
 <h2>Timeframes</h2>
 
 <p>I'm trading a small account. Therefore to maximise the magic of compounding, I'm will trade short-term on a M15 timeframe. I do not believe I have the temperament or quickness of mind for shorter timeframes.</p>
 
-<h2>Trading Times</h2>
+<h2>Trading Hours</h2>
 
 <p>Trading takes intense concentration, therefore I dont' believe I can be effective for an entire trading day. So I need to trade just a subset. There are two particular time periods that have high liquid and volatility which are the conditions best suited to create an environment in which it is possible to make some pips. The two periods are the first 3 hours of the London Open which is 0800-1100 UTC and the intersection of the London Open and the New York Open which is from 1300-1600 UTC. I will choose to trade one of these periods each day.</p>
+
+<h2>Trading Limits</h2>
+
+<ul>
+<li>Allowed positions per day : 1</li>
+</ul>
+
+
+<h2>Stop Trading Signals</h2>
+
+<ul>
+<li>6% Rule</li>
+<li>Outside Defined Trading Hours</li>
+<li>Reached Daily Loss Limit</li>
+<li>Reached Week Loss Limit</li>
+<li>Reached Month Loss Limit</li>
+<li>Emotional Drained : Tired, Depressed, Angry, Exuberant, Invincibiliy</li>
+<li>Distracted, UnableToConcentrate, UnableToFocus</li>
+<li>When Feel Impulse to trade Hunch, Bias or outside of plan</li>
+<li>Volume is consistently low</li>
+<li>Usual setups not working</li>
+<li>Frequent Trend Change (Chop)</li>
+</ul>
+
 
 <h2>Journal</h2>
 
@@ -605,19 +672,31 @@
 
 <p>I will log all my trades using journal.xlsx. This journal calculates position size, risk reward, risk.multiple which I will complete before executing a trade.</p>
 
-<h2>Withdrawals</h2>
+<h2>Portfolio</h2>
 
-<p>This area is important because one thing I found when trading previously was, if you leave money in your account you will blow it.</p>
+<p>TODO</p>
 
-<p>Money earned from the markets is considered by some to be just a temporary loan, as the market will take it back. The trading analogy to a casino is strongly correlated.</p>
-
-<p>Each time my account increases by AUD1000 I will withdraw that AUD1000. This has the beneficial side effect of giving a reward for doing well.</p>
-
-<h2>Money Management</h2>
-
-<p>I should be risking an absolute maximum of 2% of my equity on a trade. But my account is so miniscule that I feel it is necessary to risk 5%.</p>
+<h2>Risk Management</h2>
 
 <p><blockquote><p>equity = account.balance + open.trades(winning) - open.trades(losing)</p></blockquote></p>
+
+<h3>Capital Preservation</h3>
+
+<ul>
+<li>MaxTrade      : 5% equity</li>
+<li>MaxAll        : 25% equity</li>
+<li>MaxDailyLoss  : 5% equity</li>
+<li>MaxWeekLoss   : 10% equity</li>
+<li>MaxMonthLoss  : 20% equity</li>
+<li>Never average down.</li>
+<li>Miniumum R:R 2:1</li>
+<li>Cut Losses</li>
+<li>AdjustStops to protect 80% of profit</li>
+<li>Never allow WinningTrade to become a LosingTrade</li>
+</ul>
+
+
+<p>I should be risking an absolute maximum of 2% of my equity on a trade. But my account is so miniscule that I feel it is necessary to risk 5%.</p>
 
 <p>Maximum leverage 100:1, again, way too much, I should only be applying a maximum of 50:1. But the miniscule account problem rears its ugly head.</p>
 
@@ -625,11 +704,56 @@
 
 <h2>Discipline</h2>
 
-<h2>Rewards</h2>
+<h3>Withdrawals</h3>
 
-<h2>Punishment</h2>
+<p>This area is important because one thing I found when trading previously was, if you leave money in your account you will blow it.</p>
 
-<h2>Mentor</h2>
+<p>Money earned from the markets is considered by some to be just a temporary loan, as the market will take it back. The trading analogy to a casino is strongly correlated.</p>
+
+<p>Each time my account increases by AUD1000 I will withdraw that AUD1000. This has the beneficial side effect of giving a reward for doing well.</p>
+
+<h3>Funding</h3>
+
+<p>TODO</p>
+
+<h3>WindfallProfits</h3>
+
+<p>TODO</p>
+
+<h3>DisastrousLosses</h3>
+
+<p>TODO</p>
+
+<h3>ConsecutiveLosses</h3>
+
+<p>TODO</p>
+
+<h3>Rewards</h3>
+
+<p>TODO</p>
+
+<h3>Punishment</h3>
+
+<ul>
+<li>MaxTradesPerDay               : StopTrade(period = "7")</li>
+<li>Outside Defined Trading Hours : StopTrade(period = "7")</li>
+</ul>
+
+
+<h2>Resources</h2>
+
+<p>This is only a subset of my forex resources, most trading including forex resources are on my hard drive and in my chrome bookmarks.</p>
+
+<h3>Web</h3>
+
+<ul>
+<li><a href="http://www.stevehopwoodforex.com">Steve Hopwood</a></li>
+<li><a href="http://www.forexticket.biz/#en">Mataf</a></li>
+<li><a href="http://www.babypips.com/">BabyPips</a></li>
+</ul>
+
+
+<h3>Mentor</h3>
 
 <p>In the sense that these people are people whose opinion and methodology I respect and agree with.</p>
 
@@ -648,18 +772,7 @@
 </ul>
 
 
-<h2>Resources</h2>
-
-<p>This is only a subset of my forex resources, most trading including forex resources are on my hard drive and in my chrome bookmarks.</p>
-
-<ul>
-<li><a href="http://www.stevehopwoodforex.com">Steve Hopwood</a></li>
-<li><a href="http://www.forexticket.biz/#en">Mataf</a></li>
-<li><a href="http://www.babypips.com/">BabyPips</a></li>
-</ul>
-
-
-<h2>Tools</h2>
+<h3>Tools</h3>
 
 <ul>
 <li><a href="http://www.fxpro.com.au">FXPro</a></li>
@@ -672,13 +785,11 @@
 </ul>
 
 
-<h2>Paper Trading</h2>
-
-<p>What to do here? I think paper trading will be good to with the LGP for 1 week.</p>
-
 <h2>Strategies</h2>
 
 <p>A Trading strategies, trading setups, and trading systems are synonyms, they describe a set of rules for executing a trade. A strategy can lie somewhere on a continumn between 100% discretionary and 100% mechanical. Whether you prefer a discretionary or mechanical approach is something you will struggle with and eventually find the right mix.</p>
+
+<p>Economic calendar events will have their own strategy section. As they are strategies. (Define strategy for specific cal. events eg. FOMC(NoTrade), OptionExpiry(NoTrade))</p>
 
 <p>The strategies I utilise are:</p>
 
