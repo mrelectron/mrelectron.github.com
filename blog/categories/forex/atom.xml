@@ -4,7 +4,7 @@
   <title><![CDATA[Category: forex | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/forex/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-03T00:50:56+10:00</updated>
+  <updated>2012-05-03T00:52:06+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -686,63 +686,6 @@
 <li>[021][Alexandra]</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Strategy Alexandra]]></title>
-    <link href="http://mrelectron.github.com/blog/2012/04/29/strategy-alexandra/"/>
-    <updated>2012-04-29T01:45:00+10:00</updated>
-    <id>http://mrelectron.github.com/blog/2012/04/29/strategy-alexandra</id>
-    <content type="html"><![CDATA[<p>The Alexandra strategy will be one of the strategies utilised by a trading group I have joined. This group will trade the London open from 0800-1100 UTC each day.</p>
-
-<!--more-->
-
-
-<p>I have not backtested Alexandra at this point.</p>
-
-<p>You can ignore the following text in brackets [has been backtested on the following instruments [AUDUSD, EURUSD ...] and in the following timeframes [M5, M15, H1 ...]. Backtest documentation and results are located [here]].</p>
-
-<h2>Money Management</h2>
-
-<ul>
-<li>Risk Percent: 1.5% of account equity.</li>
-<li>Leverage: 50:1</li>
-<li>PositionSize: 0.3 Lots.</li>
-</ul>
-
-
-<h2>Chart Configuration</h2>
-
-<p>Alexandra utilises multi-timeframe analysis. Four charts(M15, H1, H4, D1) are required. Each chart will have an ADX and 4 EMA indicators of differing lags. The configuration of the ADX, EMA's can be found in the book.</p>
-
-<h2>Entry:Long</h2>
-
-<p>use pseudo code Initiate LONG position when the RSI (7) touches the 25 level from below, wait for the first Blue MACD dot to form and then go LONG.</p>
-
-<h3>Stop</h3>
-
-<p>use pseudo code. employ the use of Trailing Stops or place your stop loss below the MACD dots.</p>
-
-<h3>Exit</h3>
-
-<p>use pseudo code. you can exit your open position when a red MACD DOT forms above the candlestick or you can wait for the RSI to touch the 75 level from below.</p>
-
-<p>piccy: Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | "title text" ["alt text"]] %}</p>
-
-<h2>Entry:Short</h2>
-
-<p>use pseudo code: initiate a SHORT position when the RSI (7) touches the 75 level from above, wait for the first Red MACD dot to appear,then sell.</p>
-
-<h3>Stop</h3>
-
-<p>use pseudo code:  Apply Trailing Stops into your trading strategy or place your stop loss above the red MACD dots.</p>
-
-<h3>Exit</h3>
-
-<p>use pseudo code: You can exit your open position when you see the formation of the first blue MACD DOT form below the candlestick or you can wait for the RSI to touch the 25 level upward.</p>
-
-<p>piccy: Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | "title text" ["alt text"]] %}</p>
 ]]></content>
   </entry>
   
