@@ -4,7 +4,7 @@
   <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-04-30T01:29:28+10:00</updated>
+  <updated>2012-04-30T02:31:33+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -473,7 +473,7 @@
     <id>http://mrelectron.github.com/blog/2012/04/29/trading-plan</id>
     <content type="html"><![CDATA[<p>This post describes my trading plan. It is good that this is a semi-public (semi-public in that I don&#8217;t actively advertise this site, people who come here will only come here by accident) forum. It is good because it will force me to write a good trading plan and hopefully will make me follow it.</p>
 
-<!--more-->
+<!-- more -->
 
 
 <h2>Beliefs</h2>
@@ -551,19 +551,21 @@
 
 <h2>Platform</h2>
 
-<p>I need platforms,for strategy development, indicator development, charting and execution. I will use <a href="http://www.r-project.org/">R</a> for strategy development, and <a href="http://www.metaquotes.net/">MT4-MQL</a> for indicator development. Financial considerations and a desire to keep my monthly costs down for at least 12 months means I will utilise the broker supplied platforms for charting and execution. Currently both Pepperstone and FXPro offer <a href="http://www.metaquotes.net/">MT4</a> for their charting and execution platforms.</p>
+<p>A platforms is required for strategy development, indicator development, charting and execution. I will use <a href="http://www.r-project.org/">R</a> for strategy development and <a href="http://www.metaquotes.net/">MT4</a> for indicator development.</p>
+
+<p>Financial considerations and a desire to keep my monthly costs down for at least 12 months precludes the option of getting a seperate data and charting package. Therefore I will utilise the broker supplied platforms for charting and execution. Currently both Pepperstone and FXPro offer <a href="http://www.metaquotes.net/">MT4</a> for their charting and execution platforms.</p>
 
 <h2>Timeframes</h2>
 
-<p>I&#8217;m trading a small account, to maximise the magic of compounding, I&#8217;m have chosen to trade short-term. I don&#8217;t think I have the personality or the quickness to be a scalper but I should feel comfortable on the 15 minute timeframe.</p>
+<p>I&#8217;m trading a small account. Therefore to maximise the magic of compounding, I&#8217;m will trade short-term on a M15 timeframe. I do not believe I have the temperament or quickness of mind for shorter timeframes.</p>
 
 <h2>Trading Times</h2>
 
-<p>I do not want to spend all day trading, I don&#8217;t think I can be effective because it is necessary to have a high level of concentration. Also there are certain times that are have much higher liquidity than others. There are two particular time periods, that I will trade (not at the same time) either one or the other each day. The two periods are the first 3 hours of the London Open which is 0800-1100 UTC and the intersection of the London Open and the New York Open which is from 1300-1600 UTC</p>
+<p>Trading takes intense concentration, therefore I dont&#8217; believe I can be effective for an entire trading day. So I need to trade just a subset. There are two particular time periods that have high liquid and volatility which are the conditions best suited to create an environment in which it is possible to make some pips. The two periods are the first 3 hours of the London Open which is 0800-1100 UTC and the intersection of the London Open and the New York Open which is from 1300-1600 UTC. I will choose to trade one of these periods each day.</p>
 
 <h2>Journal</h2>
 
-<p>I will journal all my trades on the heterodoxic.com website under the category Execution. I will also undertake to complete a daily analysis each day prior to the London open at 0800 UTC. I have setup two Octopress templates that set out the structure and content of these journal entries.</p>
+<p>I will journal all my trades on the heterodoxic.com blog under the category Execution. I will also undertake to complete a daily analysis each day prior to the London open at 0800 UTC. I have setup two Octopress templates that set out the structure and content of these journal entries.</p>
 
 <h2>Log</h2>
 
@@ -571,16 +573,22 @@
 
 <h2>Withdrawals</h2>
 
-<ul>
-<li>This area is important because one of thing I found in previous trading was that if you leave money in your account you will blow it. I saw a similar thing  written somewhere, that when people win at trading, it is really just a loan from the markets, as the market will take it back. This is similar I guess to a casino. So if you get money in your account, take it out at regular intervals and put it into something else. This is also has the beneficial effect of giving you a reward especially if you don&#8217;t actually put into a bank, but take the cash and keep it at home in 100 dollar bills.</li>
-</ul>
+<p>This area is important because one thing I found when trading previously was, if you leave money in your account you will blow it.</p>
 
+<p>Money earned from the markets is considered by some to be just a temporary loan, as the market will take it back. The trading analogy to a casino is strongly correlated.</p>
+
+<p>Each time my account increases by AUD1000 I will withdraw that AUD1000. This has the beneficial side effect of giving a reward for doing well.</p>
 
 <h2>Money Management</h2>
 
-<p>This makes me a bit uncomfortable, because I know I should only be risking an absolute maximum of 2% of my net equity (net.equity = account.balance + open.winning.trades - open.losing.trades) on a trade. But my account is so miniscule that I feel it is necessary to risk 5%, this maybe my downfall.</p>
+<p>I should be risking an absolute maximum of 2% of my equity on a trade. But my account is so miniscule that I feel it is necessary to risk 5%.</p>
 
-<p>Maximum leverage I will apply is 100:1, again, way too much, I should only be applying a maximum of 50:1. But the miniscule account problem rears its ugly head. If my account does grow then I will institute sane money management rules, 2% of net equity and a maximum of 50:1 leverage.</p>
+<blockquote><p>equity = account.balance + open.trades(winning) - open.trades(losing)</p></blockquote>
+
+
+<p>Maximum leverage 100:1, again, way too much, I should only be applying a maximum of 50:1. But the miniscule account problem rears its ugly head.</p>
+
+<p>If my account does grow then I will institute sane money management rules, 2% of equity and 50:1 leverage.</p>
 
 <h2>Discipline</h2>
 
@@ -590,25 +598,33 @@
 
 <h2>Mentor</h2>
 
-<p>In the sense that these people are people whose opinion and methodology I respect and agree with.
-* <a href="http://www.trading-naked.com">Trading Naked</a>
-* <a href="http://www.learntotradethemarket.com/">Nial Fuller</a>
-* <a href="http://www.amazon.com/Crossing-Wall-Street-Independent-Financial/dp/0615510132">Crossing Wall Street</a>
-* <a href="http://www.james16group.us/">James Sixteen</a>
-* The London Group
-* <a href="http://www.alphatrends.net">Brian Shannon</a>
-* <a href="http://www.stockbee.biz">Stockbee</a>
-* <a href="http://www.joefahmy.com">Joe Fahmy</a>
-* <a href="http://www.davelandry.com">Dave Landry</a>
-* <a href="http://www.peterlbrandt.com">Peter Brandt</a>
-* <a href="http://www.effectivevolume.com">Pascal Willain</a></p>
+<p>In the sense that these people are people whose opinion and methodology I respect and agree with.</p>
+
+<ul>
+<li><a href="http://www.trading-naked.com">Trading Naked</a></li>
+<li><a href="http://www.learntotradethemarket.com/">Nial Fuller</a></li>
+<li><a href="http://www.amazon.com/Crossing-Wall-Street-Independent-Financial/dp/0615510132">Crossing Wall Street</a></li>
+<li><a href="http://www.james16group.us/">James Sixteen</a></li>
+<li>The London Group</li>
+<li><a href="http://www.alphatrends.net">Brian Shannon</a></li>
+<li><a href="http://www.stockbee.biz">Stockbee</a></li>
+<li><a href="http://www.joefahmy.com">Joe Fahmy</a></li>
+<li><a href="http://www.davelandry.com">Dave Landry</a></li>
+<li><a href="http://www.peterlbrandt.com">Peter Brandt</a></li>
+<li><a href="http://www.effectivevolume.com">Pascal Willain</a></li>
+</ul>
+
 
 <h2>Resources</h2>
 
-<p>This is only a subset of my forex resources, most trading including forex resources are on my hard drive and in my chrome bookmarks.
-* <a href="http://www.stevehopwoodforex.com">Steve Hopwood</a>
-* <a href="http://www.forexticket.biz/#en">Mataf</a>
-* <a href="http://www.babypips.com/">BabyPips</a></p>
+<p>This is only a subset of my forex resources, most trading including forex resources are on my hard drive and in my chrome bookmarks.</p>
+
+<ul>
+<li><a href="http://www.stevehopwoodforex.com">Steve Hopwood</a></li>
+<li><a href="http://www.forexticket.biz/#en">Mataf</a></li>
+<li><a href="http://www.babypips.com/">BabyPips</a></li>
+</ul>
+
 
 <h2>Tools</h2>
 
@@ -629,12 +645,14 @@
 
 <h2>Strategies</h2>
 
-<p>A trading strategy is a set of rules for executing a trade and will be applied in a manner somewhere along a continumn between 100% discretionary and 100% mechanical.</p>
+<p>A Trading strategies, trading setups, and trading systems are synonyms, they describe a set of rules for executing a trade. A strategy can lie somewhere on a continumn between 100% discretionary and 100% mechanical. Whether you prefer a discretionary or mechanical approach is something you will struggle with and eventually find the right mix.</p>
 
-<p>Whether you prefer a discretionary or mechanical approach is something you will struggle with and eventually find the right mix. You may apply a different trading strategy to different parts of your portfolio. For example you may apply a purely mechanical trading strategy to the Forex instruments in your portfolio and a purely discretionary trading strategy to your equity instruments. Trading strategies, trading setups, and trading systems are synonyms.</p>
+<p>The strategies I utilise are:</p>
 
-<p>The strategies I utilise are:
-* [021][Alexandra]</p>
+<ul>
+<li>[021][Alexandra]</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -643,14 +661,27 @@
     <link href="http://mrelectron.github.com/blog/2012/04/29/strategy-alexandra/"/>
     <updated>2012-04-29T01:45:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/04/29/strategy-alexandra</id>
-    <content type="html"><![CDATA[<p>This strategy is generally known as &#8220;The Harvest&#8221;, complete details about &#8220;Harvest&#8221; can be found in an ebook located on my HDD. We are going to call the strategy Alexandra not harvest. The Alexandra strategy is only interesting for me because it will enable me to be part of a trading group setup by the author of the strategy. This group will trade the London open from 0800-1100 UTC each day. On looking at this strategy it looks kinda dodgy, so I&#8217;m keen to see how it goes in live trading.</p>
-
-<p>I have not backtested Alexandra at this point. You can ignore the following text in brackets [has been backtested on the following instruments [AUDUSD, EURUSD &#8230;] and in the following timeframes [M5, M15, H1 &#8230;]. Backtest documentation and results are located [here]].</p>
-
-<p>The strategy uses indicators [][], [][] &amp; [][].</p>
+    <content type="html"><![CDATA[<p>The Alexandra strategy will be one of the strategies utilised by a trading group I have joined. This group will trade the London open from 0800-1100 UTC each day.</p>
 
 <!--more-->
 
+
+<p>I have not backtested Alexandra at this point.</p>
+
+<p>You can ignore the following text in brackets [has been backtested on the following instruments [AUDUSD, EURUSD &#8230;] and in the following timeframes [M5, M15, H1 &#8230;]. Backtest documentation and results are located [here]].</p>
+
+<h2>Money Management</h2>
+
+<ul>
+<li>Risk Percent: 1.5% of account equity.</li>
+<li>Leverage: 50:1</li>
+<li>PositionSize: 0.3 Lots.</li>
+</ul>
+
+
+<h2>Chart Configuration</h2>
+
+<p>Alexandra utilises multi-timeframe analysis. Four charts(M15, H1, H4, D1) are required. Each chart will have an ADX and 4 EMA indicators of differing lags. The configuration of the ADX, EMA&#8217;s can be found in the book.</p>
 
 <h2>Entry:Long</h2>
 
