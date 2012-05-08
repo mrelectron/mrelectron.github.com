@@ -4,7 +4,7 @@
   <title><![CDATA[Category: forex | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/forex/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-05T00:15:37+10:00</updated>
+  <updated>2012-05-08T22:41:01+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -12,6 +12,371 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MT4 Keyboard Shortcuts]]></title>
+    <link href="http://mrelectron.github.com/blog/2012/05/08/mt4-keyboard-shortcuts/"/>
+    <updated>2012-05-08T22:27:00+10:00</updated>
+    <id>http://mrelectron.github.com/blog/2012/05/08/mt4-keyboard-shortcuts</id>
+    <content type="html"><![CDATA[<p>This post lists MT4 keyboard shortcuts, as sometimes it is a pain to swap between mouse and keyboard.</p>
+
+<!-- more -->
+
+
+<h2>Scroll</h2>
+
+<ul>
+<li>Left          : Left</li>
+<li>Left Fast     : Page Up</li>
+<li>Left OneBar   : F12</li>
+<li>Right         : Right</li>
+<li>Right Fast    : Page Down</li>
+<li>Right OneBar  : Shift+F12</li>
+<li>End           : End</li>
+<li>Start         : Home</li>
+</ul>
+
+
+<h2>Windows</h2>
+
+<ul>
+<li>Data          : Ctrl+D</li>
+<li>Indicators    : Ctrl+I</li>
+<li>Market Watch  : Ctrl+M</li>
+<li>Navigator     : Ctrl+N</li>
+<li>Terminal      : Ctrl+T</li>
+<li>Tester        : Ctrl+R</li>
+</ul>
+
+
+<h2>Switch</h2>
+
+<ul>
+<li>Chart Next    : Ctrl+F6</li>
+<li>Profile Next  : Ctrl+F5</li>
+</ul>
+
+
+<h2>Dialogs</h2>
+
+<ul>
+<li>Chart Props   : F8</li>
+<li>Global Vars   : F3</li>
+<li>History Center: F2</li>
+<li>New Order     : F9</li>
+<li>Open Windows  : Alt+W</li>
+<li>Options       : Ctrl+O</li>
+<li>Prices Dialog : F10</li>
+<li>Print         : Ctrl+P</li>
+</ul>
+
+
+<h2>Toggle</h2>
+
+<ul>
+<li>Bar Chart     : Alt+1</li>
+<li>Candle Chart  : Alt+2</li>
+<li>Fast Nav      : Enter</li>
+<li>Full screen   : F11</li>
+<li>Grid          : Ctrl+G</li>
+<li>Line Chart    : Alt+3</li>
+<li>OHLC          : Ctrl+H</li>
+<li>Period Seps   : Ctrl+Y</li>
+<li>Volume        : Ctrl+L</li>
+</ul>
+
+
+<h2>Miscellany</h2>
+
+<ul>
+<li>Close Dialogs : Esc</li>
+<li>Close Window  : Ctrl+F4</li>
+<li>Copy          : Ctrl+C</li>
+<li>Crosshair     : Ctrl+F</li>
+<li>Help          : F1</li>
+<li>MetaEditor    : F4</li>
+<li>Quit          : Alt+F4</li>
+<li>Save          : Ctrl+S</li>
+<li>Undo          : Ctrl+Z</li>
+<li>Zoom In       : +</li>
+<li>Zoom out      : -</li>
+</ul>
+
+
+<p>There is no facility within MT4 to assign keyboard shortcuts. But if you want to expand the range of keyboard shortcuts then you can use a free utility called <a href="http://www.autohotkey.com/">AutoHotKey</a>, you can then go crazy with keyboard shortcuts.  I found this basic AutoHotKey script for MT4 somewhere. Thanks to the anonymous user.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;# = Windows Key
+</span><span class='line'>;^ = Control
+</span><span class='line'>;! = Alt
+</span><span class='line'>;+ = Shift
+</span><span class='line'>;Demo Script&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CapsLock &amp; c::run, calc.exe&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;FXDD MT4 Scripts&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TIMEFRAMES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 1::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 2::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 3::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 4::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 5::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 6::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 7::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 8::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 9::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TEMPLATES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; q::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; w::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; e::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; r::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; t::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; y::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return
+</span><span class='line'>;PAIRS&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; A::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; S::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; D::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; F::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; G::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; H::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; J::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; K::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; L::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; M::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; N::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
+</span><span class='line'>return
+</span><span class='line'>;MISC
+</span><span class='line'>;TOGGLE FOREGROUND
+</span><span class='line'>CAPSLOCK &amp; Z::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TOGGLE CHART SCROLL
+</span><span class='line'>CAPSLOCK &amp; X::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;CHART SHIFT
+</span><span class='line'>CAPSLOCK &amp; V::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[No Secrets]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trading | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/trading/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-05T00:15:37+10:00</updated>
+  <updated>2012-05-08T22:41:01+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -12,6 +12,371 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MT4 Keyboard Shortcuts]]></title>
+    <link href="http://mrelectron.github.com/blog/2012/05/08/mt4-keyboard-shortcuts/"/>
+    <updated>2012-05-08T22:27:00+10:00</updated>
+    <id>http://mrelectron.github.com/blog/2012/05/08/mt4-keyboard-shortcuts</id>
+    <content type="html"><![CDATA[<p>This post lists MT4 keyboard shortcuts, as sometimes it is a pain to swap between mouse and keyboard.</p>
+
+<!-- more -->
+
+
+<h2>Scroll</h2>
+
+<ul>
+<li>Left          : Left</li>
+<li>Left Fast     : Page Up</li>
+<li>Left OneBar   : F12</li>
+<li>Right         : Right</li>
+<li>Right Fast    : Page Down</li>
+<li>Right OneBar  : Shift+F12</li>
+<li>End           : End</li>
+<li>Start         : Home</li>
+</ul>
+
+
+<h2>Windows</h2>
+
+<ul>
+<li>Data          : Ctrl+D</li>
+<li>Indicators    : Ctrl+I</li>
+<li>Market Watch  : Ctrl+M</li>
+<li>Navigator     : Ctrl+N</li>
+<li>Terminal      : Ctrl+T</li>
+<li>Tester        : Ctrl+R</li>
+</ul>
+
+
+<h2>Switch</h2>
+
+<ul>
+<li>Chart Next    : Ctrl+F6</li>
+<li>Profile Next  : Ctrl+F5</li>
+</ul>
+
+
+<h2>Dialogs</h2>
+
+<ul>
+<li>Chart Props   : F8</li>
+<li>Global Vars   : F3</li>
+<li>History Center: F2</li>
+<li>New Order     : F9</li>
+<li>Open Windows  : Alt+W</li>
+<li>Options       : Ctrl+O</li>
+<li>Prices Dialog : F10</li>
+<li>Print         : Ctrl+P</li>
+</ul>
+
+
+<h2>Toggle</h2>
+
+<ul>
+<li>Bar Chart     : Alt+1</li>
+<li>Candle Chart  : Alt+2</li>
+<li>Fast Nav      : Enter</li>
+<li>Full screen   : F11</li>
+<li>Grid          : Ctrl+G</li>
+<li>Line Chart    : Alt+3</li>
+<li>OHLC          : Ctrl+H</li>
+<li>Period Seps   : Ctrl+Y</li>
+<li>Volume        : Ctrl+L</li>
+</ul>
+
+
+<h2>Miscellany</h2>
+
+<ul>
+<li>Close Dialogs : Esc</li>
+<li>Close Window  : Ctrl+F4</li>
+<li>Copy          : Ctrl+C</li>
+<li>Crosshair     : Ctrl+F</li>
+<li>Help          : F1</li>
+<li>MetaEditor    : F4</li>
+<li>Quit          : Alt+F4</li>
+<li>Save          : Ctrl+S</li>
+<li>Undo          : Ctrl+Z</li>
+<li>Zoom In       : +</li>
+<li>Zoom out      : -</li>
+</ul>
+
+
+<p>There is no facility within MT4 to assign keyboard shortcuts. But if you want to expand the range of keyboard shortcuts then you can use a free utility called <a href="http://www.autohotkey.com/">AutoHotKey</a>, you can then go crazy with keyboard shortcuts.  I found this basic AutoHotKey script for MT4 somewhere. Thanks to the anonymous user.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;# = Windows Key
+</span><span class='line'>;^ = Control
+</span><span class='line'>;! = Alt
+</span><span class='line'>;+ = Shift
+</span><span class='line'>;Demo Script&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CapsLock &amp; c::run, calc.exe&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;FXDD MT4 Scripts&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TIMEFRAMES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 1::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 2::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 3::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 4::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 5::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 6::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 7::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 8::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 9::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TEMPLATES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; q::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; w::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; e::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; r::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; t::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; y::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return
+</span><span class='line'>;PAIRS&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; A::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; S::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; D::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; F::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; G::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; H::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; J::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; K::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; L::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; M::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; N::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
+</span><span class='line'>return
+</span><span class='line'>;MISC
+</span><span class='line'>;TOGGLE FOREGROUND
+</span><span class='line'>CAPSLOCK &amp; Z::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TOGGLE CHART SCROLL
+</span><span class='line'>CAPSLOCK &amp; X::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;CHART SHIFT
+</span><span class='line'>CAPSLOCK &amp; V::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Trading Affirmations]]></title>
@@ -389,76 +754,6 @@ It's critical to your trading success that you learn and trade with a strategy t
 <p>Unfortunately entry techniques are where the vast majority of books and talking heads focus their attention. You could have the greatest stock picking system in the world but unless you take these money management issue into consideration you may not have any money left to trade the system.</p>
 
 <p>Having a system that gives you a positive expectancy should be in the forefront of your mind when putting together a trading plan.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Order Types]]></title>
-    <link href="http://mrelectron.github.com/blog/2012/04/29/order-types/"/>
-    <updated>2012-04-29T03:57:00+10:00</updated>
-    <id>http://mrelectron.github.com/blog/2012/04/29/order-types</id>
-    <content type="html"><![CDATA[<p>This post is about execution orders in particular about the types of orders you can make when you execute a trade.</p>
-
-<!-- more -->
-
-
-<h2>Order Types</h2>
-
-<p>Most brokers allow traders 2 different ways in which they can enter the market. Traders have the option to either enter the market instantly or wait for a predetermined level to be reached and then automatically enter the market. These are known as Market orders and Pending orders.</p>
-
-<h3>Market Orders</h3>
-
-<p>These are the most basic way of trading. A trader will decide which way they think the market is going and either buy or sell at the current price. After determining the size of their position the trader simply has to click on buy or sell and the trade is opened instantly by their broker.</p>
-
-<h3>Pending Orders</h3>
-
-<p>There are 3 different types of pending orders that can be placed on most brokers" platforms; stop order, limit order &amp; OCO order. Pending orders are placed a specific levels predetermined by the trader. The trader will place either a buy or sell trade and wait for the market to reach the level they are waiting for before their order goes "live".</p>
-
-<h3>Stop Orders</h3>
-
-<p>These types of orders can be placed when the trader wants to wait for the market to reach a certain level before entering their trade. These types of orders can be placed when the market is ranging (no clear direction) either above or below the range. The traders order is triggered when the market moves up or down to their predetermined level depending on the direction they are expecting.</p>
-
-<h3>Buy Stop</h3>
-
-<p>As you can see below the pending buy order is placed above the current market price. The trader expects the price to continue rising after they have been triggered into the trade.</p>
-
-<p><img src="/images/20120429-0001.png"></p>
-
-<h3>Sell Stop</h3>
-
-<p>As you can see the pending order is placed below the current market price. The trade expects the market to continue falling after they have been entered into the trade</p>
-
-<p><img src="/images/20120429-0002.png"></p>
-
-<h3>Limit Orders</h3>
-
-<p>These types of orders can be placed when the trade wants to wait for the market to reach a certain level before entering their trade. They are different to stop orders. As we know, when a trader places a buy/sell stop they are expecting the market to continue moving in the same direction. Limit orders however are slightly different. The trade will place a buy or sell limit at a higher or lower price than the current market price. However they will expect the market to "bounce" of their entry price and move in the opposite direction. For example a buy limit may be placed when the trader expects the market to move up before moving down therefore placing a sell limit at a higher price than the current market price hoping to enter the trade at a better price.</p>
-
-<h3>Buy Limit</h3>
-
-<p>As you can see the trader expects the market to slightly fall before rising. They have placed a buy limit below the current market price.</p>
-
-<p><img src="/images/20120429-0003.png"></p>
-
-<h2>Sell Limit</h2>
-
-<p>As you can see below the trader expects the market to rise before falling. They have placed a sell limit order above the current market price.</p>
-
-<p><img src="/images/20120429-0004.png"></p>
-
-<h3>OCO Orders</h3>
-
-<p>Many brokers allow traders the option to place OCO orders. OCO means "order cancels other". These are 2 orders placed on the same currency pair. One is a buy stop and the other is a sell stop. The trader expects the market to move either up or down and dosnt want to miss out on the move. They place a buy stop above the current market price and a sell stop below the current market price. When either the buy or sell have been triggered the other pending trade is automatically cancelled.</p>
-
-<p><img src="/images/20120429-0005.png"></p>
-
-<h3>GTC Orders</h3>
-
-<p>These types of orders are an "add on" to the 3 types of orders we"ve just discussed. GTC means Good Till Cancelled. This means that the order placed by the trader will remain in the market until cancelled by them. Many brokers also allow the option to add a "valid until" part to a pending trade. This means that predetermined time can be set by the trader before the trade is closed by the broker automatically.</p>
-
-<p><img src="/images/20120429-0006.png"></p>
-
-<p><img src="/images/20120429-0007.png"></p>
 ]]></content>
   </entry>
   
