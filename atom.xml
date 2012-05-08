@@ -4,7 +4,7 @@
   <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-09T01:45:22+10:00</updated>
+  <updated>2012-05-09T02:01:14+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -2283,11 +2283,11 @@
 
 <h2>Journal</h2>
 
-<p>I will journal all my trades on the heterodoxic.com blog under the category Execution. I will also undertake to complete a daily analysis each day prior to the London open at 0800 UTC. I have setup two Octopress templates that set out the structure and content of these journal entries. TODO</p>
+<p>I will journal all my trades on the heterodoxic.com blog. There will be a post for each day that I trade, this post will incorporate a daily market analysis and also each of my trades for that day.</p>
 
 <h2>Log</h2>
 
-<p>I will log all my trades using journal.xlsx. This journal calculates position size, risk reward, risk.multiple which I will complete before executing a trade.</p>
+<p>I will plan and log all my trades using the python program I wrote.  The program will calculate position size, risk reward and risk.multiples. After the trade is complete I will add the actual figures and calculate summary figures and system expectancy.</p>
 
 <h2>Portfolio</h2>
 
@@ -2380,7 +2380,6 @@
 <li><a href="http://www.learntotradethemarket.com/">Nial Fuller</a></li>
 <li><a href="http://www.amazon.com/Crossing-Wall-Street-Independent-Financial/dp/0615510132">Crossing Wall Street</a></li>
 <li><a href="http://www.james16group.us/">James Sixteen</a></li>
-<li>The London Group</li>
 <li><a href="http://www.alphatrends.net">Brian Shannon</a></li>
 <li><a href="http://www.stockbee.biz">Stockbee</a></li>
 <li><a href="http://www.joefahmy.com">Joe Fahmy</a></li>
@@ -2399,7 +2398,6 @@
 <li><a href="http://www.octopress.net">Octopress</a></li>
 <li><a href="http://www.metaquotes.net/">MT4</a></li>
 <li><a href="http://www.r-project.org/">R</a></li>
-<li><a href="http://www.snagit.com">SnagIT</a></li>
 </ul>
 
 
@@ -2421,7 +2419,11 @@
 
 <h3>Naming Conventions</h3>
 
-<p>MT4 Profiles are named according to PAIR-STRATEGYNAME. MT4 Templates are named by PAIR-TIMEFRAME-STRATEGYNAME. All timeframes use minutes so 4 Hour Timeframe is 0240 minutes or Daily timeframe is 1440 minutes etc etc. All our strategies can be found on the blog so we can always backtrack to the strategy to get naming information. For example I might see a profile called AUDUSD-ALINA or a template called AUDUSD-M1440-ALINA but its been a while so I forget what ALINA is/does, so I can just refresh my memory on the blog.</p>
+<ul>
+<li>MT4 Profiles are named according to STRATEGY-PAIR.</li>
+<li>MT4 Templates are named from the STRATEGY they belong.</li>
+</ul>
+
 ]]></content>
   </entry>
   
