@@ -4,7 +4,7 @@
   <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-08T22:59:14+10:00</updated>
+  <updated>2012-05-08T23:04:16+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -33,14 +33,14 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Left         : Left
-</span><span class='line'>Left Fast         : Page Up 
-</span><span class='line'>Left OneBar       : F12
-</span><span class='line'>Right         : Right
-</span><span class='line'>Right Fast    : Page Down
-</span><span class='line'>Right OneBar  : Shift+F12
-</span><span class='line'>End               : End
-</span><span class='line'>Start         : Home</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Left            : Left
+</span><span class='line'>Left Fast       : Page Up 
+</span><span class='line'>Left OneBar     : F12
+</span><span class='line'>Right           : Right
+</span><span class='line'>Right Fast      : Page Down
+</span><span class='line'>Right OneBar    : Shift+F12
+</span><span class='line'>End             : End
+</span><span class='line'>Start           : Home</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Windows</h2>
@@ -51,20 +51,20 @@
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Data         : Ctrl+D
-</span><span class='line'>Indicators        : Ctrl+I
-</span><span class='line'>Market Watch  : Ctrl+M
-</span><span class='line'>Navigator     : Ctrl+N
-</span><span class='line'>Terminal      : Ctrl+T
-</span><span class='line'>Tester            : Ctrl+R</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Data            : Ctrl+D
+</span><span class='line'>Indicators      : Ctrl+I
+</span><span class='line'>Market Watch    : Ctrl+M
+</span><span class='line'>Navigator       : Ctrl+N
+</span><span class='line'>Terminal        : Ctrl+T
+</span><span class='line'>Tester          : Ctrl+R</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Switch</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Next       : Ctrl+F6
-</span><span class='line'>Profile Next  : Ctrl+F5</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Next      : Ctrl+F6
+</span><span class='line'>Profile Next    : Ctrl+F5</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Dialogs</h2>
@@ -77,14 +77,14 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Props      : F8
-</span><span class='line'>Global Vars       : F3
-</span><span class='line'>History Center    : F2
-</span><span class='line'>New Order     : F9
-</span><span class='line'>Open Windows  : Alt+W
-</span><span class='line'>Options           : Ctrl+O
-</span><span class='line'>Prices Dialog : F10
-</span><span class='line'>Print         : Ctrl+P</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Props     : F8
+</span><span class='line'>Global Vars     : F3
+</span><span class='line'>History Center  : F2
+</span><span class='line'>New Order       : F9
+</span><span class='line'>Open Windows    : Alt+W
+</span><span class='line'>Options         : Ctrl+O
+</span><span class='line'>Prices Dialog   : F10
+</span><span class='line'>Print           : Ctrl+P</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Toggle</h2>
@@ -98,15 +98,15 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Bar Chart        : Alt+1
-</span><span class='line'>Candle Chart  : Alt+2
-</span><span class='line'>Fast Nav      : Enter
-</span><span class='line'>Full screen       : F11
-</span><span class='line'>Grid          : Ctrl+G
-</span><span class='line'>Line Chart        : Alt+3
-</span><span class='line'>OHLC          : Ctrl+H
-</span><span class='line'>Period Seps       : Ctrl+Y
-</span><span class='line'>Volume            : Ctrl+L</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Bar Chart       : Alt+1
+</span><span class='line'>Candle Chart    : Alt+2
+</span><span class='line'>Fast Nav        : Enter
+</span><span class='line'>Full screen     : F11
+</span><span class='line'>Grid            : Ctrl+G
+</span><span class='line'>Line Chart      : Alt+3
+</span><span class='line'>OHLC            : Ctrl+H
+</span><span class='line'>Period Seps     : Ctrl+Y
+</span><span class='line'>Volume          : Ctrl+L</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Miscellany</h2>
@@ -122,17 +122,17 @@
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Close Dialogs    : Esc
-</span><span class='line'>Close Window  : Ctrl+F4
-</span><span class='line'>Copy          : Ctrl+C
-</span><span class='line'>Crosshair     : Ctrl+F
-</span><span class='line'>Help          : F1
-</span><span class='line'>MetaEditor        : F4
-</span><span class='line'>Quit          : Alt+F4
-</span><span class='line'>Save          : Ctrl+S
-</span><span class='line'>Undo          : Ctrl+Z
-</span><span class='line'>Zoom In           : +
-</span><span class='line'>Zoom out      : -</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Close Dialogs   : Esc
+</span><span class='line'>Close Window    : Ctrl+F4
+</span><span class='line'>Copy            : Ctrl+C
+</span><span class='line'>Crosshair       : Ctrl+F
+</span><span class='line'>Help            : F1
+</span><span class='line'>MetaEditor      : F4
+</span><span class='line'>Quit            : Alt+F4
+</span><span class='line'>Save            : Ctrl+S
+</span><span class='line'>Undo            : Ctrl+Z
+</span><span class='line'>Zoom In         : +
+</span><span class='line'>Zoom out        : -</span></code></pre></td></tr></table></div></figure>
 
 
 <p>There is no facility within MT4 to assign keyboard shortcuts. But if you want to expand the range of keyboard shortcuts then you can use a free utility called <a href="http://www.autohotkey.com/">AutoHotKey</a>, you can then go crazy with keyboard shortcuts.  I found this basic AutoHotKey script for MT4 somewhere. Thanks to the anonymous user.</p>
@@ -323,7 +323,7 @@
 </span><span class='line'>CAPSLOCK & q::
 </span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & w::
 </span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
 </span><span class='line'>return
@@ -352,23 +352,23 @@
 </span><span class='line'>CAPSLOCK & S::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & D::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & F::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & G::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & H::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & J::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
 </span><span class='line'>return
@@ -384,7 +384,7 @@
 </span><span class='line'>CAPSLOCK & M::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>CAPSLOCK & N::
 </span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
 </span><span class='line'>return
@@ -398,7 +398,7 @@
 </span><span class='line'>CAPSLOCK & X::
 </span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
 </span><span class='line'>return
-</span><span class='line'>  
+</span><span class='line'>    
 </span><span class='line'>;CHART SHIFT
 </span><span class='line'>CAPSLOCK & V::
 </span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
