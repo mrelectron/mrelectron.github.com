@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Trading"
+date: 2012-05-09 00:35
+comments: false
+categories: ['Forex','Trading','Analysis', 'EURGBP', 'Faith', 'Daily']
+---
+
+This post is my trading journal for the 08-May 2012, this is my first journal entry in my new guise of being a forex trader. I don't actually plan to trade today, what sparked my interest was a comment by Goldman Sachs on April 25 to sell the Euro.
+
+<!-- more -->
+
+{% blockquote %}
+The mighty Goldman Sachs has apparently recommended selling EUR/GBP at 0.8210/20 with a tight stop of 0.8250 and targeting a move back down to 0.8150/60
+{% endblockquote %}
+
+I read this on the [faithmightfx][001] blog, in a post called "Beware Trade Tips". She thinks Goldmans are telling porky pies, and says that Goldman will be long the Euro. So I'm kinda interested in seeing how this pans out. Its a good chance for me to practice my trade analysis skills. 
+
+
+{% img /images/20120508-0006.gif %}
+
+-----
+
+{% img /images/20120508-0005.gif %}
+
+-----
+
+{% img /images/20120508-0004.gif %}
+
+-----
+
+{% img /images/20120508-0003.gif %}
+
+-----
+
+{% img /images/20120508-0002.gif %}
+
+-----
+
+{% img /images/20120508-0001.gif %}
+
+-----
+
+[001]:http://faithmightfx.com/2012/04/25/beware-trade-tips/

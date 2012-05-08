@@ -1,0 +1,115 @@
+---
+layout: post
+title: "The Magic of Compounding"
+date: 2012-04-29 02:07
+comments: false
+categories: ['trading', 'life', 'lessons']
+---
+
+Have you ever wondered how Warren Buffet made his millions? In this post we look at the concept of compounding. If you are at all interested in financial security for your children, you should be drumming this into your child's head as soon as they can walk. 
+
+It's a crime that school is the worse possible preparation for life. Having said that I did learn compounding at school, though it was in Mathematics and maybe I did not have the brains to realise its application in the real world. 
+
+<!-- more -->
+
+{% blockquote %}
+Thank you to Richard Stoyeck for this article. Richard's background includes being a limited partner at Bear Stearns, Senior VP at Lehman Brothers, Kuhn Loeb, Arthur Andersen, and KPMG. Educated at Pace University, NYU, and Harvard.
+{% endblockquote %}
+
+Some of you know about this, some of you don't. Either way I'm going to give you the basics of compounding, plus a couple of new slants on the concept. I suggest you read The Magic of Compounding not just once, but several times. If you have children, print this write-up and give it to them to read. If they master this concept they will become rich.
+
+## The Basics
+
+Compounding describes how numbers, or money, can grow. Numbers can grow in an arithmetic progression, for example 2,4,6,8,10,12 or 3,6,9,12,15,18, where one unit is added on at each step in the progression and that action provides the growth, or, numbers can grow exponentially, 2,4,8,16,32,64. In an exponential progression the increase comes by doubling the number at each step in the progression. See the difference? This is compounding.
+
+Now the really amazing part, the magic, comes when you see how fast compounding will make money grow. And guess what! That's right, I've got a little game to play with you, a little story to tell, that will illustrate this principle. This puzzle is as old as J.P. Morgan's moustache comb, so if you've already been schooled in compounding you've heard it before. But didn't I tell you to read this section several times? OK, then, solve the puzzle with us once more while I tell it for the first time to the children for whom "The Magic of Compounding" has just been printed out.
+
+## The Puzzle
+
+I'm a wealthy and generous man, and I want to hire you to work for me for one month. Since I'm also flexible, I give you a choice: you can choose to be payed the entire month's salary up front on the first day of your employment, or, I will pay you 1 cent the first day and I'll double your pay every day for the rest of the month, but you won't get the money until the last day of the month. So on the first day you'll work 8 whole hours and you'll have 1cent coming to you. But on the second day you'll earn 2cents. Hold on, it gets better, the 3rd day with me you'll have earned 4 cents, the day after that 8 cents and so on. Saturdays and Sundays are included just to give you a chance. Oh, by the way, if you take your pay all at once on the first day I'll give you a million bucks ($1,000,000.00) cash. Seems like an easy choice, doesn't it?
+
+Well, you decide for yourself . Now let's look at how much the individual who picked the penney-a-day plan are going to have at month's end. Remember, on the one hand $1,000,000.00. On the other hand::
+
+{% codeblock %}
+	Day	Amount
+	01	0.01
+	02	0.02
+	03	0.04
+	04	0.08
+	05	0.16
+	06	0.32
+	07	0.64
+	08	1.28
+{% endcodeblock %}
+
+Hey folks, it's day eight, you're up to $1.28 and you only have a month. Maybe you are better off taking the one shot deal, the million dollars. Let's see what happens::
+
+{% codeblock %}
+	Day Amount
+	09	2.56
+	10	5.12
+	11	10.24
+	12	20.48
+	13	40.96
+	14	81.82
+	15	163.84
+	16	327.68
+	17	655.36
+	18	1310.72
+	19	2621.44
+	20	5242.88
+{% endcodeblock %}
+
+By the way, did any of you ask me what month of the year we're in? Is it February with 28 days, or leap year with 29 days, or September with 30 days, or December with 31 days? You should realize that it's going to make a difference. Do you want the million dollars? Ask your kids again which they would choose? Let's continue::
+
+{% codeblock %}
+	Day	Amount
+	21	10,485.76
+	22	20,971.52
+	23	41,943.04
+	24	83,886.08
+	25	167,772.16
+	26	335,544.32
+	27	671,772.16
+	28	1,342,177.28
+	29	2,684,354.56
+	30	5,368,709.12
+	31	10,737,418.24
+{% endcodeblock %}
+
+If you work for me in September with 30 days you make over $5,000,000. In December it's over $10,000,000! I have never met the child who didn't leap at the $1,000,000 on day one. This is because human brains think arithmetically, not exponentially. You might say that we are hardwired to think in this linear way, that the software in our brains compels us to think about progressions as being simple arithmetic ones. Luckily though, how we think about things, our prejudices, our attitudes, and our mindsets, can all be changed and worked with. We can update the software! We can consciously change the way we think about numbers, money and investing by absorbing new information, namely, that when you make your money compound you can get rich sooner rather than later.
+
+Teach your children to live a balanced life, and also help them master this concept and you will have very happy and very rich children. In stocks make money at the bottom by buying depressed securities that are going to come right back, making you a fortune as they rocket off the bottom. In the future make money with the Warren Buffet concept, or classical Graham and Dodd analysis.
+
+## The New Slant
+
+Really understanding compounding will make all the difference in investing. I believe that Warren Buffett, the world's greatest investor, is hardwired to think geometrically. He is rich beyond dreams because he totally gets the magic of compounding, and he executes on the concept. I am going to get these numbers wrong because I'm doing them from memory but it doesn't matter. You'll get the concept. Buffett started a partnership way back when. He had a number of limited partners invest with him, and he took 20% of the gains. In the late 1960s he terminated the partnership with his famous letter,
+
+{% blockquote %}
+"When you no longer understand the way the game is played, it's time to leave the game."
+{% endblockquote %}
+
+I'm paraphrasing, even though it's in quotes. Buffet took about $100 million out of that first partnership for himself, so he was working with $100 million, keep that in mind. In 1974 when the bear market bottomed, it might have been early 1975, he started another rise...he took over Berkshire Hathaway. Buffet, since the 1970's, has been getting a compounded (remember that means exponential) growth rate of about 22 to 24%.
+
+This is where I introduce you to the cousin of the Magic of Compounding, which is called the Rule of 72. With the Rule of 72 you can calculate how long it will take you to double your money at any given rate of return. OK? Let's take an example. If you're earning 12% on your money and you want to know how long it will take to double it (we're compounding, remember?) divide 72 by 12, and your answer is 6. It will take 6 years to double your money. Let's do another one. If you're getting 6% on your money, divide 72 by 6 and you'll see that it will take 12 years to double. If you're getting 9%, it's 72 divided by 9, or 8 years to double up.
+
+As for Warren Buffett, he's getting 22% on his money. This means you divide 72 by 22 and gee, in only 3.27 years, or every 3 years and 4 months, he doubles his money. Since he's been at it about 35 years with that $100 million he had to play with, he's doubled his original $100 million almost nine times. You get that by taking 35 years and dividing by a double every 3 years and 4 months. It equals 10.70, or let's go with nine doubles to adjust for a rate of compounding that is varying. The key point is he's not making 9 times his money with the $100 million, that would be an arithmetic progression that would give him $900 million. He's making nine doubles, a geometric or compounded progression. Let's see how that works::
+
+{% codeblock %}
+	Starting Amount	: 100,000,000
+	Time Periods	: Nine 3 Year, 4 month periods
+
+	Per	TimeTaken 	CompoundedGain
+	01 	03Y4M 		00,200,000,000
+	02 	06Y8M 		00,400,000,000
+	03 	10Y0M 		00,800,000,000
+	04 	13Y4M 		01,600,000,000
+	05 	16Y8M 		03,200,000,000
+	06 	20Y0M 		06,400,000,000
+	07 	23Y4M 		12,800,000,000
+	08 	26Y8M 		25,600,000,000
+	09 	30Y0M 		51,200,000,000
+
+{% endcodeblock %}
+
+I believe Buffet is worth about $47 billion. It doesn't matter, he is somewhere in his ninth double. This is the magic of compounding! Also, he never sells. This means his money is doubling every three years and four months with no tax consequences. He gets taxed only when he sells. Under normal conditions, the money compounds until he dies, then it's taxed at a capital gains rate in the far distant future. In Buffett's case, he's giving most of his wealth to the Gates' foundation to benefit society.
