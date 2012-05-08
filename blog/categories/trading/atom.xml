@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trading | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/trading/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-08T22:57:09+10:00</updated>
+  <updated>2012-05-08T22:59:14+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -25,215 +25,382 @@
 
 <h2>Scroll</h2>
 
-<p>{% codeblock %}
-Left            : Left
-Left Fast   : Page Up
-Left OneBar : F12
-Right           : Right
-Right Fast      : Page Down
-Right OneBar    : Shift+F12
-End         : End
-Start           : Home</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Left            : Left
+</span><span class='line'>Left Fast       : Page Up
+</span><span class='line'>Left OneBar     : F12
+</span><span class='line'>Right           : Right
+</span><span class='line'>Right Fast      : Page Down
+</span><span class='line'>Right OneBar    : Shift+F12
+</span><span class='line'>End             : End
+</span><span class='line'>Start           : Home</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Windows</h2>
 
-<p>{% codeblock %}
-Data            : Ctrl+D
-Indicators  : Ctrl+I
-Market Watch    : Ctrl+M
-Navigator       : Ctrl+N
-Terminal        : Ctrl+T
-Tester      : Ctrl+R
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Data            : Ctrl+D
+</span><span class='line'>Indicators      : Ctrl+I
+</span><span class='line'>Market Watch    : Ctrl+M
+</span><span class='line'>Navigator       : Ctrl+N
+</span><span class='line'>Terminal        : Ctrl+T
+</span><span class='line'>Tester          : Ctrl+R</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Switch</h2>
 
-<p>{% codeblock %}
-Chart Next  : Ctrl+F6
-Profile Next    : Ctrl+F5
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Next      : Ctrl+F6
+</span><span class='line'>Profile Next    : Ctrl+F5</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Dialogs</h2>
 
-<p>{% codeblock %}
-Chart Props : F8
-Global Vars : F3
-History Center: F2
-New Order       : F9
-Open Windows    : Alt+W
-Options     : Ctrl+O
-Prices Dialog   : F10
-Print           : Ctrl+P
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Props     : F8
+</span><span class='line'>Global Vars     : F3
+</span><span class='line'>History Center  : F2
+</span><span class='line'>New Order       : F9
+</span><span class='line'>Open Windows    : Alt+W
+</span><span class='line'>Options         : Ctrl+O
+</span><span class='line'>Prices Dialog   : F10
+</span><span class='line'>Print           : Ctrl+P</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Toggle</h2>
 
-<p>{% codeblock %}
-Bar Chart       : Alt+1
-Candle Chart    : Alt+2
-Fast Nav        : Enter
-Full screen : F11
-Grid            : Ctrl+G
-Line Chart  : Alt+3
-OHLC            : Ctrl+H
-Period Seps : Ctrl+Y
-Volume      : Ctrl+L
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Bar Chart       : Alt+1
+</span><span class='line'>Candle Chart    : Alt+2
+</span><span class='line'>Fast Nav        : Enter
+</span><span class='line'>Full screen     : F11
+</span><span class='line'>Grid            : Ctrl+G
+</span><span class='line'>Line Chart      : Alt+3
+</span><span class='line'>OHLC            : Ctrl+H
+</span><span class='line'>Period Seps     : Ctrl+Y
+</span><span class='line'>Volume          : Ctrl+L</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Miscellany</h2>
 
-<p>{% codeblock %}
-Close Dialogs   : Esc
-Close Window    : Ctrl+F4
-Copy            : Ctrl+C
-Crosshair       : Ctrl+F
-Help            : F1
-MetaEditor  : F4
-Quit            : Alt+F4
-Save            : Ctrl+S
-Undo            : Ctrl+Z
-Zoom In     : +
-Zoom out        : -
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Close Dialogs   : Esc
+</span><span class='line'>Close Window    : Ctrl+F4
+</span><span class='line'>Copy            : Ctrl+C
+</span><span class='line'>Crosshair       : Ctrl+F
+</span><span class='line'>Help            : F1
+</span><span class='line'>MetaEditor      : F4
+</span><span class='line'>Quit            : Alt+F4
+</span><span class='line'>Save            : Ctrl+S
+</span><span class='line'>Undo            : Ctrl+Z
+</span><span class='line'>Zoom In         : +
+</span><span class='line'>Zoom out        : -</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>There is no facility within MT4 to assign keyboard shortcuts. But if you want to expand the range of keyboard shortcuts then you can use a free utility called <a href="http://www.autohotkey.com/">AutoHotKey</a>, you can then go crazy with keyboard shortcuts.  I found this basic AutoHotKey script for MT4 somewhere. Thanks to the anonymous user.</p>
 
-<p>{% codeblock %}
-;# = Windows Key
-;^ = Control
-;! = Alt
-;+ = Shift
-;Demo Script</p>
-
-<p>CapsLock &amp; c::run, calc.exe</p>
-
-<p>;FXDD MT4 Scripts</p>
-
-<p>;TIMEFRAMES</p>
-
-<p>CAPSLOCK &amp; 1::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 2::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 3::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 4::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 5::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 6::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 7::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 8::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 9::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
-return</p>
-
-<p>;TEMPLATES</p>
-
-<p>CAPSLOCK &amp; q::
-send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; w::
-send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; e::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; r::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; t::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; y::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return
-;PAIRS</p>
-
-<p>CAPSLOCK &amp; A::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; S::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; D::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; F::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; G::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; H::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; J::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; K::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; L::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; M::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; N::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
-return
-;MISC
-;TOGGLE FOREGROUND
-CAPSLOCK &amp; Z::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>;TOGGLE CHART SCROLL
-CAPSLOCK &amp; X::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>;CHART SHIFT
-CAPSLOCK &amp; V::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;# = Windows Key
+</span><span class='line'>;^ = Control
+</span><span class='line'>;! = Alt
+</span><span class='line'>;+ = Shift
+</span><span class='line'>;Demo Script&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CapsLock &amp; c::run, calc.exe&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;FXDD MT4 Scripts&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TIMEFRAMES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 1::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 2::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 3::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 4::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 5::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 6::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 7::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 8::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 9::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TEMPLATES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; q::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; w::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; e::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; r::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; t::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; y::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return
+</span><span class='line'>;PAIRS&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; A::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; S::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; D::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; F::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; G::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; H::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; J::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; K::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; L::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; M::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; N::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
+</span><span class='line'>return
+</span><span class='line'>;MISC
+</span><span class='line'>;TOGGLE FOREGROUND
+</span><span class='line'>CAPSLOCK &amp; Z::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TOGGLE CHART SCROLL
+</span><span class='line'>CAPSLOCK &amp; X::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;CHART SHIFT
+</span><span class='line'>CAPSLOCK &amp; V::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
@@ -247,89 +414,55 @@ return</p>
 <!-- more -->
 
 
-<p>{% blockquote %}
-What the mind of man can conceive and believe, it can achieve" - Napoleon Hill
-{% endblockquote %}
+<p><blockquote><p>What the mind of man can conceive and believe, it can achieve" - Napoleon Hill</p></blockquote>
 This is the most important motivational quote of all time, which is why I have it listed again. If you haven't read Napoleon Hill's Think and Grow Rich Book, I suggest you do so in the near future, it's the single best piece of motivational literature ever written in my opinion, and it will likely have transformative effects on your trading and your personal life.</p>
 
-<p>{% blockquote %}
-I am a successful trader
-{% endblockquote %}
+<p><blockquote><p>I am a successful trader</p></blockquote>
 If you repeat to yourself everyday that you are a successful trader, it will make you a lot more likely to do the things that are necessary to become one. If you do not believe you are a successful trader, you will never become one, as with anything else in life, you have to believe in your cause or goal before you can make it a reality.</p>
 
-<p>{% blockquote %}
-I am consistently following my trading plan
-{% endblockquote %}
+<p><blockquote><p>I am consistently following my trading plan</p></blockquote>
 You need to approach Forex trading as a business and be strategic and logical in following your trading plan; don't deviate. If you've taken the time to formulate a comprehensive trading plan based on your trading strategy, your trading will be the most effective when you follow your plan, since you were objective and clear-minded when creating it.</p>
 
-<p>{% blockquote %}  <br/>
-I have a Forex trading journal and I use it
-{% endblockquote %}
+<p><blockquote><p><br/><br/>I have a Forex trading journal and I use it</p></blockquote>
 If you have a Forex trading journal and you actually use it, you will be far ahead of most traders. It's critical to keep a running track record of your trading performance so that you have a tangible piece of evidence that reflects your trading ability or lack thereof. A trading journal will also give you something to stay accountable too and help you remain disciplined and organized.</p>
 
-<p>{% blockquote %}
-I practice proper risk management
-{% endblockquote %}
+<p><blockquote><p>I practice proper risk management</p></blockquote>
 It's important to remember that trading success is defined over a large series of trades, not over one or two. This means that you should not give too much significance to any one trade, and the way to do this is by never risking more than you are comfortable with losing per trade. By that I mean, never risk an amount that keeps you up at night thinking about or watching your trades. Remember to take small losses and that you are going to have losing trades; it's just part of doing business in the Forex market.</p>
 
-<p>{% blockquote %}
-I trade according to what the market IS doing, not what I think it 'should' be doing
-{% endblockquote %}
+<p><blockquote><p>I trade according to what the market IS doing, not what I think it 'should' be doing</p></blockquote>
 We want to trade what we actually see on our Forex price charts, not what we "think" should happen or what we "want" to happen. At the end of the day, it doesn't matter what you want the market to do; it's going to do what it wants, so your job is to learn how to read its price action and take advantage of it, not fight against it.</p>
 
-<p>{% blockquote %}
-I will never take a trade unless my reward clearly outweighs my risk
-{% endblockquote %}
+<p><blockquote><p>I will never take a trade unless my reward clearly outweighs my risk</p></blockquote>
 The goal of any trader or investor is to make sure that the prospective reward of a trade clearly outweighs the risk involved. You need to gauge the market structure prior to entering a trade and make sure there is a logical reason for expecting that the risk reward on the trade is at least 1:1.5 or 1:2 or better.</p>
 
-<p>{% blockquote %}
-I will not sit around and watch my trades after they are live
-{% endblockquote %}
+<p><blockquote><p>I will not sit around and watch my trades after they are live</p></blockquote>
 There's nothing wrong with checking in on the market every 4 or 8 hours, but if you are sitting there addicted to your charts like a junkie, you are going to self-sabotage your own trades and probably end up losing a lot of money in the process. We have to learn to let the market "do the work" and just forget about our trades for a while after they are live. The set and forget forex trading strategy is something that I stand by and that I implement in my own personal trading, because meddling in your trades after they are live is an emotional decision and thus it's usually the wrong thing to do. Find anything to do except watch your charts after you enter a trade.</p>
 
-<p>{% blockquote %}
-I am not emotionally affected by my profits or losses
-{% endblockquote %}
+<p><blockquote><p>I am not emotionally affected by my profits or losses</p></blockquote>
 Both losses and profits have the ability to induce emotional reactions in us. A loss can cause us to want to take 'revenge' on the market and try and 'make back' the money we just lost. A profit can cause us to become overly-confident or even euphoric, which can cause us to deviate from our trading plan and take a trade that is lower probability than what we normally would take. Either way, you have to always be on guard against making an emotional trade immediately after a trade closes out, whether it was a winner or a loser. The best thing to do is to simply remove yourself from the markets for 12 to 24 hours after any trade.</p>
 
-<p>{% blockquote %}
-I try to trade with the dominant daily trend as much as possible
-{% endblockquote %}
+<p><blockquote><p>I try to trade with the dominant daily trend as much as possible</p></blockquote>
 I know you've heard this before, and I know it's very cliche, but it's also very true; the trend is your friend. I am often amazed at how many emails I get from traders telling me they are losing money in the markets and simultaneously asking me to comment on the chart they've attached to the email that shows a counter-trend trade on the intra-day charts. The easiest way to make money in any financial market is and has always been trading with the dominant trend. There are times when trading counter-trend is warranted, but until you've mastered trend-trading you should forget about counter-trend trading. Remember, don't fight the dominant daily chart trend, instead, capitalize on it and ride the momentum until it ends.</p>
 
-<p>{% blockquote %}
-I will not over-trade, I will be patient and let trading opportunities present themselves to me
-{% endblockquote %}
+<p><blockquote><p>I will not over-trade, I will be patient and let trading opportunities present themselves to me</p></blockquote>
 Don't trade just because you feel like you have to or you want to ... make sure there's a real reason to do so and never trade when your pre-defined trading edge is not present. The downfall of most traders is over-trading, because most traders simply don't have enough patience to trade forex like a sniper and not a machine gunner.</p>
 
-<p>{% blockquote %}
-I am not a gambler, I'm a professional trader and I will not engage in gambling my money in the markets
-{% endblockquote %}
+<p><blockquote><p>I am not a gambler, I'm a professional trader and I will not engage in gambling my money in the markets</p></blockquote>
 Gamblers make random bets in casinos or elsewhere, and traders who don't have trading plans or who don't follow their trading edge are also gamblers. It's really easy to click your mouse and put a trade on and hope to get lucky, kind of like pulling the arm of the slot machine at a casino. The difference is that you can actually develop and implement a high-probability trading edge like price action strategies when trading the markets. So, it's up to you if you want to be a gambler or a trader.</p>
 
-<p>{% blockquote %}
-I will not interfere with my trades without just cause
-{% endblockquote %}
+<p><blockquote><p>I will not interfere with my trades without just cause</p></blockquote>
 This one is similar to number 8, but it's so important I wanted to touch on it again. Interfering with trades is usually an emotional reaction born out of risking too much or over-trading, both of which cause you to become overly attached to any one trade, which in turn causes you to over-analyze your trades and meddle with them once they are live. There are times when there's just cause to interfere with your trades, such as a giant pin bar reversal that forms counter to your position, or some other opposing price action. However these instances are rare and it takes time and effort to develop your discretionary trading sense to the point where you can "effectively interfere" in your trades.</p>
 
-<p>{% blockquote %}
-I will never let the news or fundamentals influence my trading decisions
-{% endblockquote %}
+<p><blockquote><p>I will never let the news or fundamentals influence my trading decisions</p></blockquote>
 Traders who fall into the temptation to over-analyze the thousands of Forex news variables that occur each day, usually end up losing their trading accounts pretty quickly. All market variables are reflected via the natural price movement of the market, so by analyzing and trying to "figure out" what's going to happen by reading economic news or watching CNBC you're simply adding unnecessary and confusing variables to your trading approach.</p>
 
-<p>{% blockquote %}
-I am happy to take a profit and I will not be greedy
-{% endblockquote %}
+<p><blockquote><p>I am happy to take a profit and I will not be greedy</p></blockquote>
 Take your profits when your targets get hit, don't change targets in an effort to try and get "just a little bit more" profit. These attempts to get a "little more profit" are usually in vain, and they usually lead to you letting a winning trade turn into a losing trade. Traders with smaller accounts especially need to take logical profits as they come, in order to build their accounts up and their confidence. If you get a 1 to 1.5 or 1 to 2 risk reward, there's nothing wrong with taking the money off the table. Don't fall into the trap of hoping that every trade you take goes on a parabolic run in your favor, the markets ebb and flow, meaning they don't go in straight lines for very long.</p>
 
-<p>{% blockquote %}
-I invest in my trading education &amp; myself
-{% endblockquote %}
+<p><blockquote><p>I invest in my trading education &amp; myself</p></blockquote>
 Investing in your own education is paramount to success in any field. Forex trading is no different; whether it's a book on trading psychology or the knowledge of an experienced Forex trading coach, learning something each day to make yourself a better trader will only improve your edge in the markets.</p>
 
-<p>{% blockquote %}
-I believe in my trading strategy completely and whole heartedly
-{% endblockquote %}
+<p><blockquote><p>I believe in my trading strategy completely and whole heartedly</p></blockquote>
 It's critical to your trading success that you learn and trade with a strategy that's proven and that you personally enjoy trading with. You have to follow it without deviation by remembering the fact that one loss does not negate the whole trading strategy. Don't jump from one strategy or system to the next just because you stumble upon a few losing trades; losing trades are a natural part of any trading method. The key lies in losing trades properly and making sure you are trading with a strategy that is both simple and effective, like price action.</p>
 ]]></content>
   </entry>
@@ -348,17 +481,13 @@ It's critical to your trading success that you learn and trade with a strategy t
 
 <h2>Sam Seiden</h2>
 
-<p>{% blockquote %}
-"Focus On The Lowest Trading Activity"
-{% endblockquote %}</p>
+<p><blockquote><p>"Focus On The Lowest Trading Activity"</p></blockquote></p>
 
 <p>When identifying where the next turn in the market will be, most traders focus on where the most trading activity took place on a chart. This is also what everyone is taught to do. I don't. I focus on the opposite, where the least amount of trades took place because this is where supply and demand is most out of balance and that's where prices turn.</p>
 
 <h2>James Chen</h2>
 
-<p>{% blockquote %}
-"Knowing The Strength &amp; Weakness Single Currencies"
-{% endblockquote %}</p>
+<p><blockquote><p>"Knowing The Strength &amp; Weakness Single Currencies"</p></blockquote></p>
 
 <p>Trading currencies is vastly different from trading other financial instruments. The key differentiator: currencies are traded exclusively as relative, rather than absolute, entities. Although all forex traders should be well aware of this, it warrants further emphasis that currencies are traded in pairs. What this really means is that currencies are not traded in isolation, but rather in terms of their relative values against other currencies.</p>
 
@@ -368,45 +497,29 @@ It's critical to your trading success that you learn and trade with a strategy t
 
 <h2>Adam Rosen</h2>
 
-<p>{% blockquote %}
-"Time Of Day : Less Is More..."
-{% endblockquote %}</p>
+<p><blockquote><p>"Time Of Day : Less Is More..."</p></blockquote></p>
 
 <p>The most significant economic data focuses around a number of basic themes including inflation, employment, growth, or lack thereof. News of this nature is typically released during the first few hours of each respective trading session. As traders react to the news, markets tend to enjoy periods of greater volatility and volume during these morning hours which are commonly known as the "active market hours".</p>
 
-<p>{% blockquote %}
-LON 08001000 GMT
-NYC 13001500 GMT
-TYO 24000200 GMT
-{% endblockquote %}</p>
+<p><blockquote><p>LON 08001000 GMT<br/>NYC 13001500 GMT<br/>TYO 24000200 GMT</p></blockquote></p>
 
 <p>The EUR/USD (5minute) displayed with the Bollinger Bands indicator clearly shows the most significant trend began and lasted during the first 2hours of the trading day. A 'trendtrader' anticipating a breakout to the upside would have been handsomely rewarded by looking for that 'higherhigh' that did in fact occur early in the UStrading session.</p>
 
 <h2>Cesar B. Leiceaga</h2>
 
-<p>{% blockquote %}
-"Trading with Pivot Points"
-{% endblockquote %}</p>
+<p><blockquote><p>"Trading with Pivot Points"</p></blockquote></p>
 
 <p>I've found as a determining tool to apply in the foreign exchange markets, both daily and weekly pivot points.Some basic principals first to trading with pivots: They act as support and resistance.</p>
 
 <p>If prices accelerate and hold above its pivot point, market participants will look to buy or turn bullish. If prices trade below a pivot point, traders will be looking to sell or short confirming the sentiment has turned bearish. Rules I apply to trade trends with pivot points</p>
 
-<p>{% blockquote %}
-In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. Use S3 to place a stop loss order. Use R1,R2, R3 as profit targets.</p>
-
-<p>In Downtrends:Sell rallies to the pivot point and add to the position in R1 and R2. Use R3 to place a stop loss order. Use S1,S2 and S3 as profit targets.</p>
-
-<p>In Ranges:Range low: Buy in S1 or S2. Stop S3 and target the daily pivot point.Range top: Sell in R1 or R2. Stop in R3 and target the daily pivot point.
-{% endblockquote %}</p>
+<p><blockquote><p>In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. Use S3 to place a stop loss order. Use R1,R2, R3 as profit targets.</p></p><p><p>In Downtrends:Sell rallies to the pivot point and add to the position in R1 and R2. Use R3 to place a stop loss order. Use S1,S2 and S3 as profit targets.</p></p><p><p>In Ranges:Range low: Buy in S1 or S2. Stop S3 and target the daily pivot point.Range top: Sell in R1 or R2. Stop in R3 and target the daily pivot point.</p></blockquote></p>
 
 <p>It is important to remember that these techniques applying pivot points best work in liquid pairs or majors: EUR/USD, USD/CHF, USD/JPY and GBP/USD.</p>
 
 <h2>Ross Yamashita</h2>
 
-<p>{% blockquote %}
-"Scan Smarter : Not Harder"
-{% endblockquote %}</p>
+<p><blockquote><p>"Scan Smarter : Not Harder"</p></blockquote></p>
 
 <p>When studying Elliott Wave or any other wave pattern recognition theory, so many traders put too much emphasis on what the wave count is with regards to the current market.Rather than getting so caught up in where the market is in the count, I scan the markets for only 4 "high probability" patterns : Impulse, Zig Zag, Ending Diagonal and Contracting Triangles.</p>
 
@@ -416,9 +529,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Valeria Bednarik</h2>
 
-<p>{% blockquote %}
-"Market volume with no technical indicators"
-{% endblockquote %}</p>
+<p><blockquote><p>"Market volume with no technical indicators"</p></blockquote></p>
 
 <p>Determining market volume could be critical when it comes to forex trading, as we understand that technical signals have higher probabilities of success when they come along with the right volume. For example, the break of the neckline of a figure, or a support or resistance level, are always considered reliable if volume is high, while pullbacks to those areas should show a lower volume, to give our signal further support.</p>
 
@@ -430,33 +541,25 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Aamar Hussain</h2>
 
-<p>{% blockquote %}
-"Adapt and Overcome"
-{% endblockquote %}</p>
+<p><blockquote><p>"Adapt and Overcome"</p></blockquote></p>
 
 <p>Always be willing and ready to adapt to the market. (a) Daily Ranges, (b) Volume and (c) Fundamentals, all provide key information and clues as to which technical analysis and trading strategies will work best in a particular environment. NO strategy or analysis method will work in all environments. If you keep a close eye on the abc and make copious notes and observations how changes in each effect market dynamics you will be able to ascertain which methods and strategies are most suited to each environment.Data and Evolution are Key.</p>
 
 <h2>Charis Charilaou</h2>
 
-<p>{% blockquote %}
-"Focus on the main story... everything else is just noise"
-{% endblockquote %}</p>
+<p><blockquote><p>"Focus on the main story... everything else is just noise"</p></blockquote></p>
 
 <p>Markets are constantly moving and media try to publish as much information as possible in order to gain credibility and expand audiences. However, not all information is equal. You need to be able to screen out most of the news and focus on the main story. This is the only way to understand the Market and become efficient in any trading style. There is always a main story concerning a war, a political state, an economical point of view etc. This is what the market focuses on and this is what creates a trend. Everything else is just noise.</p>
 
 <h2>John Kicklighter</h2>
 
-<p>{% blockquote %}
-"Know What Moves Your Trade"
-{% endblockquote %}</p>
+<p><blockquote><p>"Know What Moves Your Trade"</p></blockquote></p>
 
 <p>One of the most valuable lessons I have learned trading in the past few years is to first identify what fundamental driver or drivers the market deems most important for a particular currency or the market as a whole. It's easy to get caught up in reviewing all the economic indicators or headlines that cross the wires and then trying to assess what kind of impact it could have on price action. Yet, if for example yield expectations are the market's sole concern, we shouldn't waste time monitoring growth numbers and potentially confusing an otherwise straightforward forecast. Furthermore, when looking for that primary catalyst, it is important to remember that the market always boils down to the equilibrium of risk and reward in one way or another.</p>
 
 <h2>Dirk Du Toit</h2>
 
-<p>{% blockquote %}
-"You need a fundamental view."
-{% endblockquote %}</p>
+<p><blockquote><p>"You need a fundamental view."</p></blockquote></p>
 
 <p>If you use technical analysis you base your whole trading system on this principle: "The last price contains all information about price valuation".A series of such "last prices" is a pattern and a pattern is predictive of future moves.The problem very short term minded traders experience is that the Big Players as a rule ignore their "last prices". They don't even consider an intra day price as important.It is completely irrelevant to them that that price you think is a high probability indicator exists!</p>
 
@@ -468,9 +571,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Elizabeth Gregory</h2>
 
-<p>{% blockquote %}
-"Plan the trade, trade the plan"
-{% endblockquote %}</p>
+<p><blockquote><p>"Plan the trade, trade the plan"</p></blockquote></p>
 
 <p>What usually hurts novice traders is poor risk management; choosing wildly optimistic profit targets in order to justify cripplingly painful stops and staying in losing trades far beyond the original plan. It's human nature to take profit on winning positions too early for fear of losing small accrued profits and to hold onto losing positions (and worse, doubling down!) in the vain hope that the market must surely reverse soon.</p>
 
@@ -480,25 +581,19 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Alberto Munoz</h2>
 
-<p>{% blockquote %}
-"Risk/Reward Ratio vs Investment Horizon"
-{% endblockquote %}</p>
+<p><blockquote><p>"Risk/Reward Ratio vs Investment Horizon"</p></blockquote></p>
 
 <p>My main discovery about trading in the last months is that risk/reward ratio should be directly proportional to your investment horizon. That is, when you're trading in very short time frames, scalping for a few pips, then you're risk/reward ratio should be low, even lower than 1. The concept behind this is that it makes no sense to hold a position too much time waiting for a profit which is twice the stop loss: it won't work as the market noise will probably hit our tight stop. On the other hand, when trading on higher time frames (i.e. daily) risk/reward ratios should be high, above 2 or more, as we have time enough to reach our target.</p>
 
 <h2>Yohay Elam</h2>
 
-<p>{% blockquote %}
-"Never risk more than 2% of your account at once"
-{% endblockquote %}</p>
+<p><blockquote><p>"Never risk more than 2% of your account at once"</p></blockquote></p>
 
 <p>As with anything new, you're likely to make mistakes, learn from them, and then improve. Many new traders risk too much of their account, and burn it out before learning anything.Money management is the "secret" to avoiding this fate. This abstract idea can go down to the 2% rule. Making 2% an overriding priority means no stop loss movements, using lower leverage, making a bigger initial deposit, having higher spreads, or anything, else that will keep the losses limited. Some things are more comfortable to do than others, but keeping this rule will likely yield in better results for newbies in the long run : keep them away from burning their account.</p>
 
 <h2>Ron Schelling</h2>
 
-<p>{% blockquote %}
-"Never use more than 2% equity risk when I place stops."
-{% endblockquote %}</p>
+<p><blockquote><p>"Never use more than 2% equity risk when I place stops."</p></blockquote></p>
 
 <p>I am in trading since 1983, a time that there was no computer or realtime data, just a phone ! Data came in by telex and I draw the charts by hand, actually the best training I ever got. Today we have almost everything for free, realtime data, online brokerage, realtime charts etc.Still most traders make no money, at least not constant. I am happy to survive it so far and maybe this comes from discipline I learned in aviation to fly aircraft using strictly checklist for each part of the flight.</p>
 
@@ -508,41 +603,31 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Keagan York</h2>
 
-<p>{% blockquote %}
-"Head not Heart!"
-{% endblockquote %}</p>
+<p><blockquote><p>"Head not Heart!"</p></blockquote></p>
 
 <p>It is always hard to take a loss. However, the first rule that needs to be adhered to by a novice trader is that positions can and will go against you and that stop losses are an important part of any trading strategy. I have been in the position where I have gotten emotionally attached to a position and didn't trade with my head. On occasion, things ended up working out. However, more often than not, I ended up losing more money. In these situations, not only do you lose money but you also end up missing out on better opportunities because your ability to trade is compromised by the funding the losing position. So remember think with your head, not your heart and make the tough call!</p>
 
 <h2>Joseph Trevisani</h2>
 
-<p>{% blockquote %}
-"Be modest in your confidence and thankful in your profits"
-{% endblockquote %}</p>
+<p><blockquote><p>"Be modest in your confidence and thankful in your profits"</p></blockquote></p>
 
 <p>When our trades lose money, whatever our logic, we can be sure we were not alone. But we can equally be sure that we were in the minority. Had we been in the majority the market would have performed as anticipated. The market decision process is that simple. It is a matter of putting our behavior in line with the majority as often as we can. The most effective tool to achieve that is our own empirically tested market psychology. We are the market, if only we can let ourselves mimic the mind of the market and not permit individuality to rule our decisions.</p>
 
 <h2>Shawn Powell</h2>
 
-<p>{% blockquote %}
-"Count to ten rule"
-{% endblockquote %}</p>
+<p><blockquote><p>"Count to ten rule"</p></blockquote></p>
 
 <p>If you are in that much of a hurry, you probably haven't done your analysis or you might be chasing a move. Do you know your stop and take profit levels? One quick review, count to ten and then take the trade.</p>
 
 <h2>Dr Sivaraman</h2>
 
-<p>{% blockquote %}
-"Pay attention to quick, false and intentional moves"
-{% endblockquote %}</p>
+<p><blockquote><p>"Pay attention to quick, false and intentional moves"</p></blockquote></p>
 
 <p>1.Quick moves are false moves in the market : use such moves to do counter trades once the new low or high is not breached for 30 min in a session.2. False moves may be seen before the data release and the intentional move may be seen after the data : a drop before we may initiate buy and a rise before data we can initiate sell to quickly close in or keep stop at entry in in first 30 min of entry.</p>
 
 <h2>Derek Frey</h2>
 
-<p>{% blockquote %}
-"you can't predict the future..."
-{% endblockquote %}</p>
+<p><blockquote><p>"you can't predict the future..."</p></blockquote></p>
 
 <p>The biggest thing that got me from a losing trader to a winning trader was the realization that I did not have to know the future to be successful. Many new traders think that trading is all about know what is coming next, but of course no one can really predict the future. So for me realizing that this business is all about playing the odds rather than knowing the future was the single biggest epiphany that got me over the hump. I now focus on Harmonics and the statistical edge that they provide. If you don't know what your edge is, you don't have one!</p>
 
@@ -550,9 +635,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Greg Michalowski</h2>
 
-<p>{% blockquote %}
-"Three's a Crowd"
-{% endblockquote %}</p>
+<p><blockquote><p>"Three's a Crowd"</p></blockquote></p>
 
 <p>Most people know the old saying "Two's Company. Three's a Crowd". I use that easily remembered saying, to help define a nontrending forex market that is likely to transition into a trending market.I can use the Three's Company setup on a 5 minute, hourly or daily chart. The "two" in my trade are two moving averages.</p>
 
@@ -562,17 +645,13 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Mohammed Isbeer</h2>
 
-<p>{% blockquote %}
-"Never go against the general trend"
-{% endblockquote %}</p>
+<p><blockquote><p>"Never go against the general trend"</p></blockquote></p>
 
 <p>Identifying the general trend whether on the short/medium/long term is the most essential, and when you figure it out, you stay with the trend. You buy on dips or sell on rallies according whether it's a down or up trend, but you never bet on a correction against the general trend.Committing to this rule will protect you from sudden and huge losses, as well as guarantees that you will be able to gain the most from a trend when the right moves happen.</p>
 
 <h2>Kathy Lien</h2>
 
-<p>{% blockquote %}
-"Stick With the Trend: Tops &amp; Bottoms only evident in Hindsight"
-{% endblockquote %}</p>
+<p><blockquote><p>"Stick With the Trend: Tops &amp; Bottoms only evident in Hindsight"</p></blockquote></p>
 
 <p>The trend is your friend may be one of the oldest maxims in trading but it is also one of the most important when it comes to the forex market. Trends in currencies can last for days, weeks and sometimes even months. Currencies are typically seen as little confidence indicators for a country and the outlook for a country usually gets progressively better or worse.</p>
 
@@ -582,9 +661,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Raghee Horner</h2>
 
-<p>{% blockquote %}
-"Don't Fight the Daily Market Trend"
-{% endblockquote %}</p>
+<p><blockquote><p>"Don't Fight the Daily Market Trend"</p></blockquote></p>
 
 <p>Over the years I have been using the daily timeframe for what I call Directional Bias. The reason for this is because I don't want to fight the larger, more dominant trend : it's like swimming upstream otherwise : much more effort it needed. The dominant trend reflects the psychology of the market.</p>
 
@@ -594,9 +671,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Wayne McDonnell</h2>
 
-<p>{% blockquote %}
-"Multiple time frames to trade forex"
-{% endblockquote %}</p>
+<p><blockquote><p>"Multiple time frames to trade forex"</p></blockquote></p>
 
 <p>I always start my trade planning by looking at the Daily chart.On the Daily chart I look to see where price is in relation to shortterm moving averages. I like to trade in the direction of the trend. This means that I'm either trading at/near the moving averages and cautious when price is far from the moving averages due to the possibility of a mean reversion.</p>
 
@@ -626,18 +701,11 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <p>To calculate the R Multiple for a trade:</p>
 
-<p>{% blockquote %}
-Rmultiple = ProfitLoss / InitialRisk
-{% endblockquote %}</p>
+<p><blockquote><p>Rmultiple = ProfitLoss / InitialRisk</p></blockquote></p>
 
 <p>Example:</p>
 
-<p>{% blockquote %}
-InitialRisk: AUD175
-ProfitLoss: AUD350
-Rmultiple = 350 / 175
-Rmultiple = 2.00
-{% endblockquote %}</p>
+<p><blockquote><p>InitialRisk: AUD175<br/>ProfitLoss: AUD350<br/>Rmultiple = 350 / 175<br/>Rmultiple = 2.00</p></blockquote></p>
 
 <p>When I look at my results in terms of multiples of R I can easily tell how good or bad the trades were. I like to think of R-Multiples as telling you the efficiency of your system.</p>
 
@@ -661,33 +729,19 @@ Rmultiple = 2.00
 
 <p>In simple terms, expectancy is the average amount you can expect to win (or lose) per dollar at risk. Here's the formula for expectancy:</p>
 
-<p>{% blockquote %}
-Expectancy = (ProbabilityWin * AvgWin) - (ProbabilityLoss * AvgLoss)
-{% endblockquote %}</p>
+<p><blockquote><p>Expectancy = (ProbabilityWin * AvgWin) - (ProbabilityLoss * AvgLoss)</p></blockquote></p>
 
 <p>As an example let's say that a trader has a system that produces winning trades 30% of the time. That trader's average winning trade nets 10% while losing trades lose 3%. So if he were trading $10,000 positions his expectancy would be:</p>
 
-<p>{% blockquote %}
-(0.3 * $1,000) - (0.7 * $300) = $90
-{% endblockquote %}</p>
+<p><blockquote><p>(0.3 * $1,000) - (0.7 * $300) = $90</p></blockquote></p>
 
 <p>So even though that system produces losing trades 70% of the time the expectancy is still positive and thus the trader can make money over time. You can also see how you could have a system that produces winning trades the majority of the time but would have a negative expectancy if the average loss was larger than the average win:</p>
 
-<p>{% blockquote %}
-(0.6 * $400) - (0.4 * $650) = -$20
-{% endblockquote %}</p>
+<p><blockquote><p>(0.6 * $400) - (0.4 * $650) = -$20</p></blockquote></p>
 
 <p>In fact, you could come up with any number of scenarios that would give you a positive, or negative, expectancy. The interesting thing is that most of us would feel better with a system that produced more winning trades than losers. The vast majority of people would have a lot of trouble with the first system above because of our natural tendency to want to be right all of the time. Yet we can see just by those two examples that the percentage of winning trades is not the most important factor in building a system. As Dr. Van K. Tharp points out:</p>
 
-<p>{% blockquote %}
-... your trading system should have a positive expectancy and you should understand what that means. The natural bias that most people have is to go for high probability systems with high reliability.</p>
-
-<p>We all are given this bias that you need to be right. We're taught at school that 94 percent or better is an A and 70 or below is failure. Nothing below 70 is acceptable. Everyone is looking for high reliability entry systems, but its expectancy that is the key.</p>
-
-<p>And the real key to expectancy is how you get out of the markets not how you get in. How you take profits and how you get out of a bad position to protect your assets. The expectancy is really the amount you'll make on the average per dollar risked.</p>
-
-<p>If you have a methodology that makes you 50 cents or better per dollar risked, that's superb. Most people don't. That means if you risk $1,000 that you'll make on the average $500 for every trade - that's averaging winners and losers together.
-{% endblockquote %}</p>
+<p><blockquote><p>... your trading system should have a positive expectancy and you should understand what that means. The natural bias that most people have is to go for high probability systems with high reliability.</p></p><p><p>We all are given this bias that you need to be right. We're taught at school that 94 percent or better is an A and 70 or below is failure. Nothing below 70 is acceptable. Everyone is looking for high reliability entry systems, but its expectancy that is the key.</p></p><p><p>And the real key to expectancy is how you get out of the markets not how you get in. How you take profits and how you get out of a bad position to protect your assets. The expectancy is really the amount you'll make on the average per dollar risked.</p></p><p><p>If you have a methodology that makes you 50 cents or better per dollar risked, that's superb. Most people don't. That means if you risk $1,000 that you'll make on the average $500 for every trade - that's averaging winners and losers together.</p></blockquote></p>
 
 <p>In "Trade Your Way to Financial Freedom" Dr. Tharp defines the following four components of expectancy.</p>
 
@@ -701,21 +755,11 @@ Expectancy = (ProbabilityWin * AvgWin) - (ProbabilityLoss * AvgLoss)
 
 <p>The fourth item in that list is a very important and often overlooked aspect of trading. If you had two systems that both had the same positive expectancy, let's say $100, the system that produced more trades would make more money over time. For example, system A produces 3 trades per week while system B produces 10 trades per week. After just one week B would have made $1,000 while A would only have made $300. Gary B. Smith has discussed this before:</p>
 
-<p>{% blockquote %}
-I think of my equity as inventory. In that respect, my goal is to maximize not profit per dollar, but profit per dollar per day. In essence, I try to make a small percentage on my equity each day, but compound that amount as rapidly as possible.
-{% endblockquote %}</p>
+<p><blockquote><p>I think of my equity as inventory. In that respect, my goal is to maximize not profit per dollar, but profit per dollar per day. In essence, I try to make a small percentage on my equity each day, but compound that amount as rapidly as possible.</p></blockquote></p>
 
 <p>And in another article Gary said:</p>
 
-<p>{% blockquote %}
-Q: What aspect of trading took you the longest to learn?</p>
-
-<p>I'd say the view that my equity is the same as a retailer's inventory. Your profit per piece doesn't matter if you never turn your inventory. And your turnover doesn't matter if you're losing money on each sale. What matters is the turnover times profit per piece.</p>
-
-<p>That's the same concept I try to apply to my trading. I start with $1 and want to figure out how to quickly turn that into $10. Most people focus on buying a stock at $20 and selling it at $40, and they rarely care how long it takes them to do that.</p>
-
-<p>However, if during that time I can buy 10 $20 stocks and sell them each at a 10% gain, I'm way ahead if I continue to compound my equity.
-{% endblockquote %}</p>
+<p><blockquote><p>Q: What aspect of trading took you the longest to learn?</p></p><p><p>I'd say the view that my equity is the same as a retailer's inventory. Your profit per piece doesn't matter if you never turn your inventory. And your turnover doesn't matter if you're losing money on each sale. What matters is the turnover times profit per piece.</p></p><p><p>That's the same concept I try to apply to my trading. I start with $1 and want to figure out how to quickly turn that into $10. Most people focus on buying a stock at $20 and selling it at $40, and they rarely care how long it takes them to do that.</p></p><p><p>However, if during that time I can buy 10 $20 stocks and sell them each at a 10% gain, I'm way ahead if I continue to compound my equity.</p></blockquote></p>
 
 <p>To touch on the importance of the size of your equity and position sizing I'll use part of a snowball fight metaphor that Tharp uses in his book:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: forex | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/forex/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-08T22:57:09+10:00</updated>
+  <updated>2012-05-08T22:59:14+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -25,215 +25,382 @@
 
 <h2>Scroll</h2>
 
-<p>{% codeblock %}
-Left            : Left
-Left Fast   : Page Up
-Left OneBar : F12
-Right           : Right
-Right Fast      : Page Down
-Right OneBar    : Shift+F12
-End         : End
-Start           : Home</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Left            : Left
+</span><span class='line'>Left Fast       : Page Up
+</span><span class='line'>Left OneBar     : F12
+</span><span class='line'>Right           : Right
+</span><span class='line'>Right Fast      : Page Down
+</span><span class='line'>Right OneBar    : Shift+F12
+</span><span class='line'>End             : End
+</span><span class='line'>Start           : Home</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Windows</h2>
 
-<p>{% codeblock %}
-Data            : Ctrl+D
-Indicators  : Ctrl+I
-Market Watch    : Ctrl+M
-Navigator       : Ctrl+N
-Terminal        : Ctrl+T
-Tester      : Ctrl+R
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Data            : Ctrl+D
+</span><span class='line'>Indicators      : Ctrl+I
+</span><span class='line'>Market Watch    : Ctrl+M
+</span><span class='line'>Navigator       : Ctrl+N
+</span><span class='line'>Terminal        : Ctrl+T
+</span><span class='line'>Tester          : Ctrl+R</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Switch</h2>
 
-<p>{% codeblock %}
-Chart Next  : Ctrl+F6
-Profile Next    : Ctrl+F5
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Next      : Ctrl+F6
+</span><span class='line'>Profile Next    : Ctrl+F5</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Dialogs</h2>
 
-<p>{% codeblock %}
-Chart Props : F8
-Global Vars : F3
-History Center: F2
-New Order       : F9
-Open Windows    : Alt+W
-Options     : Ctrl+O
-Prices Dialog   : F10
-Print           : Ctrl+P
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Chart Props     : F8
+</span><span class='line'>Global Vars     : F3
+</span><span class='line'>History Center  : F2
+</span><span class='line'>New Order       : F9
+</span><span class='line'>Open Windows    : Alt+W
+</span><span class='line'>Options         : Ctrl+O
+</span><span class='line'>Prices Dialog   : F10
+</span><span class='line'>Print           : Ctrl+P</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Toggle</h2>
 
-<p>{% codeblock %}
-Bar Chart       : Alt+1
-Candle Chart    : Alt+2
-Fast Nav        : Enter
-Full screen : F11
-Grid            : Ctrl+G
-Line Chart  : Alt+3
-OHLC            : Ctrl+H
-Period Seps : Ctrl+Y
-Volume      : Ctrl+L
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Bar Chart       : Alt+1
+</span><span class='line'>Candle Chart    : Alt+2
+</span><span class='line'>Fast Nav        : Enter
+</span><span class='line'>Full screen     : F11
+</span><span class='line'>Grid            : Ctrl+G
+</span><span class='line'>Line Chart      : Alt+3
+</span><span class='line'>OHLC            : Ctrl+H
+</span><span class='line'>Period Seps     : Ctrl+Y
+</span><span class='line'>Volume          : Ctrl+L</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Miscellany</h2>
 
-<p>{% codeblock %}
-Close Dialogs   : Esc
-Close Window    : Ctrl+F4
-Copy            : Ctrl+C
-Crosshair       : Ctrl+F
-Help            : F1
-MetaEditor  : F4
-Quit            : Alt+F4
-Save            : Ctrl+S
-Undo            : Ctrl+Z
-Zoom In     : +
-Zoom out        : -
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Close Dialogs   : Esc
+</span><span class='line'>Close Window    : Ctrl+F4
+</span><span class='line'>Copy            : Ctrl+C
+</span><span class='line'>Crosshair       : Ctrl+F
+</span><span class='line'>Help            : F1
+</span><span class='line'>MetaEditor      : F4
+</span><span class='line'>Quit            : Alt+F4
+</span><span class='line'>Save            : Ctrl+S
+</span><span class='line'>Undo            : Ctrl+Z
+</span><span class='line'>Zoom In         : +
+</span><span class='line'>Zoom out        : -</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>There is no facility within MT4 to assign keyboard shortcuts. But if you want to expand the range of keyboard shortcuts then you can use a free utility called <a href="http://www.autohotkey.com/">AutoHotKey</a>, you can then go crazy with keyboard shortcuts.  I found this basic AutoHotKey script for MT4 somewhere. Thanks to the anonymous user.</p>
 
-<p>{% codeblock %}
-;# = Windows Key
-;^ = Control
-;! = Alt
-;+ = Shift
-;Demo Script</p>
-
-<p>CapsLock &amp; c::run, calc.exe</p>
-
-<p>;FXDD MT4 Scripts</p>
-
-<p>;TIMEFRAMES</p>
-
-<p>CAPSLOCK &amp; 1::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 2::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 3::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 4::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 5::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 6::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 7::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 8::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; 9::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
-return</p>
-
-<p>;TEMPLATES</p>
-
-<p>CAPSLOCK &amp; q::
-send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; w::
-send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; e::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; r::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; t::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>CAPSLOCK &amp; y::
-send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return
-;PAIRS</p>
-
-<p>CAPSLOCK &amp; A::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; S::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; D::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; F::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; G::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; H::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; J::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; K::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; L::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; M::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
-return</p>
-
-<p>CAPSLOCK &amp; N::
-send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
-return
-;MISC
-;TOGGLE FOREGROUND
-CAPSLOCK &amp; Z::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>;TOGGLE CHART SCROLL
-CAPSLOCK &amp; X::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>;CHART SHIFT
-CAPSLOCK &amp; V::
-send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
-return</p>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;# = Windows Key
+</span><span class='line'>;^ = Control
+</span><span class='line'>;! = Alt
+</span><span class='line'>;+ = Shift
+</span><span class='line'>;Demo Script&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CapsLock &amp; c::run, calc.exe&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;FXDD MT4 Scripts&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TIMEFRAMES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 1::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 2::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M5{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 3::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M15{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 4::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}M30{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 5::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 6::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}H4{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 7::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}D1{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 8::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}WEEKLY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; 9::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}MN{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TEMPLATES&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; q::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; w::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; e::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; r::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; t::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; y::
+</span><span class='line'>send, {ALT}CT{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return
+</span><span class='line'>;PAIRS&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; A::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; S::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; D::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}GBPJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; F::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; G::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}AUDUSD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; H::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCAD{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; J::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURGBP{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; K::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}USDCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; L::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURJPY{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; M::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}EURCHF{ENTER}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>CAPSLOCK &amp; N::
+</span><span class='line'>send, {ESC}{ENTER}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}{BS}CHFJPY{ENTER}
+</span><span class='line'>return
+</span><span class='line'>;MISC
+</span><span class='line'>;TOGGLE FOREGROUND
+</span><span class='line'>CAPSLOCK &amp; Z::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;TOGGLE CHART SCROLL
+</span><span class='line'>CAPSLOCK &amp; X::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;CHART SHIFT
+</span><span class='line'>CAPSLOCK &amp; V::
+</span><span class='line'>send, {ALT}C{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{ENTER}{END}
+</span><span class='line'>return&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
@@ -251,17 +418,13 @@ return</p>
 
 <h2>Sam Seiden</h2>
 
-<p>{% blockquote %}
-"Focus On The Lowest Trading Activity"
-{% endblockquote %}</p>
+<p><blockquote><p>"Focus On The Lowest Trading Activity"</p></blockquote></p>
 
 <p>When identifying where the next turn in the market will be, most traders focus on where the most trading activity took place on a chart. This is also what everyone is taught to do. I don't. I focus on the opposite, where the least amount of trades took place because this is where supply and demand is most out of balance and that's where prices turn.</p>
 
 <h2>James Chen</h2>
 
-<p>{% blockquote %}
-"Knowing The Strength &amp; Weakness Single Currencies"
-{% endblockquote %}</p>
+<p><blockquote><p>"Knowing The Strength &amp; Weakness Single Currencies"</p></blockquote></p>
 
 <p>Trading currencies is vastly different from trading other financial instruments. The key differentiator: currencies are traded exclusively as relative, rather than absolute, entities. Although all forex traders should be well aware of this, it warrants further emphasis that currencies are traded in pairs. What this really means is that currencies are not traded in isolation, but rather in terms of their relative values against other currencies.</p>
 
@@ -271,45 +434,29 @@ return</p>
 
 <h2>Adam Rosen</h2>
 
-<p>{% blockquote %}
-"Time Of Day : Less Is More..."
-{% endblockquote %}</p>
+<p><blockquote><p>"Time Of Day : Less Is More..."</p></blockquote></p>
 
 <p>The most significant economic data focuses around a number of basic themes including inflation, employment, growth, or lack thereof. News of this nature is typically released during the first few hours of each respective trading session. As traders react to the news, markets tend to enjoy periods of greater volatility and volume during these morning hours which are commonly known as the "active market hours".</p>
 
-<p>{% blockquote %}
-LON 08001000 GMT
-NYC 13001500 GMT
-TYO 24000200 GMT
-{% endblockquote %}</p>
+<p><blockquote><p>LON 08001000 GMT<br/>NYC 13001500 GMT<br/>TYO 24000200 GMT</p></blockquote></p>
 
 <p>The EUR/USD (5minute) displayed with the Bollinger Bands indicator clearly shows the most significant trend began and lasted during the first 2hours of the trading day. A 'trendtrader' anticipating a breakout to the upside would have been handsomely rewarded by looking for that 'higherhigh' that did in fact occur early in the UStrading session.</p>
 
 <h2>Cesar B. Leiceaga</h2>
 
-<p>{% blockquote %}
-"Trading with Pivot Points"
-{% endblockquote %}</p>
+<p><blockquote><p>"Trading with Pivot Points"</p></blockquote></p>
 
 <p>I've found as a determining tool to apply in the foreign exchange markets, both daily and weekly pivot points.Some basic principals first to trading with pivots: They act as support and resistance.</p>
 
 <p>If prices accelerate and hold above its pivot point, market participants will look to buy or turn bullish. If prices trade below a pivot point, traders will be looking to sell or short confirming the sentiment has turned bearish. Rules I apply to trade trends with pivot points</p>
 
-<p>{% blockquote %}
-In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. Use S3 to place a stop loss order. Use R1,R2, R3 as profit targets.</p>
-
-<p>In Downtrends:Sell rallies to the pivot point and add to the position in R1 and R2. Use R3 to place a stop loss order. Use S1,S2 and S3 as profit targets.</p>
-
-<p>In Ranges:Range low: Buy in S1 or S2. Stop S3 and target the daily pivot point.Range top: Sell in R1 or R2. Stop in R3 and target the daily pivot point.
-{% endblockquote %}</p>
+<p><blockquote><p>In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. Use S3 to place a stop loss order. Use R1,R2, R3 as profit targets.</p></p><p><p>In Downtrends:Sell rallies to the pivot point and add to the position in R1 and R2. Use R3 to place a stop loss order. Use S1,S2 and S3 as profit targets.</p></p><p><p>In Ranges:Range low: Buy in S1 or S2. Stop S3 and target the daily pivot point.Range top: Sell in R1 or R2. Stop in R3 and target the daily pivot point.</p></blockquote></p>
 
 <p>It is important to remember that these techniques applying pivot points best work in liquid pairs or majors: EUR/USD, USD/CHF, USD/JPY and GBP/USD.</p>
 
 <h2>Ross Yamashita</h2>
 
-<p>{% blockquote %}
-"Scan Smarter : Not Harder"
-{% endblockquote %}</p>
+<p><blockquote><p>"Scan Smarter : Not Harder"</p></blockquote></p>
 
 <p>When studying Elliott Wave or any other wave pattern recognition theory, so many traders put too much emphasis on what the wave count is with regards to the current market.Rather than getting so caught up in where the market is in the count, I scan the markets for only 4 "high probability" patterns : Impulse, Zig Zag, Ending Diagonal and Contracting Triangles.</p>
 
@@ -319,9 +466,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Valeria Bednarik</h2>
 
-<p>{% blockquote %}
-"Market volume with no technical indicators"
-{% endblockquote %}</p>
+<p><blockquote><p>"Market volume with no technical indicators"</p></blockquote></p>
 
 <p>Determining market volume could be critical when it comes to forex trading, as we understand that technical signals have higher probabilities of success when they come along with the right volume. For example, the break of the neckline of a figure, or a support or resistance level, are always considered reliable if volume is high, while pullbacks to those areas should show a lower volume, to give our signal further support.</p>
 
@@ -333,33 +478,25 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Aamar Hussain</h2>
 
-<p>{% blockquote %}
-"Adapt and Overcome"
-{% endblockquote %}</p>
+<p><blockquote><p>"Adapt and Overcome"</p></blockquote></p>
 
 <p>Always be willing and ready to adapt to the market. (a) Daily Ranges, (b) Volume and (c) Fundamentals, all provide key information and clues as to which technical analysis and trading strategies will work best in a particular environment. NO strategy or analysis method will work in all environments. If you keep a close eye on the abc and make copious notes and observations how changes in each effect market dynamics you will be able to ascertain which methods and strategies are most suited to each environment.Data and Evolution are Key.</p>
 
 <h2>Charis Charilaou</h2>
 
-<p>{% blockquote %}
-"Focus on the main story... everything else is just noise"
-{% endblockquote %}</p>
+<p><blockquote><p>"Focus on the main story... everything else is just noise"</p></blockquote></p>
 
 <p>Markets are constantly moving and media try to publish as much information as possible in order to gain credibility and expand audiences. However, not all information is equal. You need to be able to screen out most of the news and focus on the main story. This is the only way to understand the Market and become efficient in any trading style. There is always a main story concerning a war, a political state, an economical point of view etc. This is what the market focuses on and this is what creates a trend. Everything else is just noise.</p>
 
 <h2>John Kicklighter</h2>
 
-<p>{% blockquote %}
-"Know What Moves Your Trade"
-{% endblockquote %}</p>
+<p><blockquote><p>"Know What Moves Your Trade"</p></blockquote></p>
 
 <p>One of the most valuable lessons I have learned trading in the past few years is to first identify what fundamental driver or drivers the market deems most important for a particular currency or the market as a whole. It's easy to get caught up in reviewing all the economic indicators or headlines that cross the wires and then trying to assess what kind of impact it could have on price action. Yet, if for example yield expectations are the market's sole concern, we shouldn't waste time monitoring growth numbers and potentially confusing an otherwise straightforward forecast. Furthermore, when looking for that primary catalyst, it is important to remember that the market always boils down to the equilibrium of risk and reward in one way or another.</p>
 
 <h2>Dirk Du Toit</h2>
 
-<p>{% blockquote %}
-"You need a fundamental view."
-{% endblockquote %}</p>
+<p><blockquote><p>"You need a fundamental view."</p></blockquote></p>
 
 <p>If you use technical analysis you base your whole trading system on this principle: "The last price contains all information about price valuation".A series of such "last prices" is a pattern and a pattern is predictive of future moves.The problem very short term minded traders experience is that the Big Players as a rule ignore their "last prices". They don't even consider an intra day price as important.It is completely irrelevant to them that that price you think is a high probability indicator exists!</p>
 
@@ -371,9 +508,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Elizabeth Gregory</h2>
 
-<p>{% blockquote %}
-"Plan the trade, trade the plan"
-{% endblockquote %}</p>
+<p><blockquote><p>"Plan the trade, trade the plan"</p></blockquote></p>
 
 <p>What usually hurts novice traders is poor risk management; choosing wildly optimistic profit targets in order to justify cripplingly painful stops and staying in losing trades far beyond the original plan. It's human nature to take profit on winning positions too early for fear of losing small accrued profits and to hold onto losing positions (and worse, doubling down!) in the vain hope that the market must surely reverse soon.</p>
 
@@ -383,25 +518,19 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Alberto Munoz</h2>
 
-<p>{% blockquote %}
-"Risk/Reward Ratio vs Investment Horizon"
-{% endblockquote %}</p>
+<p><blockquote><p>"Risk/Reward Ratio vs Investment Horizon"</p></blockquote></p>
 
 <p>My main discovery about trading in the last months is that risk/reward ratio should be directly proportional to your investment horizon. That is, when you're trading in very short time frames, scalping for a few pips, then you're risk/reward ratio should be low, even lower than 1. The concept behind this is that it makes no sense to hold a position too much time waiting for a profit which is twice the stop loss: it won't work as the market noise will probably hit our tight stop. On the other hand, when trading on higher time frames (i.e. daily) risk/reward ratios should be high, above 2 or more, as we have time enough to reach our target.</p>
 
 <h2>Yohay Elam</h2>
 
-<p>{% blockquote %}
-"Never risk more than 2% of your account at once"
-{% endblockquote %}</p>
+<p><blockquote><p>"Never risk more than 2% of your account at once"</p></blockquote></p>
 
 <p>As with anything new, you're likely to make mistakes, learn from them, and then improve. Many new traders risk too much of their account, and burn it out before learning anything.Money management is the "secret" to avoiding this fate. This abstract idea can go down to the 2% rule. Making 2% an overriding priority means no stop loss movements, using lower leverage, making a bigger initial deposit, having higher spreads, or anything, else that will keep the losses limited. Some things are more comfortable to do than others, but keeping this rule will likely yield in better results for newbies in the long run : keep them away from burning their account.</p>
 
 <h2>Ron Schelling</h2>
 
-<p>{% blockquote %}
-"Never use more than 2% equity risk when I place stops."
-{% endblockquote %}</p>
+<p><blockquote><p>"Never use more than 2% equity risk when I place stops."</p></blockquote></p>
 
 <p>I am in trading since 1983, a time that there was no computer or realtime data, just a phone ! Data came in by telex and I draw the charts by hand, actually the best training I ever got. Today we have almost everything for free, realtime data, online brokerage, realtime charts etc.Still most traders make no money, at least not constant. I am happy to survive it so far and maybe this comes from discipline I learned in aviation to fly aircraft using strictly checklist for each part of the flight.</p>
 
@@ -411,41 +540,31 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Keagan York</h2>
 
-<p>{% blockquote %}
-"Head not Heart!"
-{% endblockquote %}</p>
+<p><blockquote><p>"Head not Heart!"</p></blockquote></p>
 
 <p>It is always hard to take a loss. However, the first rule that needs to be adhered to by a novice trader is that positions can and will go against you and that stop losses are an important part of any trading strategy. I have been in the position where I have gotten emotionally attached to a position and didn't trade with my head. On occasion, things ended up working out. However, more often than not, I ended up losing more money. In these situations, not only do you lose money but you also end up missing out on better opportunities because your ability to trade is compromised by the funding the losing position. So remember think with your head, not your heart and make the tough call!</p>
 
 <h2>Joseph Trevisani</h2>
 
-<p>{% blockquote %}
-"Be modest in your confidence and thankful in your profits"
-{% endblockquote %}</p>
+<p><blockquote><p>"Be modest in your confidence and thankful in your profits"</p></blockquote></p>
 
 <p>When our trades lose money, whatever our logic, we can be sure we were not alone. But we can equally be sure that we were in the minority. Had we been in the majority the market would have performed as anticipated. The market decision process is that simple. It is a matter of putting our behavior in line with the majority as often as we can. The most effective tool to achieve that is our own empirically tested market psychology. We are the market, if only we can let ourselves mimic the mind of the market and not permit individuality to rule our decisions.</p>
 
 <h2>Shawn Powell</h2>
 
-<p>{% blockquote %}
-"Count to ten rule"
-{% endblockquote %}</p>
+<p><blockquote><p>"Count to ten rule"</p></blockquote></p>
 
 <p>If you are in that much of a hurry, you probably haven't done your analysis or you might be chasing a move. Do you know your stop and take profit levels? One quick review, count to ten and then take the trade.</p>
 
 <h2>Dr Sivaraman</h2>
 
-<p>{% blockquote %}
-"Pay attention to quick, false and intentional moves"
-{% endblockquote %}</p>
+<p><blockquote><p>"Pay attention to quick, false and intentional moves"</p></blockquote></p>
 
 <p>1.Quick moves are false moves in the market : use such moves to do counter trades once the new low or high is not breached for 30 min in a session.2. False moves may be seen before the data release and the intentional move may be seen after the data : a drop before we may initiate buy and a rise before data we can initiate sell to quickly close in or keep stop at entry in in first 30 min of entry.</p>
 
 <h2>Derek Frey</h2>
 
-<p>{% blockquote %}
-"you can't predict the future..."
-{% endblockquote %}</p>
+<p><blockquote><p>"you can't predict the future..."</p></blockquote></p>
 
 <p>The biggest thing that got me from a losing trader to a winning trader was the realization that I did not have to know the future to be successful. Many new traders think that trading is all about know what is coming next, but of course no one can really predict the future. So for me realizing that this business is all about playing the odds rather than knowing the future was the single biggest epiphany that got me over the hump. I now focus on Harmonics and the statistical edge that they provide. If you don't know what your edge is, you don't have one!</p>
 
@@ -453,9 +572,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Greg Michalowski</h2>
 
-<p>{% blockquote %}
-"Three's a Crowd"
-{% endblockquote %}</p>
+<p><blockquote><p>"Three's a Crowd"</p></blockquote></p>
 
 <p>Most people know the old saying "Two's Company. Three's a Crowd". I use that easily remembered saying, to help define a nontrending forex market that is likely to transition into a trending market.I can use the Three's Company setup on a 5 minute, hourly or daily chart. The "two" in my trade are two moving averages.</p>
 
@@ -465,17 +582,13 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Mohammed Isbeer</h2>
 
-<p>{% blockquote %}
-"Never go against the general trend"
-{% endblockquote %}</p>
+<p><blockquote><p>"Never go against the general trend"</p></blockquote></p>
 
 <p>Identifying the general trend whether on the short/medium/long term is the most essential, and when you figure it out, you stay with the trend. You buy on dips or sell on rallies according whether it's a down or up trend, but you never bet on a correction against the general trend.Committing to this rule will protect you from sudden and huge losses, as well as guarantees that you will be able to gain the most from a trend when the right moves happen.</p>
 
 <h2>Kathy Lien</h2>
 
-<p>{% blockquote %}
-"Stick With the Trend: Tops &amp; Bottoms only evident in Hindsight"
-{% endblockquote %}</p>
+<p><blockquote><p>"Stick With the Trend: Tops &amp; Bottoms only evident in Hindsight"</p></blockquote></p>
 
 <p>The trend is your friend may be one of the oldest maxims in trading but it is also one of the most important when it comes to the forex market. Trends in currencies can last for days, weeks and sometimes even months. Currencies are typically seen as little confidence indicators for a country and the outlook for a country usually gets progressively better or worse.</p>
 
@@ -485,9 +598,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Raghee Horner</h2>
 
-<p>{% blockquote %}
-"Don't Fight the Daily Market Trend"
-{% endblockquote %}</p>
+<p><blockquote><p>"Don't Fight the Daily Market Trend"</p></blockquote></p>
 
 <p>Over the years I have been using the daily timeframe for what I call Directional Bias. The reason for this is because I don't want to fight the larger, more dominant trend : it's like swimming upstream otherwise : much more effort it needed. The dominant trend reflects the psychology of the market.</p>
 
@@ -497,9 +608,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <h2>Wayne McDonnell</h2>
 
-<p>{% blockquote %}
-"Multiple time frames to trade forex"
-{% endblockquote %}</p>
+<p><blockquote><p>"Multiple time frames to trade forex"</p></blockquote></p>
 
 <p>I always start my trade planning by looking at the Daily chart.On the Daily chart I look to see where price is in relation to shortterm moving averages. I like to trade in the direction of the trend. This means that I'm either trading at/near the moving averages and cautious when price is far from the moving averages due to the possibility of a mean reversion.</p>
 
@@ -545,13 +654,13 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <p>As you can see below the pending buy order is placed above the current market price. The trader expects the price to continue rising after they have been triggered into the trade.</p>
 
-<p>{% img  /images/20120429-0001.png %}</p>
+<p><img src="/images/20120429-0001.png"></p>
 
 <h3>Sell Stop</h3>
 
 <p>As you can see the pending order is placed below the current market price. The trade expects the market to continue falling after they have been entered into the trade</p>
 
-<p>{% img  /images/20120429-0002.png %}</p>
+<p><img src="/images/20120429-0002.png"></p>
 
 <h3>Limit Orders</h3>
 
@@ -561,27 +670,27 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <p>As you can see the trader expects the market to slightly fall before rising. They have placed a buy limit below the current market price.</p>
 
-<p>{% img  /images/20120429-0003.png %}</p>
+<p><img src="/images/20120429-0003.png"></p>
 
 <h2>Sell Limit</h2>
 
 <p>As you can see below the trader expects the market to rise before falling. They have placed a sell limit order above the current market price.</p>
 
-<p>{% img  /images/20120429-0004.png %}</p>
+<p><img src="/images/20120429-0004.png"></p>
 
 <h3>OCO Orders</h3>
 
 <p>Many brokers allow traders the option to place OCO orders. OCO means "order cancels other". These are 2 orders placed on the same currency pair. One is a buy stop and the other is a sell stop. The trader expects the market to move either up or down and dosnt want to miss out on the move. They place a buy stop above the current market price and a sell stop below the current market price. When either the buy or sell have been triggered the other pending trade is automatically cancelled.</p>
 
-<p>{% img  /images/20120429-0005.png %}</p>
+<p><img src="/images/20120429-0005.png"></p>
 
 <h3>GTC Orders</h3>
 
 <p>These types of orders are an "add on" to the 3 types of orders we"ve just discussed. GTC means Good Till Cancelled. This means that the order placed by the trader will remain in the market until cancelled by them. Many brokers also allow the option to add a "valid until" part to a pending trade. This means that predetermined time can be set by the trader before the trade is closed by the broker automatically.</p>
 
-<p>{% img  /images/20120429-0006.png %}</p>
+<p><img src="/images/20120429-0006.png"></p>
 
-<p>{% img  /images/20120429-0007.png %}</p>
+<p><img src="/images/20120429-0007.png"></p>
 ]]></content>
   </entry>
   
@@ -609,10 +718,7 @@ In Uptrends: Buy dips to the pivot point and add to the position in S1 and S2. U
 
 <p>Reading a foreign exchange quote is simple if you remember two things</p>
 
-<p>{% blockquote %}
-The first currency listed is the base currency
-The value of the base currency is always 1.
-{% endblockquote %}</p>
+<p><blockquote><p>The first currency listed is the base currency<br/>The value of the base currency is always 1.</p></blockquote></p>
 
 <p>As we know all currencies are always quoted in pairs. Every time you make a forex trade or transaction you are simultaneously buying one currency and selling another.</p>
 
@@ -626,16 +732,11 @@ The value of the base currency is always 1.
 
 <p>For every forex pair we trade it has an exchange rate. It is the change in this exchange rate that determines how much money we make as traders. When placing a trade we are simply speculating on whether a currency will rise or fall against another. It is important to understand how exchange rates work. ::</p>
 
-<p>{% blockquote %}
-GBP/USD = 1.5279
-{% endblockquote %}</p>
+<p><blockquote><p>GBP/USD = 1.5279</p></blockquote></p>
 
 <p>Above we can see GBP/USD with its exchange rate quoted. The exchange rate is telling us how much we need in units of the of the quote currency (the one on the right) to buy one unit of the base currency (the one on the left).</p>
 
-<p>{% blockquote %}
-We would need to spend 1.5279 USD in order to buy 1 GBP.
-We would need to spend 1 GBP in order to buy 1.5279 USD"s.
-{% endblockquote %}</p>
+<p><blockquote><p>We would need to spend 1.5279 USD in order to buy 1 GBP.<br/>We would need to spend 1 GBP in order to buy 1.5279 USD"s.</p></blockquote></p>
 
 <h2>Buying &amp; Selling</h2>
 
@@ -645,25 +746,17 @@ We would need to spend 1 GBP in order to buy 1.5279 USD"s.
 
 <p>SELL GBP/USD - if you were to sell the GBP/USD you expect the Pound to "weaken" against the USD therefore pushing the exchange rate of the GBP/USD down.</p>
 
-<p>{% blockquote %}
-"I've gone long on Cable" Translates to "I've bought the GBP/USD"
-"I'm short on the Aussie" Translates to "I'm selling the AUD/USD"
-{% endblockquote %}</p>
+<p><blockquote><p>"I've gone long on Cable" Translates to "I've bought the GBP/USD"<br/>"I'm short on the Aussie" Translates to "I'm selling the AUD/USD"</p></blockquote></p>
 
 <h2>Pips</h2>
 
 <p>Price intercept points are more commonly known as PIPs. A pip is the smallest unit by which a currency quote can change. If the rate for EUR/USD is 1.3574 and it changes to 1.3575 that change is a 1 pip movement. It is these changes in forex prices that we as traders look for in order to make money from the markets. ::</p>
 
-<p>{% blockquote %}
-EUR/USD = 1.3574 - EUR/USD = 1.3575
-You can see above the price has increased by 1 pip.
-{% endblockquote %}</p>
+<p><blockquote><p>EUR/USD = 1.3574 - EUR/USD = 1.3575<br/>You can see above the price has increased by 1 pip.</p></blockquote></p>
 
 <p>The pip is always the 4th number after the decimal point; however, pairs that include the Japanese yen only have 2 digits after the decimal point, in this case the pip is the 2nd number after the decimal point. For example if the rate for EUR/JPY is 132.87 and it changes to 132.88 that change is a 1 pip movement. Some brokers are now offering an extra digit at the end of their quotes which shows a fraction of a pip. ::</p>
 
-<p>{% blockquote %}
-EUR/USD = 1.35754
-{% endblockquote %}</p>
+<p><blockquote><p>EUR/USD = 1.35754</p></blockquote></p>
 
 <p>In the quote above the 4 is the PIP and the 5 is the pip fraction. Fractions of pips do not make too much difference to trading however it is worth keeping an eye out especially if your broker is using them in their quotes.</p>
 
@@ -671,10 +764,7 @@ EUR/USD = 1.35754
 
 <p>Just like other markets, forex quotes consist of two sides, the bid and the ask::</p>
 
-<p>{% blockquote %}
-The BID is the price at which you can SELL base currency.
-The ASK is the price at which you can BUY base currency.
-{% endblockquote %}</p>
+<p><blockquote><p>The BID is the price at which you can SELL base currency.<br/>The ASK is the price at which you can BUY base currency.</p></blockquote></p>
 
 <p>The prices you can sell or buy a currency are different to one and other. It is this difference in price that is known as the Spread. The spread is where the broker makes his money. Spread is usually a few pips and all brokers will offer different spreads. Obviously the lower the spread the better for us as traders so it"s a good idea to search for brokers who offer low spreads.</p>
 
@@ -682,37 +772,31 @@ The ASK is the price at which you can BUY base currency.
 
 <p>The bid price is the price the broker has offered if you wish to sell a currency pair. The ask price is the price the broker has offered if you wish to buy a currency pair. The difference between the bid and ask is known as the spread. ::</p>
 
-<p>{% blockquote %}
-Bid     Ask
-1.3486  1.3488
-{% endblockquote %}</p>
+<p><blockquote><p>Bid     Ask<br/>1.3486  1.3488</p></blockquote></p>
 
 <h2>Lots</h2>
 
 <p>Forex is traded using specific amounts called Lots. A lot is the amount of units you are trading with. The standard lot size is 100,000 units. The size of the lot will determine the value per pip. Knowing the value per pip is critical in order to work out how much money you will make or lose per trade. Lots come in 4 sizes. ::</p>
 
-<p>{% blockquote %}
-Standard    100,000 units
-Mini        10,000 units
-Micro       1,000 units
-Nano        100 units
-{% endblockquote %}</p>
+<p><blockquote><p>Standard    100,000 units<br/>Mini        10,000 units<br/>Micro       1,000 units<br/>Nano        100 units</p></blockquote></p>
 
 <p>Many brokers also have the option to trade using flexible lots, for example 1.5 standard lots (150,000 units). You can use the size of the lot to determine the value of a pip which you can use to help calculate how much you will win or lose on any particular trade. The value of a pip can be worked out using a simple formula ::</p>
 
-<p>{% codeblock %}
-Pip value = (.0001/exchange rate) x lot size x exchange rate
-Example: EUR/USD = 1.3592, Use 1 standard lot (100,000)
-Pip value = (.0001/1.3592) x 100,000 x 1.3592 = 9.999 (rounded up) = $10
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Pip value = (.0001/exchange rate) x lot size x exchange rate
+</span><span class='line'>Example: EUR/USD = 1.3592, Use 1 standard lot (100,000)
+</span><span class='line'>Pip value = (.0001/1.3592) x 100,000 x 1.3592 = 9.999 (rounded up) = $10</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>This means that if we were to trade the EUR/USD using 1 standard lot size, each pip will be worth $10. If we make 100 pips on our trade we will be making $1000. There is a slightly different formula used to work out the value of a pip when the USD is the base currency. The formula for this is ::</p>
 
-<p>{% codeblock %}
-Pip value = (0.0001/exchange rate) x lot size
-Example: USD/CHF = 1.1213, Use 1 standard lot (100,000)
-Pip value = (.0001/1.1213) x 100,000 = 8.918 (rounded up) = $9:
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Pip value = (0.0001/exchange rate) x lot size
+</span><span class='line'>Example: USD/CHF = 1.1213, Use 1 standard lot (100,000)
+</span><span class='line'>Pip value = (.0001/1.1213) x 100,000 = 8.918 (rounded up) = $9:</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>This means that if we were to trade the USD/CHF using 1 standard lot each pip would be worth $9, if we make 100 pips on our trade we will be making $900.</p>
 
@@ -721,18 +805,20 @@ Pip value = (.0001/1.1213) x 100,000 = 8.918 (rounded up) = $9:
 <p>New Account: Free Margin is equal to the entire account balance. If a brand new account balance is $1000,the deposit currency is USD and the broker has a minimum 1% margin requirement and the trader wants to execute a 0.3 Lot trade (assuming USD is the base currency, if it is not then the calculations are a bit more complicated), then the used margin after placing the trade can be computed by multiplying the trade size by the margin requirement (0.3 lots or $30,000 x 1% = $300).</p>
 
 <p>If trading a xxxUSD pair:
-{% codeblock %}
-Margin = StandardLot * quote * LotSize / Leverage
-Example (trading 0.5 lots of GBPUSD @ 1.3982):
-Margin = 100,000 * 1.3982 * 0.5 / 200 = 349.55 USD.
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Margin = StandardLot * quote * LotSize / Leverage
+</span><span class='line'>Example (trading 0.5 lots of GBPUSD @ 1.3982):
+</span><span class='line'>Margin = 100,000 * 1.3982 * 0.5 / 200 = 349.55 USD.</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If trading a USDxxx pair:
-{% codeblock %}
-Margin = StandardLot * LotSize / Leverage
-Example (trading 0.1 lots of USDJPY):
-Margin = 100,000 * 0.1 / 200 = 50 USD set aside as margin (used margin).
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Margin = StandardLot * LotSize / Leverage
+</span><span class='line'>Example (trading 0.1 lots of USDJPY):
+</span><span class='line'>Margin = 100,000 * 0.1 / 200 = 50 USD set aside as margin (used margin).</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Leverage, in essence, is a loan that is provided to an investor by the broker that is handling his or her Forex account. When an investor decides to invest in the Forex market, he or she must first open up a margin account with a broker. Usually, the amount of leverage provided is either 50:1, 100:1 or 200:1, depending on the broker and the size of the position the investor is trading. Standard trading is done on 100,000 units of currency, so for a trade of this size, the leverage provided is usually 50:1 or 100:1. Leverage of 200:1 is usually used for positions of 50,000 units or less.</p>
 
@@ -750,41 +836,58 @@ Margin = 100,000 * 0.1 / 200 = 50 USD set aside as margin (used margin).
 
 <p>Calculate True Leverage:As we mentioned before, leverage in the financial markets is the DEBT:EQUITY ratio, so we need to calculate our debt and our equity.</p>
 
-<p>{% codeblock %}
-Equity = B + P where::
-E = Equity (quantity we are trying to calculate)
-B = Balance
-P = Profit on open positions (negative if open positions are in the red)
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Equity = B + P where::
+</span><span class='line'>E = Equity (quantity we are trying to calculate)
+</span><span class='line'>B = Balance
+</span><span class='line'>P = Profit on open positions (negative if open positions are in the red)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>{% codeblock %}
-Debt = T * Cb / Ca where::
-D = Debt (the quantity we are trying to calculate)
-T = Trade size (in units of the base currency)
-CB = Base currency
-CA = Account currency
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Debt = T * Cb / Ca where::
+</span><span class='line'>D = Debt (the quantity we are trying to calculate)
+</span><span class='line'>T = Trade size (in units of the base currency)
+</span><span class='line'>CB = Base currency
+</span><span class='line'>CA = Account currency</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Please note that the equation uses forex notation, and not true mathematical notation. In mathematical notation, EUR/USD would be displayed as USD/EUR because it denotes a ratio of "Dollars per Euro". If you would like to use mathematical notation, currency pairs should be inverted.::</p>
 
-<p>{% codeblock %}
-Leverage = (T * (Ca / Cb)) / (B + P)
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Leverage = (T * (Ca / Cb)) / (B + P)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Example
-{% codeblock %}</p>
-
-<pre><code>AccountSize: USD100,000
-TradeSize: 1 x Mini @1.2500
-T = 10,000 //Mini Lot
-Ca / Cb = 1.2500
-B = 10000
-P = 0 //no trades open so account equity == account balance
-so
-Leverage = (10000 * 1.2500) / 10000 = 1.25:1
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>AccountSize: USD100,000
+</span><span class='line'>TradeSize: 1 x Mini @1.2500
+</span><span class='line'>T = 10,000 //Mini Lot
+</span><span class='line'>Ca / Cb = 1.2500
+</span><span class='line'>B = 10000
+</span><span class='line'>P = 0 //no trades open so account equity == account balance
+</span><span class='line'>so
+</span><span class='line'>Leverage = (10000 * 1.2500) / 10000 = 1.25:1
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
@@ -966,9 +1069,7 @@ Leverage = (10000 * 1.2500) / 10000 = 1.25:1
 
 <h2>Risk Management</h2>
 
-<p>{% blockquote %}
-equity = acctbal + open(win) - open(lose)
-{% endblockquote %}</p>
+<p><blockquote><p>equity = acctbal + open(win) - open(lose)</p></blockquote></p>
 
 <h3>Capital Preservation</h3>
 
