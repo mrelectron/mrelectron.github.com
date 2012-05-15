@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ubuntu | heterodoxic]]></title>
+  <link href="http://mrelectron.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://mrelectron.github.com/"/>
+  <updated>2012-05-15T22:32:11+10:00</updated>
+  <id>http://mrelectron.github.com/</id>
+  <author>
+    <name><![CDATA[MAB]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RTorrent Install, Config, AutoStart]]></title>
+    <link href="http://mrelectron.github.com/blog/2012/05/15/rtorrent-install/"/>
+    <updated>2012-05-15T19:18:00+10:00</updated>
+    <id>http://mrelectron.github.com/blog/2012/05/15/rtorrent-install</id>
+    <content type="html"><![CDATA[<p>This post describes the process necessary to install and configure rtorrent on a remote machine running <a href="http://www.ubuntu.com/">Ubuntu</a> or <a href="http://linuxmint.com/">Mint</a>. I need to document this process for my own use, because it took me longer to setup that it should have and I don't want to have to repeat that experience. I want to thank <a href="http://randystech.com/">Randy</a> for his init.d script.</p>
+
+<!-- more -->
+
+
+<h2>Assumptions</h2>
+
+<p>You are familiar with basic Linux concepts such as sudo, home directory, opening terminal windows and entering shell commands.</p>
+
+<h2>Motivation</h2>
+
+<p>For a while now I have been running Windows + utorrent. Recently we installed a 100Mb/40Mb fibre link, so I thought I would setup a spare netbook as an always switched on seedbox. Then I would have not to leave my desktop running overnight, as it is a power hungry beast.</p>
+
+<p>I also wanted a fire and forget torrent solution. One that pickups .torrent files from a watch directory, download them and then seed them to a certain ratio.</p>
+
+<h2>Prequisites</h2>
+
+<p>Fresh install of <a href="http://linuxmint.com/">Linux Mint</a> on the emachine. That will be our starting point.</p>
+
+<h2>Step 1 - Configure Router</h2>
+
+<p>I had this step last, but unless you know how to do this, then there is no point in doing the other steps. A lot of GUI torrent clients have uPNP support,which means that the torrent client speaks to your router and says please ma'am can you open a port for me. But I'm not able to say if rtorrent has uPNP support, so I open ports on my router manually. As router configuration is model specific, all I can tell you is you need to forward port range 60125-64125 for TCP traffic to the IP address of the machine on which rtorrent is running.</p>
+
+<h2>Step 2 - Install required Packages</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get -y install rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 3 - Create required Folders</h2>
+
+<p>Create the following folders, the ~ character in shell command below indicates my home directory. You can call the directories any names you want. The important thing is you create one directory where rtorrent will download files into (~/pirate/incoming) and one directory which rtorrent will watch (~/pirate/watch). When you place a .torrent file in the watch directory rtorrent will automatically load it.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir -p ~/pirate/incoming
+</span><span class='line'>mkdir -p ~/pirate/watch</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 4 - Create Configuration File</h2>
+
+<p>In this step you will create a file that rtorrent reads configuration information from. Create in your home directory a file called .rtorrent.rc and paste the following in. The only changes you should need to make are to directory names if you changed them from what I used above (eg Lines 6,8)</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>min_peers = 50
+</span><span class='line'>max_peers = 80
+</span><span class='line'>max_uploads = 15
+</span><span class='line'>download_rate = 0
+</span><span class='line'>upload_rate = 1000
+</span><span class='line'>directory = ~/pirate/incoming
+</span><span class='line'>session = /tmp
+</span><span class='line'>schedule = watch_directory,5,5,load_start=~/pirate/watch/*.torrent
+</span><span class='line'>schedule = untied_directory,5,5,stop_untied=
+</span><span class='line'>schedule = low_diskspace,5,60,close_low_diskspace=100M
+</span><span class='line'>port_range = 60125-64125
+</span><span class='line'>port_random = yes
+</span><span class='line'>check_hash = yes
+</span><span class='line'>use_udp_trackers = yes
+</span><span class='line'>encryption = allow_incoming,try_outgoing,enable_retry
+</span><span class='line'>dht = auto
+</span><span class='line'>dht_port = 63425
+</span><span class='line'>peer_exchange = yes</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 5 - Disable Control Q &amp; Control S</h2>
+
+<p>Edit your .bashrc file which is found in your home directory, if you cannot find it - create it. Add the following line. In some terminals Control Q and Control S keys are already assigned by the operating system. These two combinations are made use of by rtorrent so we have to make sure they are disabled before we use rtorrent in an interactive session.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>stty -ixon</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 6 - AutoStart</h2>
+
+<p>We want rtorrent to start automatically. Create a file called rtorrent-daemon in /etc/init.d/ and paste the following. To create in file in /etc/init.d/ you will need to do with sudo. Change Line 12 to your user name.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+<span class='line-number'>151</span>
+<span class='line-number'>152</span>
+<span class='line-number'>153</span>
+<span class='line-number'>154</span>
+<span class='line-number'>155</span>
+<span class='line-number'>156</span>
+<span class='line-number'>157</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h3>BEGIN INIT INFO&lt;/h3>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Provides:          rtorrent_autostart&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Required-Start:    $local_fs $remote_fs $network $syslog $netdaemons&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Required-Stop:     $local_fs $remote_fs&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Default-Start:     2 3 4 5&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Default-Stop:      0 1 6&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Short-Description: rtorrent script using screen(1)&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Description:       rtorrent script using screen(1) to keep torrents working w$&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h3>END INIT INFO&lt;/h3>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>run as user&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>user="put_your_username_here"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>run as group&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>group=&lt;code>id -ng "$user"&lt;/code>&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>path to rtorrent configuration&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>config="&lt;code>su -c 'echo $HOME' $user&lt;/code>/.rtorrent.rc"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>run options&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>options=""&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>screen dir - absolute path&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>base="&lt;code>su -c 'echo $HOME' $user&lt;/code>"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>name of screen session&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>srnname="rtorrent"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>file to log to&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>logfile="/var/log/rtorrentInit.log"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>do not edit past here&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:/sbin:/bin:/usr/sbin
+</span><span class='line'>DESC="rtorrent"
+</span><span class='line'>NAME=rtorrent
+</span><span class='line'>DAEMON=$NAME
+</span><span class='line'>SCRIPTNAME=/etc/init.d/$NAME&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>checkcnfg() {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>exists=0
+</span><span class='line'>for i in `echo "$PATH" | tr ':' '\n'` ; do
+</span><span class='line'>    if [ -f $i/$NAME ] ; then
+</span><span class='line'>        exists=1
+</span><span class='line'>        break
+</span><span class='line'>    fi
+</span><span class='line'>done
+</span><span class='line'>if [ $exists -eq 0 ] ; then
+</span><span class='line'>    echo "cannot find rtorrent binary in PATH $PATH" | tee -a "$logfile" &gt;&amp;2
+</span><span class='line'>    exit 3
+</span><span class='line'>fi
+</span><span class='line'>if ! [ -r "${config}" ] ; then
+</span><span class='line'>    echo "cannot find readable config ${config}. check that it is there and$
+</span><span class='line'>    exit 3
+</span><span class='line'>fi
+</span><span class='line'>session=`getsession "$config"`
+</span><span class='line'>if ! [ -d "${session}" ] ; then
+</span><span class='line'>    echo "cannot find readable session directory ${session} from config ${c$
+</span><span class='line'>    exit 3
+</span><span class='line'>fi
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>d_start() {
+</span><span class='line'>  [ -d "${base}" ] &amp;&amp; cd "${base}"
+</span><span class='line'>  stty stop undef &amp;&amp; stty start undef
+</span><span class='line'>  su -c "screen -ls | grep -sq ".${srnname}[[:space:]]" " ${user} || su -c "sc$
+</span><span class='line'>  # this works for the screen command, but starting rtorrent below adopts scree$
+</span><span class='line'>  # even if it is not the screen session we started (e.g. running under an unde$
+</span><span class='line'>  #su -c "screen -ls | grep -sq ".${srnname}[[:space:]]" " ${user} || su -c "s$
+</span><span class='line'>  su -c "screen -S "${srnname}" -X screen rtorrent ${options} 2>&amp;1 1>/dev/null"$
+</span><span class='line'>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>d_stop() {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>session=`getsession "$config"`
+</span><span class='line'>if ! [ -s ${session}/rtorrent.lock ] ; then
+</span><span class='line'>    return
+</span><span class='line'>fi
+</span><span class='line'>pid=`cat ${session}/rtorrent.lock | awk -F: '{print($2)}' | sed "s/[^0-9]//$
+</span><span class='line'>if ps -A | grep -sq ${pid}.*rtorrent ; then # make sure the pid doesn't bel$
+</span><span class='line'>    kill -s INT ${pid}
+</span><span class='line'>fi
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>getsession() {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>session=`cat "$1" | grep "^[[:space:]]*session[[:space:]]*=" | sed "s/^[[:s$
+</span><span class='line'>echo $session
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>checkcnfg&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>case "$1" in
+</span><span class='line'>  start)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>echo -n "Starting $DESC: $NAME"
+</span><span class='line'>d_start
+</span><span class='line'>echo "."
+</span><span class='line'>;;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  stop)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>echo -n "Stopping $DESC: $NAME"
+</span><span class='line'>d_stop
+</span><span class='line'>echo "."
+</span><span class='line'>;;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  restart|force-reload)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>echo -n "Restarting $DESC: $NAME"
+</span><span class='line'>d_stop
+</span><span class='line'>sleep 1
+</span><span class='line'>d_start
+</span><span class='line'>echo "."
+</span><span class='line'>;;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>  *)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>echo "Usage: $SCRIPTNAME {start|stop|restart|force-reload}" &gt;&amp;2
+</span><span class='line'>exit 1
+</span><span class='line'>;;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>esac&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>exit 0&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 7 - Tell the Operating System to run rtorrent at Startup</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod +x /etc/init.d/rtorrent-daemon
+</span><span class='line'>sudo update-rc.d rtorrent-daemon defaults</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Step 8 - Reboot your computer</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo shutdown -r now</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Workflow</h2>
+
+<p>If you have not used RTorrent before you and are used to gui's you will get a bit of shock when you first try to drive it. But help is close at hand for the userguide go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a></p>
+
+<h2>Useful Commands</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ps aux|grep rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>screen -dr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo /etc/init.d/rtorrent-daemon stop</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo /etc/init.d/rtorrent-daemon start</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>, sudo kill PID</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Conclusion</h2>
+
+<p>If you want to comment on this post you can reach me on mememachine avec the tld owned by google. Please put the word "HETERODOXIC" somewhere in the subject. I dont' use comments because this <a href="http://octopress.org/">blog platform</a> while fantastic, only has disqus comments, which for various reasons I'm not fond of.</p>
+]]></content>
+  </entry>
+  
+</feed>
