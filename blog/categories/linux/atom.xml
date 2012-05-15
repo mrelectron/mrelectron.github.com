@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-15T22:57:10+10:00</updated>
+  <updated>2012-05-15T23:24:07+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[RTorrent Install & AutoStart]]></title>
+    <title type="html"><![CDATA[RTorrent Installation]]></title>
     <link href="http://mrelectron.github.com/blog/2012/05/15/rtorrent-install/"/>
     <updated>2012-05-15T19:18:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/05/15/rtorrent-install</id>
@@ -31,7 +31,7 @@
 
 <p>For a while now I have been running Windows + utorrent. Recently we installed a 100Mb/40Mb fibre link, so I thought I would setup a spare netbook as an always on seedbox. Then I would have not to leave my desktop running overnight. I also wanted a fire and forget solution. One that pickups .torrent files from a watch directory, downloads, seeds, and finally stops seeding once a predefined ratio is reached.</p>
 
-<h2>Prequisites</h2>
+<h2>Prerequisites</h2>
 
 <p>Fresh install of <a href="http://linuxmint.com/">Linux Mint</a> on the netbook. That will be our starting point.</p>
 
@@ -44,9 +44,9 @@
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get -y install rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h2>Step 3 - Create required Folders</h2>
+<h2>Step 3 - Create required Directories</h2>
 
-<p>Create the following folders, the ~ character in shell command below indicates my home directory. You can call the directories any names you want. The important thing is you create one directory where <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will download files into (~/pirate/incoming) and one directory which <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will watch (~/pirate/watch).</p>
+<p>The ~ character in shell command below indicates my home directory. You can call the directories any names you want. The important thing is you create one directory where <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will download files into (~/pirate/incoming) and one directory which <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will watch (~/pirate/watch) for new torrents.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -55,7 +55,7 @@
 
 <h2>Step 4 - Create Configuration File</h2>
 
-<p>In this step you will create a file that <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> reads configuration information from. Create in your home directory a file called .rtorrent.rc and paste the following in. The only changes you should need to make are to directory names if you changed them from what I used above (eg Lines 6,8)</p>
+<p>In this step you will create a file that <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> reads configuration information from. In your home directory create a file called .rtorrent.rc and paste the following in. The only changes you should need to make are to directory names if you changed them from what I used above (Lines 6,8) and the upload_rate (Line 5),</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -422,6 +422,8 @@
 
 <h2>Step 7 - Run rtorrent at Startup</h2>
 
+<p>We have to notify the operating system that we require it the run the rtorrent-daemon file when the computer boots up.</p>
+
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod +x /etc/init.d/rtorrent-daemon
@@ -429,28 +431,47 @@
 
 <h2>Step 8 - Reboot your computer</h2>
 
+<p>Probably not absolutely necessary but can't hurt, so lets just reboot, to bed everything down.</p>
+
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo shutdown -r now</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Workflow</h2>
 
-<p>Go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a> for a userguide.</p>
+<p>The way in which I use this setup. I have a access to the netbook watch directory from my windows machine via a Samba share. When I see something on the web I want to download, I download the .torrent file to my windows machine and copy it to the netbook watch folder. rtorrent will pick it up from the watch folder, download the file, and then will continues to seed the file until the seed ratio set in the .rtorrent.rc file is met.</p>
+
+<p>Subsequently at my leisure I will pickup the downloaded file and copy it to wherever I want its final resting place to be.</p>
+
+<p>I could easily make some improvements to this workflow, for example once the seed ratio has been met, automagically move the file to its final resting place without my intervention. RTorrent does have excellent functionality to run different processes at different times.</p>
+
+<p>Anytime you actually want to use rtorrent interactively, just run screen -dr, which will detach the screen that rtorrent is running under. Just remember though once you are using it interactively and you quit out of it you will have to start it again via the daemon.</p>
+
+<p>Go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a> for a rtorrent userguide.</p>
 
 <h2>Useful Commands</h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Run this to check rtorrent is running.
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ps aux|grep rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Something like this will print out on the console screen
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>username   2297  0.0  0.1   5776  1208 ?        Ss   23:08   0:00 SCREEN -dm -S rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Run this if you want to use rtorrent interactively.
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>screen -dr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Stop rtorrent.
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo /etc/init.d/rtorrent-daemon stop</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Start rtorrent.
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo /etc/init.d/rtorrent-daemon start</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Kill the process with a process identifier of PID
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo kill PID</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>Conclusion</h2>
