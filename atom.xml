@@ -4,7 +4,7 @@
   <title><![CDATA[heterodoxic]]></title>
   <link href="http://mrelectron.github.com/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-15T22:32:11+10:00</updated>
+  <updated>2012-05-15T22:57:10+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[RTorrent Install, Config, AutoStart]]></title>
+    <title type="html"><![CDATA[RTorrent Install & AutoStart]]></title>
     <link href="http://mrelectron.github.com/blog/2012/05/15/rtorrent-install/"/>
     <updated>2012-05-15T19:18:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/05/15/rtorrent-install</id>
-    <content type="html"><![CDATA[<p>This post describes the process necessary to install and configure rtorrent on a remote machine running <a href="http://www.ubuntu.com/">Ubuntu</a> or <a href="http://linuxmint.com/">Mint</a>. I need to document this process for my own use, because it took me longer to setup that it should have and I don&#8217;t want to have to repeat that experience. I want to thank <a href="http://randystech.com/">Randy</a> for his init.d script.</p>
+    <content type="html"><![CDATA[<p>This post describes the process necessary to install and configure <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> on a remote machine running <a href="http://www.ubuntu.com/">Ubuntu</a> or <a href="http://linuxmint.com/">Mint</a>. I need to document this process for my own use, because it took me longer to setup that it should have and I don&#8217;t want to have to repeat that experience. I want to thank <a href="http://randystech.com/">Randy</a> for his init.d script.</p>
 
 <!-- more -->
 
@@ -29,17 +29,15 @@
 
 <h2>Motivation</h2>
 
-<p>For a while now I have been running Windows + utorrent. Recently we installed a 100Mb/40Mb fibre link, so I thought I would setup a spare netbook as an always switched on seedbox. Then I would have not to leave my desktop running overnight, as it is a power hungry beast.</p>
-
-<p>I also wanted a fire and forget torrent solution. One that pickups .torrent files from a watch directory, download them and then seed them to a certain ratio.</p>
+<p>For a while now I have been running Windows + utorrent. Recently we installed a 100Mb/40Mb fibre link, so I thought I would setup a spare netbook as an always on seedbox. Then I would have not to leave my desktop running overnight. I also wanted a fire and forget solution. One that pickups .torrent files from a watch directory, downloads, seeds, and finally stops seeding once a predefined ratio is reached.</p>
 
 <h2>Prequisites</h2>
 
-<p>Fresh install of <a href="http://linuxmint.com/">Linux Mint</a> on the emachine. That will be our starting point.</p>
+<p>Fresh install of <a href="http://linuxmint.com/">Linux Mint</a> on the netbook. That will be our starting point.</p>
 
 <h2>Step 1 - Configure Router</h2>
 
-<p>I had this step last, but unless you know how to do this, then there is no point in doing the other steps. A lot of GUI torrent clients have uPNP support,which means that the torrent client speaks to your router and says please ma&#8217;am can you open a port for me. But I&#8217;m not able to say if rtorrent has uPNP support, so I open ports on my router manually. As router configuration is model specific, all I can tell you is you need to forward port range 60125-64125 for TCP traffic to the IP address of the machine on which rtorrent is running.</p>
+<p>I had this step last, but unless you know how to do this, then there is no point in doing the other steps. A lot of GUI torrent clients have <a href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">uPnP</a> support,which means that the torrent client speaks to your router and says please ma&#8217;am can you open a port for me. But I&#8217;m not able to say if <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> has <a href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">uPnP</a> support. In any case I prefer to open my router ports manually. Now as router configuration is model specific, all I can tell you for the purposes of this &#8220;how to&#8221; is you need to forward port range 60125-64125 for TCP traffic to the IP address of the machine on which <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> is running.</p>
 
 <h2>Step 2 - Install required Packages</h2>
 
@@ -49,7 +47,7 @@
 
 <h2>Step 3 - Create required Folders</h2>
 
-<p>Create the following folders, the ~ character in shell command below indicates my home directory. You can call the directories any names you want. The important thing is you create one directory where rtorrent will download files into (~/pirate/incoming) and one directory which rtorrent will watch (~/pirate/watch). When you place a .torrent file in the watch directory rtorrent will automatically load it.</p>
+<p>Create the following folders, the ~ character in shell command below indicates my home directory. You can call the directories any names you want. The important thing is you create one directory where <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will download files into (~/pirate/incoming) and one directory which <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> will watch (~/pirate/watch).</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -59,7 +57,7 @@
 
 <h2>Step 4 - Create Configuration File</h2>
 
-<p>In this step you will create a file that rtorrent reads configuration information from. Create in your home directory a file called .rtorrent.rc and paste the following in. The only changes you should need to make are to directory names if you changed them from what I used above (eg Lines 6,8)</p>
+<p>In this step you will create a file that <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> reads configuration information from. Create in your home directory a file called .rtorrent.rc and paste the following in. The only changes you should need to make are to directory names if you changed them from what I used above (eg Lines 6,8)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -101,7 +99,7 @@
 
 <h2>Step 5 - Disable Control Q &amp; Control S</h2>
 
-<p>Edit your .bashrc file which is found in your home directory, if you cannot find it - create it. Add the following line. In some terminals Control Q and Control S keys are already assigned by the operating system. These two combinations are made use of by rtorrent so we have to make sure they are disabled before we use rtorrent in an interactive session.</p>
+<p>In some terminals Control Q and Control S keys are already assigned by the operating system. Unfortunately these keys are used by rtorrent. Therefore we need to disable them prior to any interactive sessions with rtorrent. Create or edit your .bashrc file found in your home directory, add the following line.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>stty -ixon</span></code></pre></td></tr></table></div></figure>
@@ -109,7 +107,7 @@
 
 <h2>Step 6 - AutoStart</h2>
 
-<p>We want rtorrent to start automatically. Create a file called rtorrent-daemon in /etc/init.d/ and paste the following. To create in file in /etc/init.d/ you will need to do with sudo. Change Line 12 to your user name.</p>
+<p>We want <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> to start automatically. Create a file called rtorrent-daemon in /etc/init.d/ and paste the following. You will require sudo to create a file in etc/init.d/. Change Line 13 to your user name.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -234,7 +232,7 @@
 </span><span class='line'># Default-Start:     2 3 4 5
 </span><span class='line'># Default-Stop:      0 1 6
 </span><span class='line'># Short-Description: rtorrent script using screen(1)
-</span><span class='line'># Description:       rtorrent script using screen(1) to keep torrents working w$
+</span><span class='line'># Description:       Description:       rtorrent script using screen(1) to keep torrents working without the user logging in
 </span><span class='line'>### END INIT INFO
 </span><span class='line'>
 </span><span class='line'># run as user
@@ -278,12 +276,12 @@
 </span><span class='line'>        exit 3
 </span><span class='line'>    fi
 </span><span class='line'>    if ! [ -r "${config}" ] ; then
-</span><span class='line'>        echo "cannot find readable config ${config}. check that it is there and$
+</span><span class='line'>        echo "cannot find readable config ${config}. check that it is there and permissions are appropriate" | tee -a "$logfile" >&2
 </span><span class='line'>        exit 3
 </span><span class='line'>    fi
 </span><span class='line'>    session=`getsession "$config"`
 </span><span class='line'>    if ! [ -d "${session}" ] ; then
-</span><span class='line'>        echo "cannot find readable session directory ${session} from config ${c$
+</span><span class='line'>        echo "cannot find readable session directory ${session} from config ${config}. check permissions" | tee -a "$logfile" >&2
 </span><span class='line'>        exit 3
 </span><span class='line'>    fi
 </span><span class='line'>}
@@ -291,11 +289,11 @@
 </span><span class='line'>d_start() {
 </span><span class='line'>  [ -d "${base}" ] && cd "${base}"
 </span><span class='line'>  stty stop undef && stty start undef
-</span><span class='line'>  su -c "screen -ls | grep -sq "\.${srnname}[[:space:]]" " ${user} || su -c "sc$
-</span><span class='line'>  # this works for the screen command, but starting rtorrent below adopts scree$
-</span><span class='line'>  # even if it is not the screen session we started (e.g. running under an unde$
-</span><span class='line'>  #su -c "screen -ls | grep -sq "\.${srnname}[[:space:]]" " ${user} || su -c "s$
-</span><span class='line'>  su -c "screen -S "${srnname}" -X screen rtorrent ${options} 2>&1 1>/dev/null"$
+</span><span class='line'>  su -c "screen -ls | grep -sq "\.${srnname}[[:space:]]" " ${user} || su -c "screen -dm -S ${srnname} 2>&1 1>/dev/null" ${user} | tee -a "$logfile" >&2
+</span><span class='line'>  # this works for the screen command, but starting rtorrent below adopts screen session gid
+</span><span class='line'>  # even if it is not the screen session we started (e.g. running under an undesirable gid
+</span><span class='line'>  #su -c "screen -ls | grep -sq "\.${srnname}[[:space:]]" " ${user} || su -c "sg \"$group\" -c \"screen -fn -dm -S ${srnname} 2>&1 1>/dev/null\"" ${user} | tee -a "$logfile" >&2
+</span><span class='line'>  su -c "screen -S "${srnname}" -X screen rtorrent ${options} 2>&1 1>/dev/null" ${user} | tee -a "$logfile" >&2
 </span><span class='line'>}
 </span><span class='line'>
 </span><span class='line'>d_stop() {
@@ -303,14 +301,14 @@
 </span><span class='line'>    if ! [ -s ${session}/rtorrent.lock ] ; then
 </span><span class='line'>        return
 </span><span class='line'>    fi
-</span><span class='line'>    pid=`cat ${session}/rtorrent.lock | awk -F: '{print($2)}' | sed "s/[^0-9]//$
-</span><span class='line'>    if ps -A | grep -sq ${pid}.*rtorrent ; then # make sure the pid doesn't bel$
+</span><span class='line'>    pid=`cat ${session}/rtorrent.lock | awk -F: '{print($2)}' | sed "s/[^0-9]//g"`
+</span><span class='line'>    if ps -A | grep -sq ${pid}.*rtorrent ; then # make sure the pid doesn't belong to another process
 </span><span class='line'>        kill -s INT ${pid}
 </span><span class='line'>    fi
 </span><span class='line'>}
 </span><span class='line'>
 </span><span class='line'>getsession() {
-</span><span class='line'>    session=`cat "$1" | grep "^[[:space:]]*session[[:space:]]*=" | sed "s/^[[:s$
+</span><span class='line'>    session=`cat "$1" | grep "^[[:space:]]*session[[:space:]]*=" | sed "s/^[[:space:]]*session[[:space:]]*=[[:space:]]*//" `
 </span><span class='line'>    echo $session
 </span><span class='line'>}
 </span><span class='line'>
@@ -343,7 +341,7 @@
 </span><span class='line'>exit 0</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>Step 7 - Tell the Operating System to run rtorrent at Startup</h2>
+<h2>Step 7 - Run rtorrent at Startup</h2>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -359,7 +357,7 @@
 
 <h2>Workflow</h2>
 
-<p>If you have not used RTorrent before you and are used to gui&#8217;s you will get a bit of shock when you first try to drive it. But help is close at hand for the userguide go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a></p>
+<p>Go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a> for a userguide.</p>
 
 <h2>Useful Commands</h2>
 
@@ -388,7 +386,7 @@
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>, sudo kill PID</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo kill PID</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Conclusion</h2>
