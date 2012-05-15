@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | heterodoxic]]></title>
   <link href="http://mrelectron.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-15T23:24:07+10:00</updated>
+  <updated>2012-05-15T23:34:52+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -422,7 +422,7 @@
 
 <h2>Step 7 - Run rtorrent at Startup</h2>
 
-<p>We have to notify the operating system that we require it the run the rtorrent-daemon file when the computer boots up.</p>
+<p>We have to notify the operating system that we require it to run the rtorrent-daemon file when the computer boots up.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -438,13 +438,11 @@
 
 <h2>Workflow</h2>
 
-<p>The way in which I use this setup. I have a access to the netbook watch directory from my windows machine via a Samba share. When I see something on the web I want to download, I download the .torrent file to my windows machine and copy it to the netbook watch folder. rtorrent will pick it up from the watch folder, download the file, and then will continues to seed the file until the seed ratio set in the .rtorrent.rc file is met.</p>
+<p>The way in which I use this setup. I have a access to the netbook watch directory from my windows machine via a Samba share. When I see something on the web I want to download, I download the .torrent file to my windows machine and copy it to the netbook watch folder. rtorrent will pick the .torrent file up from the watch folder, download the torrent and seed it until the seed ratio is met.</p>
 
-<p>Subsequently at my leisure I will pickup the downloaded file and copy it to wherever I want its final resting place to be.</p>
+<p>Subsequently at my leisure I will pickup the downloaded file from the incoming folder and copy it to wherever I want its final resting place to be. I could easily make some improvements to this workflow, for example once the seed ratio has been met, automagically move the file to its final resting place.</p>
 
-<p>I could easily make some improvements to this workflow, for example once the seed ratio has been met, automagically move the file to its final resting place without my intervention. RTorrent does have excellent functionality to run different processes at different times.</p>
-
-<p>Anytime you actually want to use rtorrent interactively, just run screen -dr, which will detach the screen that rtorrent is running under. Just remember though once you are using it interactively and you quit out of it you will have to start it again via the daemon.</p>
+<p>Anytime you want to use rtorrent interactively, just run screen -dr, which will detach the screen that rtorrent is running under. Just remember though once you are using it interactively and you quit out of it you will have to start it again via the daemon.</p>
 
 <p>Go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a> for a rtorrent userguide.</p>
 
