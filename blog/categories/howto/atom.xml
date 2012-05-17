@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: how to | heterodoxic]]></title>
-  <link href="http://mrelectron.github.com/blog/categories/how-to/atom.xml" rel="self"/>
+  <title><![CDATA[Category: howto | heterodoxic]]></title>
+  <link href="http://mrelectron.github.com/blog/categories/howto/atom.xml" rel="self"/>
   <link href="http://mrelectron.github.com/"/>
-  <updated>2012-05-15T23:34:52+10:00</updated>
+  <updated>2012-05-17T19:37:39+10:00</updated>
   <id>http://mrelectron.github.com/</id>
   <author>
     <name><![CDATA[MAB]]></name>
@@ -14,18 +14,18 @@
 
   
   <entry>
-    <title type="html"><![CDATA[RTorrent Installation]]></title>
+    <title type="html"><![CDATA[RTorrent + Screen + Remote]]></title>
     <link href="http://mrelectron.github.com/blog/2012/05/15/rtorrent-install/"/>
     <updated>2012-05-15T19:18:00+10:00</updated>
     <id>http://mrelectron.github.com/blog/2012/05/15/rtorrent-install</id>
-    <content type="html"><![CDATA[<p>This post describes the process necessary to install and configure <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> on a remote machine running <a href="http://www.ubuntu.com/">Ubuntu</a> or <a href="http://linuxmint.com/">Mint</a>. I need to document this process for my own use, because it took me longer to setup that it should have and I don't want to have to repeat that experience. I want to thank <a href="http://randystech.com/">Randy</a> for his init.d script.</p>
+    <content type="html"><![CDATA[<p>This post describes the process necessary to install and configure <a href="http://libtorrent.rakshasa.no/wiki">rtorrent</a> running under <a href="http://ss64.com/bash/screen.html">screen</a> on a remote machine running <a href="http://www.ubuntu.com/">Ubuntu</a> or <a href="http://linuxmint.com/">Mint</a>. I need to document this process for my own use, because it took me longer to setup that it should have and I don't want to have to repeat that experience. I want to thank <a href="http://randystech.com/">Randy</a> for his init.d script.</p>
 
 <!-- more -->
 
 
 <h2>Assumptions</h2>
 
-<p>You are familiar with basic Linux concepts such as sudo, home directory, opening terminal windows and entering shell commands.</p>
+<p>You are familiar with basic Linux concepts such as sudo, home directory, opening terminal windows and entering shell commands. Being familiar with <a href="http://ss64.com/bash/screen.html">screen</a> would be helpful but not necessary.</p>
 
 <h2>Motivation</h2>
 
@@ -436,13 +436,11 @@
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo shutdown -r now</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h2>Workflow</h2>
+<h2>Workflow - How to use this setup.</h2>
 
-<p>The way in which I use this setup. I have a access to the netbook watch directory from my windows machine via a Samba share. When I see something on the web I want to download, I download the .torrent file to my windows machine and copy it to the netbook watch folder. rtorrent will pick the .torrent file up from the watch folder, download the torrent and seed it until the seed ratio is met.</p>
+<p>I download .torrent files to my windows machine and copy them to the netbook watch folder (~/pirate/watch). Rtorrent will pickup the .torrent file up from the watch folder, download and seed the torrent until the seed ratio is met. I will pickup the downloaded file from the incoming folder and copy it to wherever I want its final resting place to be.</p>
 
-<p>Subsequently at my leisure I will pickup the downloaded file from the incoming folder and copy it to wherever I want its final resting place to be. I could easily make some improvements to this workflow, for example once the seed ratio has been met, automagically move the file to its final resting place.</p>
-
-<p>Anytime you want to use rtorrent interactively, just run screen -dr, which will detach the screen that rtorrent is running under. Just remember though once you are using it interactively and you quit out of it you will have to start it again via the daemon.</p>
+<p>One thing I have skipped in this entire tutorial is the use of <a href="http://ss64.com/bash/screen.html">screen</a>, see <a href="http://www.rackaid.com/resources/linux-screen-tutorial-and-how-to/">here</a> for a good tutorial. Rtorrent is running within a screen, fortunately knowing how to use screen is not actually necessary, as you can manage the entire torrent cycle without accessing rtorrent at all.</p>
 
 <p>Go <a href="http://libtorrent.rakshasa.no/wiki/RTorrentUserGuide">here</a> for a rtorrent userguide.</p>
 
@@ -452,13 +450,17 @@
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ps aux|grep rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>Something like this will print out on the console screen
+<p>.. and something similiar to this will print out on the console screen
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>username   2297  0.0  0.1   5776  1208 ?        Ss   23:08   0:00 SCREEN -dm -S rtorrent</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Run this if you want to use rtorrent interactively.
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>screen -dr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>To leave rtorrent entered using screen -dr
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Control+A+D</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Stop rtorrent.
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
